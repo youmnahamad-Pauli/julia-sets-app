@@ -1,0 +1,26867 @@
+// ============================================================
+// Julia Sets — Grade 1 Practice Bank
+// Auto-generated — do not edit by hand
+// 400 problems:
+//   Common (light schema): Addition 50 + Subtraction 50 +
+//                          Multiplication 50 + Division 50 = 200
+//   Specific (full schema): Count On & Back 70 +
+//                           Double & Half 70 +
+//                           Word Problems 60 = 200
+// Steps shown only after 2 consecutive mistakes.
+// Common bank uses learn_ref to link to grade1 learn bank steps.
+// ============================================================
+
+export interface LearnStep {
+  step: number;
+  title_en: string;
+  title_ar: string;
+  explanation_en: string;
+  explanation_ar: string;
+}
+
+export interface LearnMethod {
+  steps: LearnStep[];
+  hint_en: string;
+  hint_ar: string;
+  result_en: string;
+  result_ar: string;
+}
+
+export interface PracticeMeta {
+  fun_fact_tag: string;
+}
+
+export interface LightPracticeProblem {
+  id: string;
+  grade: number;
+  bank: 'common';
+  category: 'Addition' | 'Subtraction' | 'Multiplication' | 'Division';
+  level: 'Easy' | 'Medium' | 'Hard';
+  question_en: string;
+  question_ar: string;
+  answer: number;
+  learn_ref: string;
+}
+
+export interface FullPracticeProblem {
+  id: string;
+  grade: number;
+  bank: 'specific';
+  category: 'Count On & Back' | 'Double & Half' | 'Word Problem';
+  level: 'Easy' | 'Medium' | 'Hard';
+  question_en: string;
+  question_ar: string;
+  answer: number;
+  methods: {
+    vedic: LearnMethod;
+    decompose: LearnMethod;
+    visualize: LearnMethod;
+  };
+  meta: PracticeMeta;
+}
+
+export type PracticeProblem = LightPracticeProblem | FullPracticeProblem;
+
+export const grade1PracticeBank: PracticeProblem[] = 
+[
+  {
+    "id": "g1-practice-add-easy-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "1 + 6 = ?",
+    "question_ar": "1 + 6 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-add-easy-001"
+  },
+  {
+    "id": "g1-practice-add-easy-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "4 + 1 = ?",
+    "question_ar": "4 + 1 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-add-easy-003"
+  },
+  {
+    "id": "g1-practice-add-easy-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "5 + 3 = ?",
+    "question_ar": "5 + 3 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 7 = ?",
+    "question_ar": "2 + 7 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-add-easy-001"
+  },
+  {
+    "id": "g1-practice-add-easy-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "4 + 6 = ?",
+    "question_ar": "4 + 6 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-add-easy-001"
+  },
+  {
+    "id": "g1-practice-add-easy-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 2 = ?",
+    "question_ar": "2 + 2 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-add-easy-001"
+  },
+  {
+    "id": "g1-practice-add-easy-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "5 + 3 = ?",
+    "question_ar": "5 + 3 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-add-easy-001"
+  },
+  {
+    "id": "g1-practice-add-easy-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "5 + 5 = ?",
+    "question_ar": "5 + 5 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-add-easy-001"
+  },
+  {
+    "id": "g1-practice-add-easy-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 4 = ?",
+    "question_ar": "2 + 4 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-add-easy-003"
+  },
+  {
+    "id": "g1-practice-add-easy-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "4 + 5 = ?",
+    "question_ar": "4 + 5 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-add-easy-003"
+  },
+  {
+    "id": "g1-practice-add-easy-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "4 + 3 = ?",
+    "question_ar": "4 + 3 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "1 + 1 = ?",
+    "question_ar": "1 + 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-add-easy-003"
+  },
+  {
+    "id": "g1-practice-add-easy-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "4 + 1 = ?",
+    "question_ar": "4 + 1 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "1 + 8 = ?",
+    "question_ar": "1 + 8 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 8 = ?",
+    "question_ar": "2 + 8 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-add-easy-003"
+  },
+  {
+    "id": "g1-practice-add-easy-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "5 + 2 = ?",
+    "question_ar": "5 + 2 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 8 = ?",
+    "question_ar": "2 + 8 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "1 + 3 = ?",
+    "question_ar": "1 + 3 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-easy-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 6 = ?",
+    "question_ar": "2 + 6 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-add-easy-003"
+  },
+  {
+    "id": "g1-practice-add-easy-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Easy",
+    "question_en": "2 + 8 = ?",
+    "question_ar": "2 + 8 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-add-easy-002"
+  },
+  {
+    "id": "g1-practice-add-medium-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "4 + 10 = ?",
+    "question_ar": "4 + 10 = ؟",
+    "answer": 14,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "4 + 6 = ?",
+    "question_ar": "4 + 6 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "5 + 12 = ?",
+    "question_ar": "5 + 12 = ؟",
+    "answer": 17,
+    "learn_ref": "g1-common-add-medium-002"
+  },
+  {
+    "id": "g1-practice-add-medium-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "4 + 15 = ?",
+    "question_ar": "4 + 15 = ؟",
+    "answer": 19,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "6 + 13 = ?",
+    "question_ar": "6 + 13 = ؟",
+    "answer": 19,
+    "learn_ref": "g1-common-add-medium-002"
+  },
+  {
+    "id": "g1-practice-add-medium-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "4 + 12 = ?",
+    "question_ar": "4 + 12 = ؟",
+    "answer": 16,
+    "learn_ref": "g1-common-add-medium-002"
+  },
+  {
+    "id": "g1-practice-add-medium-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "5 + 7 = ?",
+    "question_ar": "5 + 7 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-add-medium-002"
+  },
+  {
+    "id": "g1-practice-add-medium-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "5 + 4 = ?",
+    "question_ar": "5 + 4 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "3 + 9 = ?",
+    "question_ar": "3 + 9 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-add-medium-002"
+  },
+  {
+    "id": "g1-practice-add-medium-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "7 + 10 = ?",
+    "question_ar": "7 + 10 = ؟",
+    "answer": 17,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "3 + 3 = ?",
+    "question_ar": "3 + 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "5 + 8 = ?",
+    "question_ar": "5 + 8 = ؟",
+    "answer": 13,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "4 + 12 = ?",
+    "question_ar": "4 + 12 = ؟",
+    "answer": 16,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "9 + 4 = ?",
+    "question_ar": "9 + 4 = ؟",
+    "answer": 13,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "3 + 6 = ?",
+    "question_ar": "3 + 6 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "8 + 5 = ?",
+    "question_ar": "8 + 5 = ؟",
+    "answer": 13,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "7 + 5 = ?",
+    "question_ar": "7 + 5 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "9 + 10 = ?",
+    "question_ar": "9 + 10 = ؟",
+    "answer": 19,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-medium-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "9 + 3 = ?",
+    "question_ar": "9 + 3 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-add-medium-001"
+  },
+  {
+    "id": "g1-practice-add-medium-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Medium",
+    "question_en": "9 + 9 = ?",
+    "question_ar": "9 + 9 = ؟",
+    "answer": 18,
+    "learn_ref": "g1-common-add-medium-003"
+  },
+  {
+    "id": "g1-practice-add-hard-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "7 + 7 = ?",
+    "question_ar": "7 + 7 = ؟",
+    "answer": 14,
+    "learn_ref": "g1-common-add-hard-002"
+  },
+  {
+    "id": "g1-practice-add-hard-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "10 + 9 = ?",
+    "question_ar": "10 + 9 = ؟",
+    "answer": 19,
+    "learn_ref": "g1-common-add-hard-003"
+  },
+  {
+    "id": "g1-practice-add-hard-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "10 + 6 = ?",
+    "question_ar": "10 + 6 = ؟",
+    "answer": 16,
+    "learn_ref": "g1-common-add-hard-003"
+  },
+  {
+    "id": "g1-practice-add-hard-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "12 + 8 = ?",
+    "question_ar": "12 + 8 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-add-hard-003"
+  },
+  {
+    "id": "g1-practice-add-hard-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "7 + 10 = ?",
+    "question_ar": "7 + 10 = ؟",
+    "answer": 17,
+    "learn_ref": "g1-common-add-hard-001"
+  },
+  {
+    "id": "g1-practice-add-hard-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "12 + 8 = ?",
+    "question_ar": "12 + 8 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-add-hard-001"
+  },
+  {
+    "id": "g1-practice-add-hard-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "12 + 11 = ?",
+    "question_ar": "12 + 11 = ؟",
+    "answer": 23,
+    "learn_ref": "g1-common-add-hard-002"
+  },
+  {
+    "id": "g1-practice-add-hard-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "12 + 10 = ?",
+    "question_ar": "12 + 10 = ؟",
+    "answer": 22,
+    "learn_ref": "g1-common-add-hard-001"
+  },
+  {
+    "id": "g1-practice-add-hard-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "7 + 7 = ?",
+    "question_ar": "7 + 7 = ؟",
+    "answer": 14,
+    "learn_ref": "g1-common-add-hard-002"
+  },
+  {
+    "id": "g1-practice-add-hard-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Addition",
+    "level": "Hard",
+    "question_en": "10 + 8 = ?",
+    "question_ar": "10 + 8 = ؟",
+    "answer": 18,
+    "learn_ref": "g1-common-add-hard-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "5 − 2 = ?",
+    "question_ar": "5 − 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "3 − 2 = ?",
+    "question_ar": "3 − 2 = ؟",
+    "answer": 1,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "8 − 2 = ?",
+    "question_ar": "8 − 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "7 − 1 = ?",
+    "question_ar": "7 − 1 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-sub-easy-002"
+  },
+  {
+    "id": "g1-practice-sub-easy-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "7 − 5 = ?",
+    "question_ar": "7 − 5 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-easy-002"
+  },
+  {
+    "id": "g1-practice-sub-easy-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "7 − 2 = ?",
+    "question_ar": "7 − 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "3 − 1 = ?",
+    "question_ar": "3 − 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-easy-002"
+  },
+  {
+    "id": "g1-practice-sub-easy-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "5 − 1 = ?",
+    "question_ar": "5 − 1 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "8 − 5 = ?",
+    "question_ar": "8 − 5 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-easy-002"
+  },
+  {
+    "id": "g1-practice-sub-easy-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "4 − 2 = ?",
+    "question_ar": "4 − 2 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "3 − 2 = ?",
+    "question_ar": "3 − 2 = ؟",
+    "answer": 1,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "7 − 6 = ?",
+    "question_ar": "7 − 6 = ؟",
+    "answer": 1,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "6 − 3 = ?",
+    "question_ar": "6 − 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "9 − 6 = ?",
+    "question_ar": "9 − 6 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "9 − 6 = ?",
+    "question_ar": "9 − 6 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-easy-002"
+  },
+  {
+    "id": "g1-practice-sub-easy-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "9 − 7 = ?",
+    "question_ar": "9 − 7 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "10 − 4 = ?",
+    "question_ar": "10 − 4 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-sub-easy-002"
+  },
+  {
+    "id": "g1-practice-sub-easy-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "4 − 2 = ?",
+    "question_ar": "4 − 2 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-easy-001"
+  },
+  {
+    "id": "g1-practice-sub-easy-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "7 − 1 = ?",
+    "question_ar": "7 − 1 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-easy-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Easy",
+    "question_en": "6 − 3 = ?",
+    "question_ar": "6 − 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-easy-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "11 − 4 = ?",
+    "question_ar": "11 − 4 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "8 − 6 = ?",
+    "question_ar": "8 − 6 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-medium-001"
+  },
+  {
+    "id": "g1-practice-sub-medium-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "11 − 9 = ?",
+    "question_ar": "11 − 9 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 6 = ?",
+    "question_ar": "10 − 6 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "9 − 4 = ?",
+    "question_ar": "9 − 4 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "8 − 6 = ?",
+    "question_ar": "8 − 6 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 3 = ?",
+    "question_ar": "10 − 3 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 5 = ?",
+    "question_ar": "10 − 5 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "9 − 7 = ?",
+    "question_ar": "9 − 7 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-medium-001"
+  },
+  {
+    "id": "g1-practice-sub-medium-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 3 = ?",
+    "question_ar": "10 − 3 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "12 − 8 = ?",
+    "question_ar": "12 − 8 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-medium-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 2 = ?",
+    "question_ar": "10 − 2 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "12 − 11 = ?",
+    "question_ar": "12 − 11 = ؟",
+    "answer": 1,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "9 − 8 = ?",
+    "question_ar": "9 − 8 = ؟",
+    "answer": 1,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 5 = ?",
+    "question_ar": "10 − 5 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-sub-medium-001"
+  },
+  {
+    "id": "g1-practice-sub-medium-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 8 = ?",
+    "question_ar": "10 − 8 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "8 − 5 = ?",
+    "question_ar": "8 − 5 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "10 − 9 = ?",
+    "question_ar": "10 − 9 = ؟",
+    "answer": 1,
+    "learn_ref": "g1-common-sub-medium-002"
+  },
+  {
+    "id": "g1-practice-sub-medium-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "8 − 3 = ?",
+    "question_ar": "8 − 3 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-sub-medium-001"
+  },
+  {
+    "id": "g1-practice-sub-medium-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Medium",
+    "question_en": "12 − 9 = ?",
+    "question_ar": "12 − 9 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-medium-003"
+  },
+  {
+    "id": "g1-practice-sub-hard-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "20 − 7 = ?",
+    "question_ar": "20 − 7 = ؟",
+    "answer": 13,
+    "learn_ref": "g1-common-sub-hard-003"
+  },
+  {
+    "id": "g1-practice-sub-hard-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "14 − 5 = ?",
+    "question_ar": "14 − 5 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-sub-hard-002"
+  },
+  {
+    "id": "g1-practice-sub-hard-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "17 − 5 = ?",
+    "question_ar": "17 − 5 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-sub-hard-003"
+  },
+  {
+    "id": "g1-practice-sub-hard-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "19 − 12 = ?",
+    "question_ar": "19 − 12 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-sub-hard-001"
+  },
+  {
+    "id": "g1-practice-sub-hard-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "13 − 8 = ?",
+    "question_ar": "13 − 8 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-sub-hard-003"
+  },
+  {
+    "id": "g1-practice-sub-hard-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "14 − 10 = ?",
+    "question_ar": "14 − 10 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-sub-hard-003"
+  },
+  {
+    "id": "g1-practice-sub-hard-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "14 − 4 = ?",
+    "question_ar": "14 − 4 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-sub-hard-003"
+  },
+  {
+    "id": "g1-practice-sub-hard-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "18 − 8 = ?",
+    "question_ar": "18 − 8 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-sub-hard-001"
+  },
+  {
+    "id": "g1-practice-sub-hard-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "16 − 13 = ?",
+    "question_ar": "16 − 13 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-sub-hard-001"
+  },
+  {
+    "id": "g1-practice-sub-hard-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Subtraction",
+    "level": "Hard",
+    "question_en": "15 − 11 = ?",
+    "question_ar": "15 − 11 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-sub-hard-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-easy-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "3 × 1 = ?",
+    "question_ar": "3 × 1 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 1 = ?",
+    "question_ar": "2 × 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-mult-easy-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "3 × 3 = ?",
+    "question_ar": "3 × 3 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-mult-easy-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 2 = ?",
+    "question_ar": "2 × 2 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-mult-easy-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 2 = ?",
+    "question_ar": "2 × 2 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-easy-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-easy-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 1 = ?",
+    "question_ar": "2 × 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 1 = ?",
+    "question_ar": "2 × 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-easy-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "3 × 2 = ?",
+    "question_ar": "3 × 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-easy-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "3 × 2 = ?",
+    "question_ar": "3 × 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 1 = ?",
+    "question_ar": "2 × 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-easy-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "1 × 3 = ?",
+    "question_ar": "1 × 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-mult-easy-003"
+  },
+  {
+    "id": "g1-practice-mult-easy-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-easy-001"
+  },
+  {
+    "id": "g1-practice-mult-easy-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Easy",
+    "question_en": "2 × 1 = ?",
+    "question_ar": "2 × 1 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-mult-easy-002"
+  },
+  {
+    "id": "g1-practice-mult-medium-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 2 = ?",
+    "question_ar": "4 × 2 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "3 × 5 = ?",
+    "question_ar": "3 × 5 = ؟",
+    "answer": 15,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "3 × 2 = ?",
+    "question_ar": "3 × 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-medium-002"
+  },
+  {
+    "id": "g1-practice-mult-medium-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "3 × 4 = ?",
+    "question_ar": "3 × 4 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 4 = ?",
+    "question_ar": "4 × 4 = ؟",
+    "answer": 16,
+    "learn_ref": "g1-common-mult-medium-002"
+  },
+  {
+    "id": "g1-practice-mult-medium-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 3 = ?",
+    "question_ar": "4 × 3 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 4 = ?",
+    "question_ar": "4 × 4 = ؟",
+    "answer": 16,
+    "learn_ref": "g1-common-mult-medium-001"
+  },
+  {
+    "id": "g1-practice-mult-medium-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 3 = ?",
+    "question_ar": "4 × 3 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-mult-medium-002"
+  },
+  {
+    "id": "g1-practice-mult-medium-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 4 = ?",
+    "question_ar": "2 × 4 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-mult-medium-001"
+  },
+  {
+    "id": "g1-practice-mult-medium-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 5 = ?",
+    "question_ar": "4 × 5 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-medium-002"
+  },
+  {
+    "id": "g1-practice-mult-medium-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 3 = ?",
+    "question_ar": "2 × 3 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 4 = ?",
+    "question_ar": "4 × 4 = ؟",
+    "answer": 16,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 5 = ?",
+    "question_ar": "2 × 5 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-mult-medium-001"
+  },
+  {
+    "id": "g1-practice-mult-medium-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 5 = ?",
+    "question_ar": "2 × 5 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "4 × 2 = ?",
+    "question_ar": "4 × 2 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 4 = ?",
+    "question_ar": "2 × 4 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-mult-medium-003"
+  },
+  {
+    "id": "g1-practice-mult-medium-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "3 × 2 = ?",
+    "question_ar": "3 × 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-mult-medium-001"
+  },
+  {
+    "id": "g1-practice-mult-medium-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 5 = ?",
+    "question_ar": "2 × 5 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-mult-medium-001"
+  },
+  {
+    "id": "g1-practice-mult-medium-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "3 × 4 = ?",
+    "question_ar": "3 × 4 = ؟",
+    "answer": 12,
+    "learn_ref": "g1-common-mult-medium-001"
+  },
+  {
+    "id": "g1-practice-mult-medium-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Medium",
+    "question_en": "2 × 4 = ?",
+    "question_ar": "2 × 4 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-mult-medium-002"
+  },
+  {
+    "id": "g1-practice-mult-hard-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "4 × 2 = ?",
+    "question_ar": "4 × 2 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-mult-hard-003"
+  },
+  {
+    "id": "g1-practice-mult-hard-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "4 × 5 = ?",
+    "question_ar": "4 × 5 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-hard-002"
+  },
+  {
+    "id": "g1-practice-mult-hard-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "5 × 5 = ?",
+    "question_ar": "5 × 5 = ؟",
+    "answer": 25,
+    "learn_ref": "g1-common-mult-hard-001"
+  },
+  {
+    "id": "g1-practice-mult-hard-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "4 × 5 = ?",
+    "question_ar": "4 × 5 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-hard-001"
+  },
+  {
+    "id": "g1-practice-mult-hard-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "5 × 2 = ?",
+    "question_ar": "5 × 2 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-mult-hard-002"
+  },
+  {
+    "id": "g1-practice-mult-hard-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "5 × 4 = ?",
+    "question_ar": "5 × 4 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-hard-001"
+  },
+  {
+    "id": "g1-practice-mult-hard-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "4 × 5 = ?",
+    "question_ar": "4 × 5 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-hard-002"
+  },
+  {
+    "id": "g1-practice-mult-hard-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "4 × 5 = ?",
+    "question_ar": "4 × 5 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-hard-003"
+  },
+  {
+    "id": "g1-practice-mult-hard-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "5 × 2 = ?",
+    "question_ar": "5 × 2 = ؟",
+    "answer": 10,
+    "learn_ref": "g1-common-mult-hard-002"
+  },
+  {
+    "id": "g1-practice-mult-hard-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Multiplication",
+    "level": "Hard",
+    "question_en": "5 × 4 = ?",
+    "question_ar": "5 × 4 = ؟",
+    "answer": 20,
+    "learn_ref": "g1-common-mult-hard-002"
+  },
+  {
+    "id": "g1-practice-div-easy-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "8 ÷ 2 = ?",
+    "question_ar": "8 ÷ 2 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "8 ÷ 2 = ?",
+    "question_ar": "8 ÷ 2 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-002"
+  },
+  {
+    "id": "g1-practice-div-easy-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-002"
+  },
+  {
+    "id": "g1-practice-div-easy-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-easy-003"
+  },
+  {
+    "id": "g1-practice-div-easy-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "6 ÷ 2 = ?",
+    "question_ar": "6 ÷ 2 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-easy-002"
+  },
+  {
+    "id": "g1-practice-div-easy-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "4 ÷ 2 = ?",
+    "question_ar": "4 ÷ 2 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-easy-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Easy",
+    "question_en": "8 ÷ 2 = ?",
+    "question_ar": "8 ÷ 2 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-easy-001"
+  },
+  {
+    "id": "g1-practice-div-medium-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "12 ÷ 2 = ?",
+    "question_ar": "12 ÷ 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-div-medium-003"
+  },
+  {
+    "id": "g1-practice-div-medium-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "9 ÷ 3 = ?",
+    "question_ar": "9 ÷ 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "14 ÷ 2 = ?",
+    "question_ar": "14 ÷ 2 = ؟",
+    "answer": 7,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "6 ÷ 3 = ?",
+    "question_ar": "6 ÷ 3 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "15 ÷ 3 = ?",
+    "question_ar": "15 ÷ 3 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-medium-003"
+  },
+  {
+    "id": "g1-practice-div-medium-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "18 ÷ 2 = ?",
+    "question_ar": "18 ÷ 2 = ؟",
+    "answer": 9,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "12 ÷ 3 = ?",
+    "question_ar": "12 ÷ 3 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "9 ÷ 3 = ?",
+    "question_ar": "9 ÷ 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-011",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "10 ÷ 2 = ?",
+    "question_ar": "10 ÷ 2 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-012",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "9 ÷ 3 = ?",
+    "question_ar": "9 ÷ 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-013",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "12 ÷ 2 = ?",
+    "question_ar": "12 ÷ 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-014",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "9 ÷ 3 = ?",
+    "question_ar": "9 ÷ 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-015",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "16 ÷ 2 = ?",
+    "question_ar": "16 ÷ 2 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-016",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "12 ÷ 3 = ?",
+    "question_ar": "12 ÷ 3 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-017",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "16 ÷ 2 = ?",
+    "question_ar": "16 ÷ 2 = ؟",
+    "answer": 8,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-018",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "9 ÷ 3 = ?",
+    "question_ar": "9 ÷ 3 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-medium-001"
+  },
+  {
+    "id": "g1-practice-div-medium-019",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "12 ÷ 2 = ?",
+    "question_ar": "12 ÷ 2 = ؟",
+    "answer": 6,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-medium-020",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Medium",
+    "question_en": "15 ÷ 3 = ?",
+    "question_ar": "15 ÷ 3 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-medium-002"
+  },
+  {
+    "id": "g1-practice-div-hard-001",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "20 ÷ 5 = ?",
+    "question_ar": "20 ÷ 5 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-hard-002"
+  },
+  {
+    "id": "g1-practice-div-hard-002",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "16 ÷ 4 = ?",
+    "question_ar": "16 ÷ 4 = ؟",
+    "answer": 4,
+    "learn_ref": "g1-common-div-hard-001"
+  },
+  {
+    "id": "g1-practice-div-hard-003",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "25 ÷ 5 = ?",
+    "question_ar": "25 ÷ 5 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-hard-002"
+  },
+  {
+    "id": "g1-practice-div-hard-004",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "8 ÷ 4 = ?",
+    "question_ar": "8 ÷ 4 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-div-hard-002"
+  },
+  {
+    "id": "g1-practice-div-hard-005",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "20 ÷ 4 = ?",
+    "question_ar": "20 ÷ 4 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-hard-003"
+  },
+  {
+    "id": "g1-practice-div-hard-006",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "10 ÷ 5 = ?",
+    "question_ar": "10 ÷ 5 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-div-hard-001"
+  },
+  {
+    "id": "g1-practice-div-hard-007",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "10 ÷ 5 = ?",
+    "question_ar": "10 ÷ 5 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-div-hard-002"
+  },
+  {
+    "id": "g1-practice-div-hard-008",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "25 ÷ 5 = ?",
+    "question_ar": "25 ÷ 5 = ؟",
+    "answer": 5,
+    "learn_ref": "g1-common-div-hard-003"
+  },
+  {
+    "id": "g1-practice-div-hard-009",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "15 ÷ 5 = ?",
+    "question_ar": "15 ÷ 5 = ؟",
+    "answer": 3,
+    "learn_ref": "g1-common-div-hard-001"
+  },
+  {
+    "id": "g1-practice-div-hard-010",
+    "grade": 1,
+    "bank": "common",
+    "category": "Division",
+    "level": "Hard",
+    "question_en": "8 ÷ 4 = ?",
+    "question_ar": "8 ÷ 4 = ؟",
+    "answer": 2,
+    "learn_ref": "g1-common-div-hard-001"
+  },
+  {
+    "id": "g1-practice-count-easy-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 9, count on 1. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للأمام 1. إلى أي عدد تصل؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 1 forward steps: 10.",
+            "explanation_ar": "من 9، خذ 1 خطوات إلى الأمام: 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 1 adds 1: 9 + 1 = 10.",
+            "explanation_ar": "العدّ للأمام 1 يضيف 1: 9 + 1 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 10.",
+            "explanation_ar": "تصل إلى 10."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = +1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = +1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 − 9 = 1. ✓",
+            "explanation_ar": "تحقق: 10 − 9 = 1. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 1 forward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 1 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تهبط على 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 10.",
+            "explanation_ar": "إذن تصل إلى 10."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 8, count back 1. What number do you reach?",
+    "question_ar": "ابدأ من 8، عُدّ للخلف 1. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 8, take 1 backward steps: 7.",
+            "explanation_ar": "من 8، خذ 1 خطوات إلى الخلف: 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 1 subtracts 1: 8 − 1 = 7.",
+            "explanation_ar": "العدّ للخلف 1 يطرح 1: 8 − 1 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = −1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = −1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 1 = 8. ✓",
+            "explanation_ar": "تحقق: 7 + 1 = 8. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 8. Draw 1 backward hops.",
+            "explanation_ar": "ابدأ من 8. ارسم 1 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 8, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 8، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 8, take 2 backward steps: 7, 6.",
+            "explanation_ar": "من 8، خذ 2 خطوات إلى الخلف: 7، 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 8 − 2 = 6.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 8 − 2 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 6.",
+            "explanation_ar": "تصل إلى 6."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 2 = 8. ✓",
+            "explanation_ar": "تحقق: 6 + 2 = 8. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 8. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 8. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 6.",
+            "explanation_ar": "تهبط على 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 6.",
+            "explanation_ar": "إذن تصل إلى 6."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 4, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 4، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 4, take 2 forward steps: 5, 6.",
+            "explanation_ar": "من 4، خذ 2 خطوات إلى الأمام: 5، 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 4 + 2 = 6.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 4 + 2 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 6.",
+            "explanation_ar": "تصل إلى 6."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 − 4 = 2. ✓",
+            "explanation_ar": "تحقق: 6 − 4 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 4. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 4. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 6.",
+            "explanation_ar": "تهبط على 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 6.",
+            "explanation_ar": "إذن تصل إلى 6."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 5, count back 1. What number do you reach?",
+    "question_ar": "ابدأ من 5، عُدّ للخلف 1. إلى أي عدد تصل؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 5, take 1 backward steps: 4.",
+            "explanation_ar": "من 5، خذ 1 خطوات إلى الخلف: 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 1 subtracts 1: 5 − 1 = 4.",
+            "explanation_ar": "العدّ للخلف 1 يطرح 1: 5 − 1 = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 4.",
+            "explanation_ar": "تصل إلى 4."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = −1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = −1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 4 + 1 = 5. ✓",
+            "explanation_ar": "تحقق: 4 + 1 = 5. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 5. Draw 1 backward hops.",
+            "explanation_ar": "ابدأ من 5. ارسم 1 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 4.",
+            "explanation_ar": "تهبط على 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 4.",
+            "explanation_ar": "إذن تصل إلى 4."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 8, count on 1. What number do you reach?",
+    "question_ar": "ابدأ من 8، عُدّ للأمام 1. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 8, take 1 forward steps: 9.",
+            "explanation_ar": "من 8، خذ 1 خطوات إلى الأمام: 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 1 adds 1: 8 + 1 = 9.",
+            "explanation_ar": "العدّ للأمام 1 يضيف 1: 8 + 1 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = +1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = +1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 − 8 = 1. ✓",
+            "explanation_ar": "تحقق: 9 − 8 = 1. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 8. Draw 1 forward hops.",
+            "explanation_ar": "ابدأ من 8. ارسم 1 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 5, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 5، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 5, take 2 backward steps: 4, 3.",
+            "explanation_ar": "من 5، خذ 2 خطوات إلى الخلف: 4، 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 5 − 2 = 3.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 5 − 2 = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 3.",
+            "explanation_ar": "تصل إلى 3."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 3 + 2 = 5. ✓",
+            "explanation_ar": "تحقق: 3 + 2 = 5. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 5. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 5. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 3.",
+            "explanation_ar": "تهبط على 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 3.",
+            "explanation_ar": "إذن تصل إلى 3."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 10, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 10، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 10, take 2 backward steps: 9, 8.",
+            "explanation_ar": "من 10، خذ 2 خطوات إلى الخلف: 9، 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 10 − 2 = 8.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 10 − 2 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 8.",
+            "explanation_ar": "تصل إلى 8."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 + 2 = 10. ✓",
+            "explanation_ar": "تحقق: 8 + 2 = 10. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 10. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 10. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تهبط على 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 8.",
+            "explanation_ar": "إذن تصل إلى 8."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 8, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 8، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 8, take 2 forward steps: 9, 10.",
+            "explanation_ar": "من 8، خذ 2 خطوات إلى الأمام: 9، 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 8 + 2 = 10.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 8 + 2 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 10.",
+            "explanation_ar": "تصل إلى 10."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 − 8 = 2. ✓",
+            "explanation_ar": "تحقق: 10 − 8 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 8. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 8. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تهبط على 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 10.",
+            "explanation_ar": "إذن تصل إلى 10."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 4, count on 1. What number do you reach?",
+    "question_ar": "ابدأ من 4، عُدّ للأمام 1. إلى أي عدد تصل؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 4, take 1 forward steps: 5.",
+            "explanation_ar": "من 4، خذ 1 خطوات إلى الأمام: 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 1 adds 1: 4 + 1 = 5.",
+            "explanation_ar": "العدّ للأمام 1 يضيف 1: 4 + 1 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 5.",
+            "explanation_ar": "تصل إلى 5."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = +1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = +1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 − 4 = 1. ✓",
+            "explanation_ar": "تحقق: 5 − 4 = 1. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 4. Draw 1 forward hops.",
+            "explanation_ar": "ابدأ من 4. ارسم 1 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تهبط على 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 5.",
+            "explanation_ar": "إذن تصل إلى 5."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 7, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 7، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 7, take 2 forward steps: 8, 9.",
+            "explanation_ar": "من 7، خذ 2 خطوات إلى الأمام: 8، 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 7 + 2 = 9.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 7 + 2 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 − 7 = 2. ✓",
+            "explanation_ar": "تحقق: 9 − 7 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 7. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 7. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 9, count back 1. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للخلف 1. إلى أي عدد تصل؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 1 backward steps: 8.",
+            "explanation_ar": "من 9، خذ 1 خطوات إلى الخلف: 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 1 subtracts 1: 9 − 1 = 8.",
+            "explanation_ar": "العدّ للخلف 1 يطرح 1: 9 − 1 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 8.",
+            "explanation_ar": "تصل إلى 8."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = −1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = −1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 + 1 = 9. ✓",
+            "explanation_ar": "تحقق: 8 + 1 = 9. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 1 backward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 1 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تهبط على 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 8.",
+            "explanation_ar": "إذن تصل إلى 8."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 6, count back 1. What number do you reach?",
+    "question_ar": "ابدأ من 6، عُدّ للخلف 1. إلى أي عدد تصل؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 6, take 1 backward steps: 5.",
+            "explanation_ar": "من 6، خذ 1 خطوات إلى الخلف: 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 1 subtracts 1: 6 − 1 = 5.",
+            "explanation_ar": "العدّ للخلف 1 يطرح 1: 6 − 1 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 5.",
+            "explanation_ar": "تصل إلى 5."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = −1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = −1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 + 1 = 6. ✓",
+            "explanation_ar": "تحقق: 5 + 1 = 6. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 6. Draw 1 backward hops.",
+            "explanation_ar": "ابدأ من 6. ارسم 1 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تهبط على 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 5.",
+            "explanation_ar": "إذن تصل إلى 5."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 3, count on 1. What number do you reach?",
+    "question_ar": "ابدأ من 3، عُدّ للأمام 1. إلى أي عدد تصل؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 3, take 1 forward steps: 4.",
+            "explanation_ar": "من 3، خذ 1 خطوات إلى الأمام: 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 1 adds 1: 3 + 1 = 4.",
+            "explanation_ar": "العدّ للأمام 1 يضيف 1: 3 + 1 = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 4.",
+            "explanation_ar": "تصل إلى 4."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = +1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = +1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 4 − 3 = 1. ✓",
+            "explanation_ar": "تحقق: 4 − 3 = 1. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 3. Draw 1 forward hops.",
+            "explanation_ar": "ابدأ من 3. ارسم 1 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 4.",
+            "explanation_ar": "تهبط على 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 4.",
+            "explanation_ar": "إذن تصل إلى 4."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 5, count on 1. What number do you reach?",
+    "question_ar": "ابدأ من 5، عُدّ للأمام 1. إلى أي عدد تصل؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 5, take 1 forward steps: 6.",
+            "explanation_ar": "من 5، خذ 1 خطوات إلى الأمام: 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 1 adds 1: 5 + 1 = 6.",
+            "explanation_ar": "العدّ للأمام 1 يضيف 1: 5 + 1 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 6.",
+            "explanation_ar": "تصل إلى 6."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = +1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = +1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 − 5 = 1. ✓",
+            "explanation_ar": "تحقق: 6 − 5 = 1. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 5. Draw 1 forward hops.",
+            "explanation_ar": "ابدأ من 5. ارسم 1 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 6.",
+            "explanation_ar": "تهبط على 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 6.",
+            "explanation_ar": "إذن تصل إلى 6."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 7, count back 1. What number do you reach?",
+    "question_ar": "ابدأ من 7، عُدّ للخلف 1. إلى أي عدد تصل؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 7, take 1 backward steps: 6.",
+            "explanation_ar": "من 7، خذ 1 خطوات إلى الخلف: 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 1 subtracts 1: 7 − 1 = 6.",
+            "explanation_ar": "العدّ للخلف 1 يطرح 1: 7 − 1 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 6.",
+            "explanation_ar": "تصل إلى 6."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = −1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = −1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 1 = 7. ✓",
+            "explanation_ar": "تحقق: 6 + 1 = 7. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 7. Draw 1 backward hops.",
+            "explanation_ar": "ابدأ من 7. ارسم 1 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 6.",
+            "explanation_ar": "تهبط على 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 6.",
+            "explanation_ar": "إذن تصل إلى 6."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 7, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 7، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 7, take 2 backward steps: 6, 5.",
+            "explanation_ar": "من 7، خذ 2 خطوات إلى الخلف: 6، 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 7 − 2 = 5.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 7 − 2 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 5.",
+            "explanation_ar": "تصل إلى 5."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 + 2 = 7. ✓",
+            "explanation_ar": "تحقق: 5 + 2 = 7. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 7. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 7. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تهبط على 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 5.",
+            "explanation_ar": "إذن تصل إلى 5."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 9, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 2 forward steps: 10, 11.",
+            "explanation_ar": "من 9، خذ 2 خطوات إلى الأمام: 10، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 9 + 2 = 11.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 9 + 2 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 11.",
+            "explanation_ar": "تصل إلى 11."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 − 9 = 2. ✓",
+            "explanation_ar": "تحقق: 11 − 9 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تهبط على 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 11.",
+            "explanation_ar": "إذن تصل إلى 11."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 3, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 3، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 3, take 2 forward steps: 4, 5.",
+            "explanation_ar": "من 3، خذ 2 خطوات إلى الأمام: 4، 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 3 + 2 = 5.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 3 + 2 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 5.",
+            "explanation_ar": "تصل إلى 5."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 − 3 = 2. ✓",
+            "explanation_ar": "تحقق: 5 − 3 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 3. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 3. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تهبط على 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 5.",
+            "explanation_ar": "إذن تصل إلى 5."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 6, count on 1. What number do you reach?",
+    "question_ar": "ابدأ من 6، عُدّ للأمام 1. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 6, take 1 forward steps: 7.",
+            "explanation_ar": "من 6، خذ 1 خطوات إلى الأمام: 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 1 adds 1: 6 + 1 = 7.",
+            "explanation_ar": "العدّ للأمام 1 يضيف 1: 6 + 1 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = +1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = +1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 − 6 = 1. ✓",
+            "explanation_ar": "تحقق: 7 − 6 = 1. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 6. Draw 1 forward hops.",
+            "explanation_ar": "ابدأ من 6. ارسم 1 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-021",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 6, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 6، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 6, take 2 forward steps: 7, 8.",
+            "explanation_ar": "من 6، خذ 2 خطوات إلى الأمام: 7، 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 6 + 2 = 8.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 6 + 2 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 8.",
+            "explanation_ar": "تصل إلى 8."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 − 6 = 2. ✓",
+            "explanation_ar": "تحقق: 8 − 6 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 6. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 6. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تهبط على 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 8.",
+            "explanation_ar": "إذن تصل إلى 8."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-022",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 9, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 2 backward steps: 8, 7.",
+            "explanation_ar": "من 9، خذ 2 خطوات إلى الخلف: 8، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 9 − 2 = 7.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 9 − 2 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 2 = 9. ✓",
+            "explanation_ar": "تحقق: 7 + 2 = 9. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-023",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 6, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 6، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 6, take 2 backward steps: 5, 4.",
+            "explanation_ar": "من 6، خذ 2 خطوات إلى الخلف: 5، 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 6 − 2 = 4.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 6 − 2 = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 4.",
+            "explanation_ar": "تصل إلى 4."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 4 + 2 = 6. ✓",
+            "explanation_ar": "تحقق: 4 + 2 = 6. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 6. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 6. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 4.",
+            "explanation_ar": "تهبط على 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 4.",
+            "explanation_ar": "إذن تصل إلى 4."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-024",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 5, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 5، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 5, take 2 forward steps: 6, 7.",
+            "explanation_ar": "من 5، خذ 2 خطوات إلى الأمام: 6، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 5 + 2 = 7.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 5 + 2 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 − 5 = 2. ✓",
+            "explanation_ar": "تحقق: 7 − 5 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 5. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 5. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-easy-025",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Easy",
+    "question_en": "Start at 10, count back 1. What number do you reach?",
+    "question_ar": "ابدأ من 10، عُدّ للخلف 1. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 10, take 1 backward steps: 9.",
+            "explanation_ar": "من 10، خذ 1 خطوات إلى الخلف: 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 1 subtracts 1: 10 − 1 = 9.",
+            "explanation_ar": "العدّ للخلف 1 يطرح 1: 10 − 1 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 1 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 1 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 1 steps together = −1.",
+            "explanation_ar": "جميع الخطوات الـ 1 معًا = −1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 + 1 = 10. ✓",
+            "explanation_ar": "تحقق: 9 + 1 = 10. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 10. Draw 1 backward hops.",
+            "explanation_ar": "ابدأ من 10. ارسم 1 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 5, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 5، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 5, take 2 forward steps: 6, 7.",
+            "explanation_ar": "من 5، خذ 2 خطوات إلى الأمام: 6، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 5 + 2 = 7.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 5 + 2 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 − 5 = 2. ✓",
+            "explanation_ar": "تحقق: 7 − 5 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 5. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 5. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 8, count on 3. What number do you reach?",
+    "question_ar": "ابدأ من 8، عُدّ للأمام 3. إلى أي عدد تصل؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 8, take 3 forward steps: 9, 10, 11.",
+            "explanation_ar": "من 8، خذ 3 خطوات إلى الأمام: 9، 10، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 3 adds 3: 8 + 3 = 11.",
+            "explanation_ar": "العدّ للأمام 3 يضيف 3: 8 + 3 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 11.",
+            "explanation_ar": "تصل إلى 11."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = +3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = +3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 − 8 = 3. ✓",
+            "explanation_ar": "تحقق: 11 − 8 = 3. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 8. Draw 3 forward hops.",
+            "explanation_ar": "ابدأ من 8. ارسم 3 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تهبط على 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 11.",
+            "explanation_ar": "إذن تصل إلى 11."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "How many steps does it take to count from 7 to 12?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 7 إلى 12؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 7 to 12.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 7 إلى 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 12 − 7 = 5.",
+            "explanation_ar": "اطرح: 12 − 7 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 5.",
+            "explanation_ar": "عدد الخطوات للأمام = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 5 steps.",
+            "explanation_ar": "إذن نحتاج 5 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 7: 8, 9, … up to 12.",
+            "explanation_ar": "عُدّ بمقدار 1 من 7: 8، 9، ... حتى 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 5 times.",
+            "explanation_ar": "وضعت 5 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 5 = 12. ✓",
+            "explanation_ar": "تحقق: 7 + 5 = 12. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 7 forward to 12.",
+            "explanation_ar": "تخيّل القفز من 7 إلى الأمام نحو 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 5 arrows.",
+            "explanation_ar": "ترى 5 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 11, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 11، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 13,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 11, take 2 forward steps: 12, 13.",
+            "explanation_ar": "من 11، خذ 2 خطوات إلى الأمام: 12، 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 11 + 2 = 13.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 11 + 2 = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 13.",
+            "explanation_ar": "تصل إلى 13."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 13 − 11 = 2. ✓",
+            "explanation_ar": "تحقق: 13 − 11 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 11. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 11. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 13.",
+            "explanation_ar": "تهبط على 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 13.",
+            "explanation_ar": "إذن تصل إلى 13."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "How many steps does it take to count from 3 to 7?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 3 إلى 7؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 3 to 7.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 3 إلى 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 7 − 3 = 4.",
+            "explanation_ar": "اطرح: 7 − 3 = 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 4.",
+            "explanation_ar": "عدد الخطوات للأمام = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 4 steps.",
+            "explanation_ar": "إذن نحتاج 4 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 3: 4, 5, … up to 7.",
+            "explanation_ar": "عُدّ بمقدار 1 من 3: 4، 5، ... حتى 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 4 times.",
+            "explanation_ar": "وضعت 4 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 3 + 4 = 7. ✓",
+            "explanation_ar": "تحقق: 3 + 4 = 7. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 3 forward to 7.",
+            "explanation_ar": "تخيّل القفز من 3 إلى الأمام نحو 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 4 arrows.",
+            "explanation_ar": "ترى 4 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 15, count back 3. What number do you reach?",
+    "question_ar": "ابدأ من 15، عُدّ للخلف 3. إلى أي عدد تصل؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 15, take 3 backward steps: 14, 13, 12.",
+            "explanation_ar": "من 15، خذ 3 خطوات إلى الخلف: 14، 13، 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 3 subtracts 3: 15 − 3 = 12.",
+            "explanation_ar": "العدّ للخلف 3 يطرح 3: 15 − 3 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 12.",
+            "explanation_ar": "تصل إلى 12."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = −3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = −3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 + 3 = 15. ✓",
+            "explanation_ar": "تحقق: 12 + 3 = 15. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 15. Draw 3 backward hops.",
+            "explanation_ar": "ابدأ من 15. ارسم 3 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 12.",
+            "explanation_ar": "تهبط على 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 12.",
+            "explanation_ar": "إذن تصل إلى 12."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 9, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 2 forward steps: 10, 11.",
+            "explanation_ar": "من 9، خذ 2 خطوات إلى الأمام: 10، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 9 + 2 = 11.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 9 + 2 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 11.",
+            "explanation_ar": "تصل إلى 11."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 − 9 = 2. ✓",
+            "explanation_ar": "تحقق: 11 − 9 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تهبط على 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 11.",
+            "explanation_ar": "إذن تصل إلى 11."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 14, count back 3. What number do you reach?",
+    "question_ar": "ابدأ من 14، عُدّ للخلف 3. إلى أي عدد تصل؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 14, take 3 backward steps: 13, 12, 11.",
+            "explanation_ar": "من 14، خذ 3 خطوات إلى الخلف: 13، 12، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 3 subtracts 3: 14 − 3 = 11.",
+            "explanation_ar": "العدّ للخلف 3 يطرح 3: 14 − 3 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 11.",
+            "explanation_ar": "تصل إلى 11."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = −3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = −3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 + 3 = 14. ✓",
+            "explanation_ar": "تحقق: 11 + 3 = 14. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 14. Draw 3 backward hops.",
+            "explanation_ar": "ابدأ من 14. ارسم 3 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تهبط على 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 11.",
+            "explanation_ar": "إذن تصل إلى 11."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "How many steps does it take to count from 8 to 14?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 8 إلى 14؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 8 to 14.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 8 إلى 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 14 − 8 = 6.",
+            "explanation_ar": "اطرح: 14 − 8 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 6.",
+            "explanation_ar": "عدد الخطوات للأمام = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 6 steps.",
+            "explanation_ar": "إذن نحتاج 6 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 8: 9, 10, … up to 14.",
+            "explanation_ar": "عُدّ بمقدار 1 من 8: 9، 10، ... حتى 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 6 times.",
+            "explanation_ar": "وضعت 6 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 + 6 = 14. ✓",
+            "explanation_ar": "تحقق: 8 + 6 = 14. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 8 forward to 14.",
+            "explanation_ar": "تخيّل القفز من 8 إلى الأمام نحو 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 6 arrows.",
+            "explanation_ar": "ترى 6 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 4, count on 3. What number do you reach?",
+    "question_ar": "ابدأ من 4، عُدّ للأمام 3. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 4, take 3 forward steps: 5, 6, 7.",
+            "explanation_ar": "من 4، خذ 3 خطوات إلى الأمام: 5، 6، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 3 adds 3: 4 + 3 = 7.",
+            "explanation_ar": "العدّ للأمام 3 يضيف 3: 4 + 3 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = +3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = +3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 − 4 = 3. ✓",
+            "explanation_ar": "تحقق: 7 − 4 = 3. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 4. Draw 3 forward hops.",
+            "explanation_ar": "ابدأ من 4. ارسم 3 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 7, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 7، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 7, take 2 forward steps: 8, 9.",
+            "explanation_ar": "من 7، خذ 2 خطوات إلى الأمام: 8، 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 7 + 2 = 9.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 7 + 2 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 − 7 = 2. ✓",
+            "explanation_ar": "تحقق: 9 − 7 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 7. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 7. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 11, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 11، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 11, take 2 backward steps: 10, 9.",
+            "explanation_ar": "من 11، خذ 2 خطوات إلى الخلف: 10، 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 11 − 2 = 9.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 11 − 2 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 + 2 = 11. ✓",
+            "explanation_ar": "تحقق: 9 + 2 = 11. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 11. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 11. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 12, count on 3. What number do you reach?",
+    "question_ar": "ابدأ من 12، عُدّ للأمام 3. إلى أي عدد تصل؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 12, take 3 forward steps: 13, 14, 15.",
+            "explanation_ar": "من 12، خذ 3 خطوات إلى الأمام: 13، 14، 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 3 adds 3: 12 + 3 = 15.",
+            "explanation_ar": "العدّ للأمام 3 يضيف 3: 12 + 3 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 15.",
+            "explanation_ar": "تصل إلى 15."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = +3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = +3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 − 12 = 3. ✓",
+            "explanation_ar": "تحقق: 15 − 12 = 3. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 12. Draw 3 forward hops.",
+            "explanation_ar": "ابدأ من 12. ارسم 3 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 15.",
+            "explanation_ar": "تهبط على 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 15.",
+            "explanation_ar": "إذن تصل إلى 15."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 14, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 14، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 14, take 2 backward steps: 13, 12.",
+            "explanation_ar": "من 14، خذ 2 خطوات إلى الخلف: 13، 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 14 − 2 = 12.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 14 − 2 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 12.",
+            "explanation_ar": "تصل إلى 12."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 + 2 = 14. ✓",
+            "explanation_ar": "تحقق: 12 + 2 = 14. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 14. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 14. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 12.",
+            "explanation_ar": "تهبط على 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 12.",
+            "explanation_ar": "إذن تصل إلى 12."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "How many steps does it take to count from 6 to 11?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 6 إلى 11؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 6 to 11.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 6 إلى 11."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 11 − 6 = 5.",
+            "explanation_ar": "اطرح: 11 − 6 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 5.",
+            "explanation_ar": "عدد الخطوات للأمام = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 5 steps.",
+            "explanation_ar": "إذن نحتاج 5 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 6: 7, 8, … up to 11.",
+            "explanation_ar": "عُدّ بمقدار 1 من 6: 7، 8، ... حتى 11."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 5 times.",
+            "explanation_ar": "وضعت 5 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 5 = 11. ✓",
+            "explanation_ar": "تحقق: 6 + 5 = 11. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 6 forward to 11.",
+            "explanation_ar": "تخيّل القفز من 6 إلى الأمام نحو 11."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 5 arrows.",
+            "explanation_ar": "ترى 5 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 13, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 13، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 13, take 2 backward steps: 12, 11.",
+            "explanation_ar": "من 13، خذ 2 خطوات إلى الخلف: 12، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 13 − 2 = 11.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 13 − 2 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 11.",
+            "explanation_ar": "تصل إلى 11."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 + 2 = 13. ✓",
+            "explanation_ar": "تحقق: 11 + 2 = 13. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 13. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 13. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تهبط على 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 11.",
+            "explanation_ar": "إذن تصل إلى 11."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 13, count on 2. What number do you reach?",
+    "question_ar": "ابدأ من 13، عُدّ للأمام 2. إلى أي عدد تصل؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 13, take 2 forward steps: 14, 15.",
+            "explanation_ar": "من 13، خذ 2 خطوات إلى الأمام: 14، 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 2 adds 2: 13 + 2 = 15.",
+            "explanation_ar": "العدّ للأمام 2 يضيف 2: 13 + 2 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 15.",
+            "explanation_ar": "تصل إلى 15."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = +2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = +2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 − 13 = 2. ✓",
+            "explanation_ar": "تحقق: 15 − 13 = 2. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 13. Draw 2 forward hops.",
+            "explanation_ar": "ابدأ من 13. ارسم 2 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 15.",
+            "explanation_ar": "تهبط على 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 15.",
+            "explanation_ar": "إذن تصل إلى 15."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 6, count on 3. What number do you reach?",
+    "question_ar": "ابدأ من 6، عُدّ للأمام 3. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 6, take 3 forward steps: 7, 8, 9.",
+            "explanation_ar": "من 6، خذ 3 خطوات إلى الأمام: 7، 8، 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 3 adds 3: 6 + 3 = 9.",
+            "explanation_ar": "العدّ للأمام 3 يضيف 3: 6 + 3 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = +3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = +3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 − 6 = 3. ✓",
+            "explanation_ar": "تحقق: 9 − 6 = 3. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 6. Draw 3 forward hops.",
+            "explanation_ar": "ابدأ من 6. ارسم 3 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "How many steps does it take to count from 5 to 10?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 5 إلى 10؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 5 to 10.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 5 إلى 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 10 − 5 = 5.",
+            "explanation_ar": "اطرح: 10 − 5 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 5.",
+            "explanation_ar": "عدد الخطوات للأمام = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 5 steps.",
+            "explanation_ar": "إذن نحتاج 5 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 5: 6, 7, … up to 10.",
+            "explanation_ar": "عُدّ بمقدار 1 من 5: 6، 7، ... حتى 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 5 times.",
+            "explanation_ar": "وضعت 5 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 + 5 = 10. ✓",
+            "explanation_ar": "تحقق: 5 + 5 = 10. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 5 forward to 10.",
+            "explanation_ar": "تخيّل القفز من 5 إلى الأمام نحو 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 5 arrows.",
+            "explanation_ar": "ترى 5 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 12, count back 3. What number do you reach?",
+    "question_ar": "ابدأ من 12، عُدّ للخلف 3. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 12, take 3 backward steps: 11, 10, 9.",
+            "explanation_ar": "من 12، خذ 3 خطوات إلى الخلف: 11، 10، 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 3 subtracts 3: 12 − 3 = 9.",
+            "explanation_ar": "العدّ للخلف 3 يطرح 3: 12 − 3 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = −3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = −3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 + 3 = 12. ✓",
+            "explanation_ar": "تحقق: 9 + 3 = 12. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 12. Draw 3 backward hops.",
+            "explanation_ar": "ابدأ من 12. ارسم 3 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-021",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "How many steps does it take to count from 4 to 9?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 4 إلى 9؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 4 to 9.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 4 إلى 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 9 − 4 = 5.",
+            "explanation_ar": "اطرح: 9 − 4 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 5.",
+            "explanation_ar": "عدد الخطوات للأمام = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 5 steps.",
+            "explanation_ar": "إذن نحتاج 5 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 4: 5, 6, … up to 9.",
+            "explanation_ar": "عُدّ بمقدار 1 من 4: 5، 6، ... حتى 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 5 times.",
+            "explanation_ar": "وضعت 5 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 4 + 5 = 9. ✓",
+            "explanation_ar": "تحقق: 4 + 5 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 4 forward to 9.",
+            "explanation_ar": "تخيّل القفز من 4 إلى الأمام نحو 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 5 arrows.",
+            "explanation_ar": "ترى 5 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-022",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 10, count on 3. What number do you reach?",
+    "question_ar": "ابدأ من 10، عُدّ للأمام 3. إلى أي عدد تصل؟",
+    "answer": 13,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 10, take 3 forward steps: 11, 12, 13.",
+            "explanation_ar": "من 10، خذ 3 خطوات إلى الأمام: 11، 12، 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 3 adds 3: 10 + 3 = 13.",
+            "explanation_ar": "العدّ للأمام 3 يضيف 3: 10 + 3 = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 13.",
+            "explanation_ar": "تصل إلى 13."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = +3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = +3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 13 − 10 = 3. ✓",
+            "explanation_ar": "تحقق: 13 − 10 = 3. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 10. Draw 3 forward hops.",
+            "explanation_ar": "ابدأ من 10. ارسم 3 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 13.",
+            "explanation_ar": "تهبط على 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 13.",
+            "explanation_ar": "إذن تصل إلى 13."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-023",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 10, count back 3. What number do you reach?",
+    "question_ar": "ابدأ من 10، عُدّ للخلف 3. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 10, take 3 backward steps: 9, 8, 7.",
+            "explanation_ar": "من 10، خذ 3 خطوات إلى الخلف: 9، 8، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 3 subtracts 3: 10 − 3 = 7.",
+            "explanation_ar": "العدّ للخلف 3 يطرح 3: 10 − 3 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 3 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 3 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 3 steps together = −3.",
+            "explanation_ar": "جميع الخطوات الـ 3 معًا = −3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 3 = 10. ✓",
+            "explanation_ar": "تحقق: 7 + 3 = 10. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 10. Draw 3 backward hops.",
+            "explanation_ar": "ابدأ من 10. ارسم 3 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-024",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 9, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 2 backward steps: 8, 7.",
+            "explanation_ar": "من 9، خذ 2 خطوات إلى الخلف: 8، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 9 − 2 = 7.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 9 − 2 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 2 = 9. ✓",
+            "explanation_ar": "تحقق: 7 + 2 = 9. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-medium-025",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Medium",
+    "question_en": "Start at 15, count back 2. What number do you reach?",
+    "question_ar": "ابدأ من 15، عُدّ للخلف 2. إلى أي عدد تصل؟",
+    "answer": 13,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 15, take 2 backward steps: 14, 13.",
+            "explanation_ar": "من 15، خذ 2 خطوات إلى الخلف: 14، 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 2 subtracts 2: 15 − 2 = 13.",
+            "explanation_ar": "العدّ للخلف 2 يطرح 2: 15 − 2 = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 13.",
+            "explanation_ar": "تصل إلى 13."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 2 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 2 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 2 steps together = −2.",
+            "explanation_ar": "جميع الخطوات الـ 2 معًا = −2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 13 + 2 = 15. ✓",
+            "explanation_ar": "تحقق: 13 + 2 = 15. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 15. Draw 2 backward hops.",
+            "explanation_ar": "ابدأ من 15. ارسم 2 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 13.",
+            "explanation_ar": "تهبط على 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 13.",
+            "explanation_ar": "إذن تصل إلى 13."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 18, count back 5. What number do you reach?",
+    "question_ar": "ابدأ من 18، عُدّ للخلف 5. إلى أي عدد تصل؟",
+    "answer": 13,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 18, take 5 backward steps: 17, 16, 15, 14, 13.",
+            "explanation_ar": "من 18، خذ 5 خطوات إلى الخلف: 17، 16، 15، 14، 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 5 subtracts 5: 18 − 5 = 13.",
+            "explanation_ar": "العدّ للخلف 5 يطرح 5: 18 − 5 = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 13.",
+            "explanation_ar": "تصل إلى 13."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = −5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = −5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 13 + 5 = 18. ✓",
+            "explanation_ar": "تحقق: 13 + 5 = 18. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 18. Draw 5 backward hops.",
+            "explanation_ar": "ابدأ من 18. ارسم 5 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 13.",
+            "explanation_ar": "تهبط على 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 13.",
+            "explanation_ar": "إذن تصل إلى 13."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 16, count back 4. What number do you reach?",
+    "question_ar": "ابدأ من 16، عُدّ للخلف 4. إلى أي عدد تصل؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 16, take 4 backward steps: 15, 14, 13, 12.",
+            "explanation_ar": "من 16، خذ 4 خطوات إلى الخلف: 15، 14، 13، 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 4 subtracts 4: 16 − 4 = 12.",
+            "explanation_ar": "العدّ للخلف 4 يطرح 4: 16 − 4 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 12.",
+            "explanation_ar": "تصل إلى 12."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = −4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = −4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 + 4 = 16. ✓",
+            "explanation_ar": "تحقق: 12 + 4 = 16. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 16. Draw 4 backward hops.",
+            "explanation_ar": "ابدأ من 16. ارسم 4 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 12.",
+            "explanation_ar": "تهبط على 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 12.",
+            "explanation_ar": "إذن تصل إلى 12."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 20, count back 5. What number do you reach?",
+    "question_ar": "ابدأ من 20، عُدّ للخلف 5. إلى أي عدد تصل؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 20, take 5 backward steps: 19, 18, 17, 16, 15.",
+            "explanation_ar": "من 20، خذ 5 خطوات إلى الخلف: 19، 18، 17، 16، 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 5 subtracts 5: 20 − 5 = 15.",
+            "explanation_ar": "العدّ للخلف 5 يطرح 5: 20 − 5 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 15.",
+            "explanation_ar": "تصل إلى 15."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = −5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = −5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 + 5 = 20. ✓",
+            "explanation_ar": "تحقق: 15 + 5 = 20. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 20. Draw 5 backward hops.",
+            "explanation_ar": "ابدأ من 20. ارسم 5 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 15.",
+            "explanation_ar": "تهبط على 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 15.",
+            "explanation_ar": "إذن تصل إلى 15."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 11, count on 5. What number do you reach?",
+    "question_ar": "ابدأ من 11، عُدّ للأمام 5. إلى أي عدد تصل؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 11, take 5 forward steps: 12, 13, 14, 15, 16.",
+            "explanation_ar": "من 11، خذ 5 خطوات إلى الأمام: 12، 13، 14، 15، 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 5 adds 5: 11 + 5 = 16.",
+            "explanation_ar": "العدّ للأمام 5 يضيف 5: 11 + 5 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 16.",
+            "explanation_ar": "تصل إلى 16."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = +5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = +5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 − 11 = 5. ✓",
+            "explanation_ar": "تحقق: 16 − 11 = 5. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 11. Draw 5 forward hops.",
+            "explanation_ar": "ابدأ من 11. ارسم 5 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 16.",
+            "explanation_ar": "تهبط على 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 16.",
+            "explanation_ar": "إذن تصل إلى 16."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 14, count back 5. What number do you reach?",
+    "question_ar": "ابدأ من 14، عُدّ للخلف 5. إلى أي عدد تصل؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 14, take 5 backward steps: 13, 12, 11, 10, 9.",
+            "explanation_ar": "من 14، خذ 5 خطوات إلى الخلف: 13، 12، 11، 10، 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 5 subtracts 5: 14 − 5 = 9.",
+            "explanation_ar": "العدّ للخلف 5 يطرح 5: 14 − 5 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 9.",
+            "explanation_ar": "تصل إلى 9."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = −5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = −5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 + 5 = 14. ✓",
+            "explanation_ar": "تحقق: 9 + 5 = 14. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 14. Draw 5 backward hops.",
+            "explanation_ar": "ابدأ من 14. ارسم 5 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تهبط على 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 9.",
+            "explanation_ar": "إذن تصل إلى 9."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 6, count on 4. What number do you reach?",
+    "question_ar": "ابدأ من 6، عُدّ للأمام 4. إلى أي عدد تصل؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 6, take 4 forward steps: 7, 8, 9, 10.",
+            "explanation_ar": "من 6، خذ 4 خطوات إلى الأمام: 7، 8، 9، 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 4 adds 4: 6 + 4 = 10.",
+            "explanation_ar": "العدّ للأمام 4 يضيف 4: 6 + 4 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 10.",
+            "explanation_ar": "تصل إلى 10."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = +4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = +4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 − 6 = 4. ✓",
+            "explanation_ar": "تحقق: 10 − 6 = 4. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 6. Draw 4 forward hops.",
+            "explanation_ar": "ابدأ من 6. ارسم 4 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تهبط على 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 10.",
+            "explanation_ar": "إذن تصل إلى 10."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 14, count back 4. What number do you reach?",
+    "question_ar": "ابدأ من 14، عُدّ للخلف 4. إلى أي عدد تصل؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 14, take 4 backward steps: 13, 12, 11, 10.",
+            "explanation_ar": "من 14، خذ 4 خطوات إلى الخلف: 13، 12، 11، 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 4 subtracts 4: 14 − 4 = 10.",
+            "explanation_ar": "العدّ للخلف 4 يطرح 4: 14 − 4 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 10.",
+            "explanation_ar": "تصل إلى 10."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = −4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = −4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 + 4 = 14. ✓",
+            "explanation_ar": "تحقق: 10 + 4 = 14. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 14. Draw 4 backward hops.",
+            "explanation_ar": "ابدأ من 14. ارسم 4 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تهبط على 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 10.",
+            "explanation_ar": "إذن تصل إلى 10."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 9, count on 5. What number do you reach?",
+    "question_ar": "ابدأ من 9، عُدّ للأمام 5. إلى أي عدد تصل؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 9, take 5 forward steps: 10, 11, 12, 13, 14.",
+            "explanation_ar": "من 9، خذ 5 خطوات إلى الأمام: 10، 11، 12، 13، 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 5 adds 5: 9 + 5 = 14.",
+            "explanation_ar": "العدّ للأمام 5 يضيف 5: 9 + 5 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 14.",
+            "explanation_ar": "تصل إلى 14."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = +5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = +5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 − 9 = 5. ✓",
+            "explanation_ar": "تحقق: 14 − 9 = 5. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 9. Draw 5 forward hops.",
+            "explanation_ar": "ابدأ من 9. ارسم 5 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 14.",
+            "explanation_ar": "تهبط على 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 14.",
+            "explanation_ar": "إذن تصل إلى 14."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 10, count on 4. What number do you reach?",
+    "question_ar": "ابدأ من 10، عُدّ للأمام 4. إلى أي عدد تصل؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 10, take 4 forward steps: 11, 12, 13, 14.",
+            "explanation_ar": "من 10، خذ 4 خطوات إلى الأمام: 11، 12، 13، 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 4 adds 4: 10 + 4 = 14.",
+            "explanation_ar": "العدّ للأمام 4 يضيف 4: 10 + 4 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 14.",
+            "explanation_ar": "تصل إلى 14."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = +4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = +4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 − 10 = 4. ✓",
+            "explanation_ar": "تحقق: 14 − 10 = 4. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 10. Draw 4 forward hops.",
+            "explanation_ar": "ابدأ من 10. ارسم 4 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 14.",
+            "explanation_ar": "تهبط على 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 14.",
+            "explanation_ar": "إذن تصل إلى 14."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 18, count back 4. What number do you reach?",
+    "question_ar": "ابدأ من 18، عُدّ للخلف 4. إلى أي عدد تصل؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 18, take 4 backward steps: 17, 16, 15, 14.",
+            "explanation_ar": "من 18، خذ 4 خطوات إلى الخلف: 17، 16، 15، 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 4 subtracts 4: 18 − 4 = 14.",
+            "explanation_ar": "العدّ للخلف 4 يطرح 4: 18 − 4 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 14.",
+            "explanation_ar": "تصل إلى 14."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = −4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = −4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 + 4 = 18. ✓",
+            "explanation_ar": "تحقق: 14 + 4 = 18. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 18. Draw 4 backward hops.",
+            "explanation_ar": "ابدأ من 18. ارسم 4 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 14.",
+            "explanation_ar": "تهبط على 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 14.",
+            "explanation_ar": "إذن تصل إلى 14."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "How many steps does it take to count from 5 to 14?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 5 إلى 14؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 5 to 14.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 5 إلى 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 14 − 5 = 9.",
+            "explanation_ar": "اطرح: 14 − 5 = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 9.",
+            "explanation_ar": "عدد الخطوات للأمام = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 9 steps.",
+            "explanation_ar": "إذن نحتاج 9 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 5: 6, 7, … up to 14.",
+            "explanation_ar": "عُدّ بمقدار 1 من 5: 6، 7، ... حتى 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 9 times.",
+            "explanation_ar": "وضعت 9 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 + 9 = 14. ✓",
+            "explanation_ar": "تحقق: 5 + 9 = 14. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 5 forward to 14.",
+            "explanation_ar": "تخيّل القفز من 5 إلى الأمام نحو 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 9 arrows.",
+            "explanation_ar": "ترى 9 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 14, count on 4. What number do you reach?",
+    "question_ar": "ابدأ من 14، عُدّ للأمام 4. إلى أي عدد تصل؟",
+    "answer": 18,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 14, take 4 forward steps: 15, 16, 17, 18.",
+            "explanation_ar": "من 14، خذ 4 خطوات إلى الأمام: 15، 16، 17، 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 4 adds 4: 14 + 4 = 18.",
+            "explanation_ar": "العدّ للأمام 4 يضيف 4: 14 + 4 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 18.",
+            "explanation_ar": "تصل إلى 18."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = +4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = +4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 18 − 14 = 4. ✓",
+            "explanation_ar": "تحقق: 18 − 14 = 4. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 14. Draw 4 forward hops.",
+            "explanation_ar": "ابدأ من 14. ارسم 4 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 18.",
+            "explanation_ar": "تهبط على 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 18.",
+            "explanation_ar": "إذن تصل إلى 18."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 8, count on 4. What number do you reach?",
+    "question_ar": "ابدأ من 8، عُدّ للأمام 4. إلى أي عدد تصل؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 8, take 4 forward steps: 9, 10, 11, 12.",
+            "explanation_ar": "من 8، خذ 4 خطوات إلى الأمام: 9، 10، 11، 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 4 adds 4: 8 + 4 = 12.",
+            "explanation_ar": "العدّ للأمام 4 يضيف 4: 8 + 4 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 12.",
+            "explanation_ar": "تصل إلى 12."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = +4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = +4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 − 8 = 4. ✓",
+            "explanation_ar": "تحقق: 12 − 8 = 4. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 8. Draw 4 forward hops.",
+            "explanation_ar": "ابدأ من 8. ارسم 4 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 12.",
+            "explanation_ar": "تهبط على 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 12.",
+            "explanation_ar": "إذن تصل إلى 12."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 13, count on 5. What number do you reach?",
+    "question_ar": "ابدأ من 13، عُدّ للأمام 5. إلى أي عدد تصل؟",
+    "answer": 18,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 13, take 5 forward steps: 14, 15, 16, 17, 18.",
+            "explanation_ar": "من 13، خذ 5 خطوات إلى الأمام: 14، 15، 16، 17، 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 5 adds 5: 13 + 5 = 18.",
+            "explanation_ar": "العدّ للأمام 5 يضيف 5: 13 + 5 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 18.",
+            "explanation_ar": "تصل إلى 18."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = +5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = +5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 18 − 13 = 5. ✓",
+            "explanation_ar": "تحقق: 18 − 13 = 5. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 13. Draw 5 forward hops.",
+            "explanation_ar": "ابدأ من 13. ارسم 5 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 18.",
+            "explanation_ar": "تهبط على 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 18.",
+            "explanation_ar": "إذن تصل إلى 18."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 16, count back 5. What number do you reach?",
+    "question_ar": "ابدأ من 16، عُدّ للخلف 5. إلى أي عدد تصل؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 16, take 5 backward steps: 15, 14, 13, 12, 11.",
+            "explanation_ar": "من 16، خذ 5 خطوات إلى الخلف: 15، 14، 13، 12، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 5 subtracts 5: 16 − 5 = 11.",
+            "explanation_ar": "العدّ للخلف 5 يطرح 5: 16 − 5 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 11.",
+            "explanation_ar": "تصل إلى 11."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = −5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = −5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 + 5 = 16. ✓",
+            "explanation_ar": "تحقق: 11 + 5 = 16. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 16. Draw 5 backward hops.",
+            "explanation_ar": "ابدأ من 16. ارسم 5 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تهبط على 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 11.",
+            "explanation_ar": "إذن تصل إلى 11."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 20, count back 4. What number do you reach?",
+    "question_ar": "ابدأ من 20، عُدّ للخلف 4. إلى أي عدد تصل؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 20, take 4 backward steps: 19, 18, 17, 16.",
+            "explanation_ar": "من 20، خذ 4 خطوات إلى الخلف: 19، 18، 17، 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 4 subtracts 4: 20 − 4 = 16.",
+            "explanation_ar": "العدّ للخلف 4 يطرح 4: 20 − 4 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 16.",
+            "explanation_ar": "تصل إلى 16."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = −4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = −4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 + 4 = 20. ✓",
+            "explanation_ar": "تحقق: 16 + 4 = 20. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 20. Draw 4 backward hops.",
+            "explanation_ar": "ابدأ من 20. ارسم 4 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 16.",
+            "explanation_ar": "تهبط على 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 16.",
+            "explanation_ar": "إذن تصل إلى 16."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 12, count back 5. What number do you reach?",
+    "question_ar": "ابدأ من 12، عُدّ للخلف 5. إلى أي عدد تصل؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting back means going backward one step at a time.",
+            "explanation_ar": "العدّ للخلف يعني التراجع خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 12, take 5 backward steps: 11, 10, 9, 8, 7.",
+            "explanation_ar": "من 12، خذ 5 خطوات إلى الخلف: 11، 10، 9، 8، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting back by 5 subtracts 5: 12 − 5 = 7.",
+            "explanation_ar": "العدّ للخلف 5 يطرح 5: 12 − 5 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 7.",
+            "explanation_ar": "تصل إلى 7."
+          }
+        ],
+        "hint_en": "Count back = subtract.",
+        "hint_ar": "العدّ للخلف = طرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small −1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (−1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each −1, you move backward by one.",
+            "explanation_ar": "بعد كل −1، تتراجع بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = −5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = −5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 5 = 12. ✓",
+            "explanation_ar": "تحقق: 7 + 5 = 12. ✓"
+          }
+        ],
+        "hint_en": "Each backward step takes 1 away.",
+        "hint_ar": "كل خطوة للخلف تطرح 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog hopping backward on a number line.",
+            "explanation_ar": "تخيّل ضفدعًا يقفز للخلف على خط الأعداد."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 12. Draw 5 backward hops.",
+            "explanation_ar": "ابدأ من 12. ارسم 5 قفزات للخلف."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تهبط على 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 7.",
+            "explanation_ar": "إذن تصل إلى 7."
+          }
+        ],
+        "hint_en": "Hop backward on a number line.",
+        "hint_ar": "اقفز للخلف على خط الأعداد.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "How many steps does it take to count from 6 to 18?",
+    "question_ar": "كم خطوة تحتاج للعدّ من 6 إلى 18؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is finding the distance from 6 to 18.",
+            "explanation_ar": "هذا هو إيجاد المسافة من 6 إلى 18."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Subtract: 18 − 6 = 12.",
+            "explanation_ar": "اطرح: 18 − 6 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Number of forward steps = 12.",
+            "explanation_ar": "عدد الخطوات للأمام = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So it takes 12 steps.",
+            "explanation_ar": "إذن نحتاج 12 خطوة."
+          }
+        ],
+        "hint_en": "Big number − small number = steps.",
+        "hint_ar": "العدد الكبير − العدد الصغير = الخطوات.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count by 1s from 6: 7, 8, … up to 18.",
+            "explanation_ar": "عُدّ بمقدار 1 من 6: 7، 8، ... حتى 18."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each tick is one step forward.",
+            "explanation_ar": "كل علامة هي خطوة للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You ticked 12 times.",
+            "explanation_ar": "وضعت 12 علامة."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 12 = 18. ✓",
+            "explanation_ar": "تحقق: 6 + 12 = 18. ✓"
+          }
+        ],
+        "hint_en": "Count the +1 ticks.",
+        "hint_ar": "عُدّ العلامات +1.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture hopping from 6 forward to 18.",
+            "explanation_ar": "تخيّل القفز من 6 إلى الأمام نحو 18."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw arrows of +1 along a number line.",
+            "explanation_ar": "ارسم أسهمًا +1 على خط الأعداد."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Count the arrows.",
+            "explanation_ar": "عُدّ الأسهم."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "You see 12 arrows.",
+            "explanation_ar": "ترى 12 سهمًا."
+          }
+        ],
+        "hint_en": "Arrows on a number line.",
+        "hint_ar": "أسهم على خط الأعداد.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 12, count on 4. What number do you reach?",
+    "question_ar": "ابدأ من 12، عُدّ للأمام 4. إلى أي عدد تصل؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 12, take 4 forward steps: 13, 14, 15, 16.",
+            "explanation_ar": "من 12، خذ 4 خطوات إلى الأمام: 13، 14، 15، 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 4 adds 4: 12 + 4 = 16.",
+            "explanation_ar": "العدّ للأمام 4 يضيف 4: 12 + 4 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 16.",
+            "explanation_ar": "تصل إلى 16."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 4 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 4 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 4 steps together = +4.",
+            "explanation_ar": "جميع الخطوات الـ 4 معًا = +4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 − 12 = 4. ✓",
+            "explanation_ar": "تحقق: 16 − 12 = 4. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 12. Draw 4 forward hops.",
+            "explanation_ar": "ابدأ من 12. ارسم 4 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 16.",
+            "explanation_ar": "تهبط على 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 16.",
+            "explanation_ar": "إذن تصل إلى 16."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-count-hard-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Count On & Back",
+    "level": "Hard",
+    "question_en": "Start at 7, count on 5. What number do you reach?",
+    "question_ar": "ابدأ من 7، عُدّ للأمام 5. إلى أي عدد تصل؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Counting on means going forward one step at a time.",
+            "explanation_ar": "العدّ للأمام يعني التقدّم خطوة خطوة."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "From 7, take 5 forward steps: 8, 9, 10, 11, 12.",
+            "explanation_ar": "من 7، خذ 5 خطوات إلى الأمام: 8، 9، 10، 11، 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Counting on by 5 adds 5: 7 + 5 = 12.",
+            "explanation_ar": "العدّ للأمام 5 يضيف 5: 7 + 5 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "You reach 12.",
+            "explanation_ar": "تصل إلى 12."
+          }
+        ],
+        "hint_en": "Count on = add.",
+        "hint_ar": "العدّ للأمام = جمع.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Break the count into 5 small +1 steps.",
+            "explanation_ar": "قسّم العدّ إلى 5 خطوات صغيرة (+1)."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "After each +1, you move forward by one.",
+            "explanation_ar": "بعد كل +1، تتقدّم بمقدار واحد."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "All 5 steps together = +5.",
+            "explanation_ar": "جميع الخطوات الـ 5 معًا = +5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 − 7 = 5. ✓",
+            "explanation_ar": "تحقق: 12 − 7 = 5. ✓"
+          }
+        ],
+        "hint_en": "Each forward step adds 1.",
+        "hint_ar": "كل خطوة للأمام تضيف 1.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine a frog on a number line, hopping forward.",
+            "explanation_ar": "تخيّل ضفدعًا على خط الأعداد، يقفز للأمام."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Start at 7. Draw 5 forward hops.",
+            "explanation_ar": "ابدأ من 7. ارسم 5 قفزات للأمام."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 12.",
+            "explanation_ar": "تهبط على 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So you reach 12.",
+            "explanation_ar": "إذن تصل إلى 12."
+          }
+        ],
+        "hint_en": "Hop forward on a number line.",
+        "hint_ar": "اقفز للأمام على خط الأعداد.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "counting"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 1 = ?",
+    "question_ar": "ضِعف 1 = ؟",
+    "answer": 2,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "1 + 1 = 2.",
+            "explanation_ar": "1 + 1 = 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 1 = 2 × 1 = 2.",
+            "explanation_ar": "ضِعف 1 = 2 × 1 = 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 1 is 2.",
+            "explanation_ar": "إذن ضِعف 1 هو 2."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 1.",
+            "explanation_ar": "اصنع نسختين من 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 1 and 1.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 1 و 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 1 + 1 = 2.",
+            "explanation_ar": "المجموع: 1 + 1 = 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 2 ÷ 2 = 1. ✓",
+            "explanation_ar": "تحقق: 2 ÷ 2 = 1. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 1 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 1 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 1 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 2.",
+            "explanation_ar": "إجمالي النقاط = 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 1 = 2.",
+            "explanation_ar": "إذن ضِعف 1 = 2."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "5 + 6 = ?  (Hint: use a near-double.)",
+    "question_ar": "5 + 6 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "5 and 6 are very close — almost a double.",
+            "explanation_ar": "5 و 6 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 5 + 5 = 10.",
+            "explanation_ar": "أوجد الضِعف أولًا: 5 + 5 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 10 + 1 = 11.",
+            "explanation_ar": "الآن أضف 1: 10 + 1 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 5 + 6 = 11.",
+            "explanation_ar": "إذن 5 + 6 = 11."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 6 as 5 + 1.",
+            "explanation_ar": "اكتب 6 على شكل 5 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 5 + 6 = 5 + 5 + 1.",
+            "explanation_ar": "إذن 5 + 6 = 5 + 5 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 10 + 1 = 11.",
+            "explanation_ar": "= 10 + 1 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 11 − 5 = 6. ✓",
+            "explanation_ar": "تحقق سريع: 11 − 5 = 6. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 5, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 5، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 5 + 5, then add one dot.",
+            "explanation_ar": "ارسم 5 + 5، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 11.",
+            "explanation_ar": "المجموع = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 5 + 6 = 11.",
+            "explanation_ar": "إذن 5 + 6 = 11."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 9 = ?",
+    "question_ar": "ضِعف 9 = ؟",
+    "answer": 18,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 9 = 18.",
+            "explanation_ar": "9 + 9 = 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 9 = 2 × 9 = 18.",
+            "explanation_ar": "ضِعف 9 = 2 × 9 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 9 is 18.",
+            "explanation_ar": "إذن ضِعف 9 هو 18."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 9.",
+            "explanation_ar": "اصنع نسختين من 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 9 and 9.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 9 و 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 9 + 9 = 18.",
+            "explanation_ar": "المجموع: 9 + 9 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 18 ÷ 2 = 9. ✓",
+            "explanation_ar": "تحقق: 18 ÷ 2 = 9. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 9 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 9 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 9 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 18.",
+            "explanation_ar": "إجمالي النقاط = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 9 = 18.",
+            "explanation_ar": "إذن ضِعف 9 = 18."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "4 + 5 = ?  (Hint: use a near-double.)",
+    "question_ar": "4 + 5 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "4 and 5 are very close — almost a double.",
+            "explanation_ar": "4 و 5 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 4 + 4 = 8.",
+            "explanation_ar": "أوجد الضِعف أولًا: 4 + 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 8 + 1 = 9.",
+            "explanation_ar": "الآن أضف 1: 8 + 1 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 4 + 5 = 9.",
+            "explanation_ar": "إذن 4 + 5 = 9."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 5 as 4 + 1.",
+            "explanation_ar": "اكتب 5 على شكل 4 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 4 + 5 = 4 + 4 + 1.",
+            "explanation_ar": "إذن 4 + 5 = 4 + 4 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 8 + 1 = 9.",
+            "explanation_ar": "= 8 + 1 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 9 − 4 = 5. ✓",
+            "explanation_ar": "تحقق سريع: 9 − 4 = 5. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 4, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 4، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 + 4, then add one dot.",
+            "explanation_ar": "ارسم 4 + 4، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 9.",
+            "explanation_ar": "المجموع = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 4 + 5 = 9.",
+            "explanation_ar": "إذن 4 + 5 = 9."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 5 = ?",
+    "question_ar": "ضِعف 5 = ؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "5 + 5 = 10.",
+            "explanation_ar": "5 + 5 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 5 = 2 × 5 = 10.",
+            "explanation_ar": "ضِعف 5 = 2 × 5 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 5 is 10.",
+            "explanation_ar": "إذن ضِعف 5 هو 10."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 5.",
+            "explanation_ar": "اصنع نسختين من 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 5 and 5.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 5 و 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 5 + 5 = 10.",
+            "explanation_ar": "المجموع: 5 + 5 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 ÷ 2 = 5. ✓",
+            "explanation_ar": "تحقق: 10 ÷ 2 = 5. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 5 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 5 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 5 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 10.",
+            "explanation_ar": "إجمالي النقاط = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 5 = 10.",
+            "explanation_ar": "إذن ضِعف 5 = 10."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "1 + 2 = ?  (Hint: use a near-double.)",
+    "question_ar": "1 + 2 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "1 and 2 are very close — almost a double.",
+            "explanation_ar": "1 و 2 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 1 + 1 = 2.",
+            "explanation_ar": "أوجد الضِعف أولًا: 1 + 1 = 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 2 + 1 = 3.",
+            "explanation_ar": "الآن أضف 1: 2 + 1 = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 1 + 2 = 3.",
+            "explanation_ar": "إذن 1 + 2 = 3."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 2 as 1 + 1.",
+            "explanation_ar": "اكتب 2 على شكل 1 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 1 + 2 = 1 + 1 + 1.",
+            "explanation_ar": "إذن 1 + 2 = 1 + 1 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 2 + 1 = 3.",
+            "explanation_ar": "= 2 + 1 = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 3 − 1 = 2. ✓",
+            "explanation_ar": "تحقق سريع: 3 − 1 = 2. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 1, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 1، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 1 + 1, then add one dot.",
+            "explanation_ar": "ارسم 1 + 1، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 3.",
+            "explanation_ar": "المجموع = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 1 + 2 = 3.",
+            "explanation_ar": "إذن 1 + 2 = 3."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 7 = ?",
+    "question_ar": "ضِعف 7 = ؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "7 + 7 = 14.",
+            "explanation_ar": "7 + 7 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 7 = 2 × 7 = 14.",
+            "explanation_ar": "ضِعف 7 = 2 × 7 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 7 is 14.",
+            "explanation_ar": "إذن ضِعف 7 هو 14."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 7.",
+            "explanation_ar": "اصنع نسختين من 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 7 and 7.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 7 و 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 7 + 7 = 14.",
+            "explanation_ar": "المجموع: 7 + 7 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 ÷ 2 = 7. ✓",
+            "explanation_ar": "تحقق: 14 ÷ 2 = 7. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 7 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 7 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 7 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 14.",
+            "explanation_ar": "إجمالي النقاط = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 7 = 14.",
+            "explanation_ar": "إذن ضِعف 7 = 14."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 3 = ?",
+    "question_ar": "ضِعف 3 = ؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "3 + 3 = 6.",
+            "explanation_ar": "3 + 3 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 3 = 2 × 3 = 6.",
+            "explanation_ar": "ضِعف 3 = 2 × 3 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 3 is 6.",
+            "explanation_ar": "إذن ضِعف 3 هو 6."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 3.",
+            "explanation_ar": "اصنع نسختين من 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 3 and 3.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 3 و 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 3 + 3 = 6.",
+            "explanation_ar": "المجموع: 3 + 3 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 ÷ 2 = 3. ✓",
+            "explanation_ar": "تحقق: 6 ÷ 2 = 3. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 3 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 3 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 3 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 6.",
+            "explanation_ar": "إجمالي النقاط = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 3 = 6.",
+            "explanation_ar": "إذن ضِعف 3 = 6."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 20 = ?",
+    "question_ar": "نصف 20 = ؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "20 ÷ 2 = 10.",
+            "explanation_ar": "20 ÷ 2 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 20 = 10.",
+            "explanation_ar": "نصف 20 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 20 is 10.",
+            "explanation_ar": "إذن نصف 20 هو 10."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 20 into two equal piles.",
+            "explanation_ar": "قسّم 20 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 10.",
+            "explanation_ar": "كل كومة = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 + 10 = 20. ✓",
+            "explanation_ar": "تحقق: 10 + 10 = 20. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 20 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 20 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 10.",
+            "explanation_ar": "كل طبق فيه 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 20 = 10.",
+            "explanation_ar": "إذن نصف 20 = 10."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 8 = ?",
+    "question_ar": "ضِعف 8 = ؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "8 + 8 = 16.",
+            "explanation_ar": "8 + 8 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 8 = 2 × 8 = 16.",
+            "explanation_ar": "ضِعف 8 = 2 × 8 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 8 is 16.",
+            "explanation_ar": "إذن ضِعف 8 هو 16."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 8.",
+            "explanation_ar": "اصنع نسختين من 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 8 and 8.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 8 و 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 8 + 8 = 16.",
+            "explanation_ar": "المجموع: 8 + 8 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 ÷ 2 = 8. ✓",
+            "explanation_ar": "تحقق: 16 ÷ 2 = 8. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 8 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 8 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 8 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 16.",
+            "explanation_ar": "إجمالي النقاط = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 8 = 16.",
+            "explanation_ar": "إذن ضِعف 8 = 16."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "2 + 3 = ?  (Hint: use a near-double.)",
+    "question_ar": "2 + 3 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "2 and 3 are very close — almost a double.",
+            "explanation_ar": "2 و 3 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 2 + 2 = 4.",
+            "explanation_ar": "أوجد الضِعف أولًا: 2 + 2 = 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 4 + 1 = 5.",
+            "explanation_ar": "الآن أضف 1: 4 + 1 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 2 + 3 = 5.",
+            "explanation_ar": "إذن 2 + 3 = 5."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 3 as 2 + 1.",
+            "explanation_ar": "اكتب 3 على شكل 2 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 2 + 3 = 2 + 2 + 1.",
+            "explanation_ar": "إذن 2 + 3 = 2 + 2 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 4 + 1 = 5.",
+            "explanation_ar": "= 4 + 1 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 5 − 2 = 3. ✓",
+            "explanation_ar": "تحقق سريع: 5 − 2 = 3. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 2, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 2، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 2 + 2, then add one dot.",
+            "explanation_ar": "ارسم 2 + 2، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 5.",
+            "explanation_ar": "المجموع = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 2 + 3 = 5.",
+            "explanation_ar": "إذن 2 + 3 = 5."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 10 = ?",
+    "question_ar": "ضِعف 10 = ؟",
+    "answer": 20,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "10 + 10 = 20.",
+            "explanation_ar": "10 + 10 = 20."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 10 = 2 × 10 = 20.",
+            "explanation_ar": "ضِعف 10 = 2 × 10 = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 10 is 20.",
+            "explanation_ar": "إذن ضِعف 10 هو 20."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 10.",
+            "explanation_ar": "اصنع نسختين من 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 10 and 10.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 10 و 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 10 + 10 = 20.",
+            "explanation_ar": "المجموع: 10 + 10 = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 20 ÷ 2 = 10. ✓",
+            "explanation_ar": "تحقق: 20 ÷ 2 = 10. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 10 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 10 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 10 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 20.",
+            "explanation_ar": "إجمالي النقاط = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 10 = 20.",
+            "explanation_ar": "إذن ضِعف 10 = 20."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 14 = ?",
+    "question_ar": "نصف 14 = ؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "14 ÷ 2 = 7.",
+            "explanation_ar": "14 ÷ 2 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 14 = 7.",
+            "explanation_ar": "نصف 14 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 14 is 7.",
+            "explanation_ar": "إذن نصف 14 هو 7."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 14 into two equal piles.",
+            "explanation_ar": "قسّم 14 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 7.",
+            "explanation_ar": "كل كومة = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 7 = 14. ✓",
+            "explanation_ar": "تحقق: 7 + 7 = 14. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 14 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 14 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 7.",
+            "explanation_ar": "كل طبق فيه 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 14 = 7.",
+            "explanation_ar": "إذن نصف 14 = 7."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 6 = ?",
+    "question_ar": "ضِعف 6 = ؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 + 6 = 12.",
+            "explanation_ar": "6 + 6 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 6 = 2 × 6 = 12.",
+            "explanation_ar": "ضِعف 6 = 2 × 6 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 6 is 12.",
+            "explanation_ar": "إذن ضِعف 6 هو 12."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 6.",
+            "explanation_ar": "اصنع نسختين من 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 6 and 6.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 6 و 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 6 + 6 = 12.",
+            "explanation_ar": "المجموع: 6 + 6 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 ÷ 2 = 6. ✓",
+            "explanation_ar": "تحقق: 12 ÷ 2 = 6. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 6 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 6 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 6 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 12.",
+            "explanation_ar": "إجمالي النقاط = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 6 = 12.",
+            "explanation_ar": "إذن ضِعف 6 = 12."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 18 = ?",
+    "question_ar": "نصف 18 = ؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "18 ÷ 2 = 9.",
+            "explanation_ar": "18 ÷ 2 = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 18 = 9.",
+            "explanation_ar": "نصف 18 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 18 is 9.",
+            "explanation_ar": "إذن نصف 18 هو 9."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 18 into two equal piles.",
+            "explanation_ar": "قسّم 18 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 9.",
+            "explanation_ar": "كل كومة = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 + 9 = 18. ✓",
+            "explanation_ar": "تحقق: 9 + 9 = 18. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 18 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 18 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 9.",
+            "explanation_ar": "كل طبق فيه 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 18 = 9.",
+            "explanation_ar": "إذن نصف 18 = 9."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "3 + 4 = ?  (Hint: use a near-double.)",
+    "question_ar": "3 + 4 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "3 and 4 are very close — almost a double.",
+            "explanation_ar": "3 و 4 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 3 + 3 = 6.",
+            "explanation_ar": "أوجد الضِعف أولًا: 3 + 3 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 6 + 1 = 7.",
+            "explanation_ar": "الآن أضف 1: 6 + 1 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 3 + 4 = 7.",
+            "explanation_ar": "إذن 3 + 4 = 7."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 4 as 3 + 1.",
+            "explanation_ar": "اكتب 4 على شكل 3 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 3 + 4 = 3 + 3 + 1.",
+            "explanation_ar": "إذن 3 + 4 = 3 + 3 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 6 + 1 = 7.",
+            "explanation_ar": "= 6 + 1 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 7 − 3 = 4. ✓",
+            "explanation_ar": "تحقق سريع: 7 − 3 = 4. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 3, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 3، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 3 + 3, then add one dot.",
+            "explanation_ar": "ارسم 3 + 3، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 7.",
+            "explanation_ar": "المجموع = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 3 + 4 = 7.",
+            "explanation_ar": "إذن 3 + 4 = 7."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 4 = ?",
+    "question_ar": "نصف 4 = ؟",
+    "answer": 2,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 ÷ 2 = 2.",
+            "explanation_ar": "4 ÷ 2 = 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 4 = 2.",
+            "explanation_ar": "نصف 4 = 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 4 is 2.",
+            "explanation_ar": "إذن نصف 4 هو 2."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 4 into two equal piles.",
+            "explanation_ar": "قسّم 4 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 2.",
+            "explanation_ar": "كل كومة = 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 2 + 2 = 4. ✓",
+            "explanation_ar": "تحقق: 2 + 2 = 4. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 4 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 4 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 2.",
+            "explanation_ar": "كل طبق فيه 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 4 = 2.",
+            "explanation_ar": "إذن نصف 4 = 2."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 2 = ?",
+    "question_ar": "نصف 2 = ؟",
+    "answer": 1,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "2 ÷ 2 = 1.",
+            "explanation_ar": "2 ÷ 2 = 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 2 = 1.",
+            "explanation_ar": "نصف 2 = 1."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 2 is 1.",
+            "explanation_ar": "إذن نصف 2 هو 1."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 1",
+        "result_ar": "الجواب: 1"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 2 into two equal piles.",
+            "explanation_ar": "قسّم 2 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 1.",
+            "explanation_ar": "كل كومة = 1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 1 + 1 = 2. ✓",
+            "explanation_ar": "تحقق: 1 + 1 = 2. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 1",
+        "result_ar": "الجواب: 1"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 2 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 2 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 1.",
+            "explanation_ar": "كل طبق فيه 1."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 2 = 1.",
+            "explanation_ar": "إذن نصف 2 = 1."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 1",
+        "result_ar": "الجواب: 1"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 8 = ?",
+    "question_ar": "نصف 8 = ؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "8 ÷ 2 = 4.",
+            "explanation_ar": "8 ÷ 2 = 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 8 = 4.",
+            "explanation_ar": "نصف 8 = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 8 is 4.",
+            "explanation_ar": "إذن نصف 8 هو 4."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 8 into two equal piles.",
+            "explanation_ar": "قسّم 8 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 4.",
+            "explanation_ar": "كل كومة = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 4 + 4 = 8. ✓",
+            "explanation_ar": "تحقق: 4 + 4 = 8. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 8 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 8 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 4.",
+            "explanation_ar": "كل طبق فيه 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 8 = 4.",
+            "explanation_ar": "إذن نصف 8 = 4."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 10 = ?",
+    "question_ar": "نصف 10 = ؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "10 ÷ 2 = 5.",
+            "explanation_ar": "10 ÷ 2 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 10 = 5.",
+            "explanation_ar": "نصف 10 = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 10 is 5.",
+            "explanation_ar": "إذن نصف 10 هو 5."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 10 into two equal piles.",
+            "explanation_ar": "قسّم 10 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 5.",
+            "explanation_ar": "كل كومة = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 5 + 5 = 10. ✓",
+            "explanation_ar": "تحقق: 5 + 5 = 10. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 10 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 10 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 5.",
+            "explanation_ar": "كل طبق فيه 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 10 = 5.",
+            "explanation_ar": "إذن نصف 10 = 5."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-021",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 6 = ?",
+    "question_ar": "نصف 6 = ؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 ÷ 2 = 3.",
+            "explanation_ar": "6 ÷ 2 = 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 6 = 3.",
+            "explanation_ar": "نصف 6 = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 6 is 3.",
+            "explanation_ar": "إذن نصف 6 هو 3."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 6 into two equal piles.",
+            "explanation_ar": "قسّم 6 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 3.",
+            "explanation_ar": "كل كومة = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 3 + 3 = 6. ✓",
+            "explanation_ar": "تحقق: 3 + 3 = 6. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 6 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 6 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 3.",
+            "explanation_ar": "كل طبق فيه 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 6 = 3.",
+            "explanation_ar": "إذن نصف 6 = 3."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-022",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 4 = ?",
+    "question_ar": "ضِعف 4 = ؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 + 4 = 8.",
+            "explanation_ar": "4 + 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 4 = 2 × 4 = 8.",
+            "explanation_ar": "ضِعف 4 = 2 × 4 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 4 is 8.",
+            "explanation_ar": "إذن ضِعف 4 هو 8."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 4.",
+            "explanation_ar": "اصنع نسختين من 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 4 and 4.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 4 و 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 4 + 4 = 8.",
+            "explanation_ar": "المجموع: 4 + 4 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 ÷ 2 = 4. ✓",
+            "explanation_ar": "تحقق: 8 ÷ 2 = 4. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 4 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 4 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 4 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 8.",
+            "explanation_ar": "إجمالي النقاط = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 4 = 8.",
+            "explanation_ar": "إذن ضِعف 4 = 8."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-023",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 12 = ?",
+    "question_ar": "نصف 12 = ؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 ÷ 2 = 6.",
+            "explanation_ar": "12 ÷ 2 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 12 = 6.",
+            "explanation_ar": "نصف 12 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 12 is 6.",
+            "explanation_ar": "إذن نصف 12 هو 6."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 12 into two equal piles.",
+            "explanation_ar": "قسّم 12 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 6.",
+            "explanation_ar": "كل كومة = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 6 = 12. ✓",
+            "explanation_ar": "تحقق: 6 + 6 = 12. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 12 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 6.",
+            "explanation_ar": "كل طبق فيه 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 12 = 6.",
+            "explanation_ar": "إذن نصف 12 = 6."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-024",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Double 2 = ?",
+    "question_ar": "ضِعف 2 = ؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "2 + 2 = 4.",
+            "explanation_ar": "2 + 2 = 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 2 = 2 × 2 = 4.",
+            "explanation_ar": "ضِعف 2 = 2 × 2 = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 2 is 4.",
+            "explanation_ar": "إذن ضِعف 2 هو 4."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 2.",
+            "explanation_ar": "اصنع نسختين من 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 2 and 2.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 2 و 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 2 + 2 = 4.",
+            "explanation_ar": "المجموع: 2 + 2 = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 4 ÷ 2 = 2. ✓",
+            "explanation_ar": "تحقق: 4 ÷ 2 = 2. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 2 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 2 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 2 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 4.",
+            "explanation_ar": "إجمالي النقاط = 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 2 = 4.",
+            "explanation_ar": "إذن ضِعف 2 = 4."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-easy-025",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Easy",
+    "question_en": "Half of 16 = ?",
+    "question_ar": "نصف 16 = ؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "16 ÷ 2 = 8.",
+            "explanation_ar": "16 ÷ 2 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 16 = 8.",
+            "explanation_ar": "نصف 16 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 16 is 8.",
+            "explanation_ar": "إذن نصف 16 هو 8."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 16 into two equal piles.",
+            "explanation_ar": "قسّم 16 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 8.",
+            "explanation_ar": "كل كومة = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 + 8 = 16. ✓",
+            "explanation_ar": "تحقق: 8 + 8 = 16. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 16 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 16 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 8.",
+            "explanation_ar": "كل طبق فيه 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 16 = 8.",
+            "explanation_ar": "إذن نصف 16 = 8."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 20 = ?",
+    "question_ar": "نصف 20 = ؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "20 ÷ 2 = 10.",
+            "explanation_ar": "20 ÷ 2 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 20 = 10.",
+            "explanation_ar": "نصف 20 = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 20 is 10.",
+            "explanation_ar": "إذن نصف 20 هو 10."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 20 into two equal piles.",
+            "explanation_ar": "قسّم 20 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 10.",
+            "explanation_ar": "كل كومة = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 + 10 = 20. ✓",
+            "explanation_ar": "تحقق: 10 + 10 = 20. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 20 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 20 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 10.",
+            "explanation_ar": "كل طبق فيه 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 20 = 10.",
+            "explanation_ar": "إذن نصف 20 = 10."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 24 = ?",
+    "question_ar": "نصف 24 = ؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "24 ÷ 2 = 12.",
+            "explanation_ar": "24 ÷ 2 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 24 = 12.",
+            "explanation_ar": "نصف 24 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 24 is 12.",
+            "explanation_ar": "إذن نصف 24 هو 12."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 24 into two equal piles.",
+            "explanation_ar": "قسّم 24 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 12.",
+            "explanation_ar": "كل كومة = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 + 12 = 24. ✓",
+            "explanation_ar": "تحقق: 12 + 12 = 24. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 24 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 24 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 12.",
+            "explanation_ar": "كل طبق فيه 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 24 = 12.",
+            "explanation_ar": "إذن نصف 24 = 12."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 9 = ?",
+    "question_ar": "ضِعف 9 = ؟",
+    "answer": 18,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 9 = 18.",
+            "explanation_ar": "9 + 9 = 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 9 = 2 × 9 = 18.",
+            "explanation_ar": "ضِعف 9 = 2 × 9 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 9 is 18.",
+            "explanation_ar": "إذن ضِعف 9 هو 18."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 9.",
+            "explanation_ar": "اصنع نسختين من 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 9 and 9.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 9 و 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 9 + 9 = 18.",
+            "explanation_ar": "المجموع: 9 + 9 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 18 ÷ 2 = 9. ✓",
+            "explanation_ar": "تحقق: 18 ÷ 2 = 9. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 9 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 9 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 9 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 18.",
+            "explanation_ar": "إجمالي النقاط = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 9 = 18.",
+            "explanation_ar": "إذن ضِعف 9 = 18."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 26 = ?",
+    "question_ar": "نصف 26 = ؟",
+    "answer": 13,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "26 ÷ 2 = 13.",
+            "explanation_ar": "26 ÷ 2 = 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 26 = 13.",
+            "explanation_ar": "نصف 26 = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 26 is 13.",
+            "explanation_ar": "إذن نصف 26 هو 13."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 26 into two equal piles.",
+            "explanation_ar": "قسّم 26 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 13.",
+            "explanation_ar": "كل كومة = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 13 + 13 = 26. ✓",
+            "explanation_ar": "تحقق: 13 + 13 = 26. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 26 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 26 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 13.",
+            "explanation_ar": "كل طبق فيه 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 26 = 13.",
+            "explanation_ar": "إذن نصف 26 = 13."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "5 + 6 = ?  (Hint: use a near-double.)",
+    "question_ar": "5 + 6 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "5 and 6 are very close — almost a double.",
+            "explanation_ar": "5 و 6 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 5 + 5 = 10.",
+            "explanation_ar": "أوجد الضِعف أولًا: 5 + 5 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 10 + 1 = 11.",
+            "explanation_ar": "الآن أضف 1: 10 + 1 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 5 + 6 = 11.",
+            "explanation_ar": "إذن 5 + 6 = 11."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 6 as 5 + 1.",
+            "explanation_ar": "اكتب 6 على شكل 5 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 5 + 6 = 5 + 5 + 1.",
+            "explanation_ar": "إذن 5 + 6 = 5 + 5 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 10 + 1 = 11.",
+            "explanation_ar": "= 10 + 1 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 11 − 5 = 6. ✓",
+            "explanation_ar": "تحقق سريع: 11 − 5 = 6. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 5, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 5، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 5 + 5, then add one dot.",
+            "explanation_ar": "ارسم 5 + 5، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 11.",
+            "explanation_ar": "المجموع = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 5 + 6 = 11.",
+            "explanation_ar": "إذن 5 + 6 = 11."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 12 = ?",
+    "question_ar": "نصف 12 = ؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 ÷ 2 = 6.",
+            "explanation_ar": "12 ÷ 2 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 12 = 6.",
+            "explanation_ar": "نصف 12 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 12 is 6.",
+            "explanation_ar": "إذن نصف 12 هو 6."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 12 into two equal piles.",
+            "explanation_ar": "قسّم 12 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 6.",
+            "explanation_ar": "كل كومة = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 6 = 12. ✓",
+            "explanation_ar": "تحقق: 6 + 6 = 12. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 12 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 6.",
+            "explanation_ar": "كل طبق فيه 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 12 = 6.",
+            "explanation_ar": "إذن نصف 12 = 6."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "4 + 5 = ?  (Hint: use a near-double.)",
+    "question_ar": "4 + 5 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "4 and 5 are very close — almost a double.",
+            "explanation_ar": "4 و 5 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 4 + 4 = 8.",
+            "explanation_ar": "أوجد الضِعف أولًا: 4 + 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 8 + 1 = 9.",
+            "explanation_ar": "الآن أضف 1: 8 + 1 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 4 + 5 = 9.",
+            "explanation_ar": "إذن 4 + 5 = 9."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 5 as 4 + 1.",
+            "explanation_ar": "اكتب 5 على شكل 4 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 4 + 5 = 4 + 4 + 1.",
+            "explanation_ar": "إذن 4 + 5 = 4 + 4 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 8 + 1 = 9.",
+            "explanation_ar": "= 8 + 1 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 9 − 4 = 5. ✓",
+            "explanation_ar": "تحقق سريع: 9 − 4 = 5. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 4, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 4، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 + 4, then add one dot.",
+            "explanation_ar": "ارسم 4 + 4، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 9.",
+            "explanation_ar": "المجموع = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 4 + 5 = 9.",
+            "explanation_ar": "إذن 4 + 5 = 9."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "8 + 9 = ?  (Hint: use a near-double.)",
+    "question_ar": "8 + 9 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 17,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "8 and 9 are very close — almost a double.",
+            "explanation_ar": "8 و 9 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 8 + 8 = 16.",
+            "explanation_ar": "أوجد الضِعف أولًا: 8 + 8 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 16 + 1 = 17.",
+            "explanation_ar": "الآن أضف 1: 16 + 1 = 17."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 8 + 9 = 17.",
+            "explanation_ar": "إذن 8 + 9 = 17."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 17",
+        "result_ar": "الجواب: 17"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 9 as 8 + 1.",
+            "explanation_ar": "اكتب 9 على شكل 8 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 8 + 9 = 8 + 8 + 1.",
+            "explanation_ar": "إذن 8 + 9 = 8 + 8 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 16 + 1 = 17.",
+            "explanation_ar": "= 16 + 1 = 17."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 17 − 8 = 9. ✓",
+            "explanation_ar": "تحقق سريع: 17 − 8 = 9. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 17",
+        "result_ar": "الجواب: 17"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 8, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 8، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 8 + 8, then add one dot.",
+            "explanation_ar": "ارسم 8 + 8، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 17.",
+            "explanation_ar": "المجموع = 17."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 8 + 9 = 17.",
+            "explanation_ar": "إذن 8 + 9 = 17."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 17",
+        "result_ar": "الجواب: 17"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 10 = ?",
+    "question_ar": "ضِعف 10 = ؟",
+    "answer": 20,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "10 + 10 = 20.",
+            "explanation_ar": "10 + 10 = 20."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 10 = 2 × 10 = 20.",
+            "explanation_ar": "ضِعف 10 = 2 × 10 = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 10 is 20.",
+            "explanation_ar": "إذن ضِعف 10 هو 20."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 10.",
+            "explanation_ar": "اصنع نسختين من 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 10 and 10.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 10 و 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 10 + 10 = 20.",
+            "explanation_ar": "المجموع: 10 + 10 = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 20 ÷ 2 = 10. ✓",
+            "explanation_ar": "تحقق: 20 ÷ 2 = 10. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 10 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 10 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 10 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 20.",
+            "explanation_ar": "إجمالي النقاط = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 10 = 20.",
+            "explanation_ar": "إذن ضِعف 10 = 20."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 12 = ?",
+    "question_ar": "ضِعف 12 = ؟",
+    "answer": 24,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 + 12 = 24.",
+            "explanation_ar": "12 + 12 = 24."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 12 = 2 × 12 = 24.",
+            "explanation_ar": "ضِعف 12 = 2 × 12 = 24."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 12 is 24.",
+            "explanation_ar": "إذن ضِعف 12 هو 24."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 24",
+        "result_ar": "الجواب: 24"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 12.",
+            "explanation_ar": "اصنع نسختين من 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 12 and 12.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 12 و 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 12 + 12 = 24.",
+            "explanation_ar": "المجموع: 12 + 12 = 24."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 24 ÷ 2 = 12. ✓",
+            "explanation_ar": "تحقق: 24 ÷ 2 = 12. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 24",
+        "result_ar": "الجواب: 24"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 12 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 12 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 12 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 24.",
+            "explanation_ar": "إجمالي النقاط = 24."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 12 = 24.",
+            "explanation_ar": "إذن ضِعف 12 = 24."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 24",
+        "result_ar": "الجواب: 24"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "10 + 11 = ?  (Hint: use a near-double.)",
+    "question_ar": "10 + 11 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 21,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "10 and 11 are very close — almost a double.",
+            "explanation_ar": "10 و 11 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 10 + 10 = 20.",
+            "explanation_ar": "أوجد الضِعف أولًا: 10 + 10 = 20."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 20 + 1 = 21.",
+            "explanation_ar": "الآن أضف 1: 20 + 1 = 21."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 10 + 11 = 21.",
+            "explanation_ar": "إذن 10 + 11 = 21."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 21",
+        "result_ar": "الجواب: 21"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 11 as 10 + 1.",
+            "explanation_ar": "اكتب 11 على شكل 10 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 10 + 11 = 10 + 10 + 1.",
+            "explanation_ar": "إذن 10 + 11 = 10 + 10 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 20 + 1 = 21.",
+            "explanation_ar": "= 20 + 1 = 21."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 21 − 10 = 11. ✓",
+            "explanation_ar": "تحقق سريع: 21 − 10 = 11. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 21",
+        "result_ar": "الجواب: 21"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 10, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 10، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 10 + 10, then add one dot.",
+            "explanation_ar": "ارسم 10 + 10، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 21.",
+            "explanation_ar": "المجموع = 21."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 10 + 11 = 21.",
+            "explanation_ar": "إذن 10 + 11 = 21."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 21",
+        "result_ar": "الجواب: 21"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 7 = ?",
+    "question_ar": "ضِعف 7 = ؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "7 + 7 = 14.",
+            "explanation_ar": "7 + 7 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 7 = 2 × 7 = 14.",
+            "explanation_ar": "ضِعف 7 = 2 × 7 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 7 is 14.",
+            "explanation_ar": "إذن ضِعف 7 هو 14."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 7.",
+            "explanation_ar": "اصنع نسختين من 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 7 and 7.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 7 و 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 7 + 7 = 14.",
+            "explanation_ar": "المجموع: 7 + 7 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 ÷ 2 = 7. ✓",
+            "explanation_ar": "تحقق: 14 ÷ 2 = 7. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 7 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 7 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 7 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 14.",
+            "explanation_ar": "إجمالي النقاط = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 7 = 14.",
+            "explanation_ar": "إذن ضِعف 7 = 14."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 18 = ?",
+    "question_ar": "نصف 18 = ؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "18 ÷ 2 = 9.",
+            "explanation_ar": "18 ÷ 2 = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 18 = 9.",
+            "explanation_ar": "نصف 18 = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 18 is 9.",
+            "explanation_ar": "إذن نصف 18 هو 9."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 18 into two equal piles.",
+            "explanation_ar": "قسّم 18 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 9.",
+            "explanation_ar": "كل كومة = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 9 + 9 = 18. ✓",
+            "explanation_ar": "تحقق: 9 + 9 = 18. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 18 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 18 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 9.",
+            "explanation_ar": "كل طبق فيه 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 18 = 9.",
+            "explanation_ar": "إذن نصف 18 = 9."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 8 = ?",
+    "question_ar": "ضِعف 8 = ؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "8 + 8 = 16.",
+            "explanation_ar": "8 + 8 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 8 = 2 × 8 = 16.",
+            "explanation_ar": "ضِعف 8 = 2 × 8 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 8 is 16.",
+            "explanation_ar": "إذن ضِعف 8 هو 16."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 8.",
+            "explanation_ar": "اصنع نسختين من 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 8 and 8.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 8 و 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 8 + 8 = 16.",
+            "explanation_ar": "المجموع: 8 + 8 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 ÷ 2 = 8. ✓",
+            "explanation_ar": "تحقق: 16 ÷ 2 = 8. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 8 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 8 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 8 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 16.",
+            "explanation_ar": "إجمالي النقاط = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 8 = 16.",
+            "explanation_ar": "إذن ضِعف 8 = 16."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 28 = ?",
+    "question_ar": "نصف 28 = ؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "28 ÷ 2 = 14.",
+            "explanation_ar": "28 ÷ 2 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 28 = 14.",
+            "explanation_ar": "نصف 28 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 28 is 14.",
+            "explanation_ar": "إذن نصف 28 هو 14."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 28 into two equal piles.",
+            "explanation_ar": "قسّم 28 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 14.",
+            "explanation_ar": "كل كومة = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 + 14 = 28. ✓",
+            "explanation_ar": "تحقق: 14 + 14 = 28. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 28 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 28 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 14.",
+            "explanation_ar": "كل طبق فيه 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 28 = 14.",
+            "explanation_ar": "إذن نصف 28 = 14."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 13 = ?",
+    "question_ar": "ضِعف 13 = ؟",
+    "answer": 26,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "13 + 13 = 26.",
+            "explanation_ar": "13 + 13 = 26."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 13 = 2 × 13 = 26.",
+            "explanation_ar": "ضِعف 13 = 2 × 13 = 26."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 13 is 26.",
+            "explanation_ar": "إذن ضِعف 13 هو 26."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 26",
+        "result_ar": "الجواب: 26"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 13.",
+            "explanation_ar": "اصنع نسختين من 13."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 13 and 13.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 13 و 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 13 + 13 = 26.",
+            "explanation_ar": "المجموع: 13 + 13 = 26."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 26 ÷ 2 = 13. ✓",
+            "explanation_ar": "تحقق: 26 ÷ 2 = 13. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 26",
+        "result_ar": "الجواب: 26"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 13 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 13 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 13 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 26.",
+            "explanation_ar": "إجمالي النقاط = 26."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 13 = 26.",
+            "explanation_ar": "إذن ضِعف 13 = 26."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 26",
+        "result_ar": "الجواب: 26"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 14 = ?",
+    "question_ar": "ضِعف 14 = ؟",
+    "answer": 28,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "14 + 14 = 28.",
+            "explanation_ar": "14 + 14 = 28."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 14 = 2 × 14 = 28.",
+            "explanation_ar": "ضِعف 14 = 2 × 14 = 28."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 14 is 28.",
+            "explanation_ar": "إذن ضِعف 14 هو 28."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 28",
+        "result_ar": "الجواب: 28"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 14.",
+            "explanation_ar": "اصنع نسختين من 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 14 and 14.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 14 و 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 14 + 14 = 28.",
+            "explanation_ar": "المجموع: 14 + 14 = 28."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 28 ÷ 2 = 14. ✓",
+            "explanation_ar": "تحقق: 28 ÷ 2 = 14. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 28",
+        "result_ar": "الجواب: 28"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 14 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 14 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 14 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 28.",
+            "explanation_ar": "إجمالي النقاط = 28."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 14 = 28.",
+            "explanation_ar": "إذن ضِعف 14 = 28."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 28",
+        "result_ar": "الجواب: 28"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "7 + 8 = ?  (Hint: use a near-double.)",
+    "question_ar": "7 + 8 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "7 and 8 are very close — almost a double.",
+            "explanation_ar": "7 و 8 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 7 + 7 = 14.",
+            "explanation_ar": "أوجد الضِعف أولًا: 7 + 7 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 14 + 1 = 15.",
+            "explanation_ar": "الآن أضف 1: 14 + 1 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 7 + 8 = 15.",
+            "explanation_ar": "إذن 7 + 8 = 15."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 8 as 7 + 1.",
+            "explanation_ar": "اكتب 8 على شكل 7 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 7 + 8 = 7 + 7 + 1.",
+            "explanation_ar": "إذن 7 + 8 = 7 + 7 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 14 + 1 = 15.",
+            "explanation_ar": "= 14 + 1 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 15 − 7 = 8. ✓",
+            "explanation_ar": "تحقق سريع: 15 − 7 = 8. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 7, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 7، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 7 + 7, then add one dot.",
+            "explanation_ar": "ارسم 7 + 7، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 15.",
+            "explanation_ar": "المجموع = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 7 + 8 = 15.",
+            "explanation_ar": "إذن 7 + 8 = 15."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 15 = ?",
+    "question_ar": "ضِعف 15 = ؟",
+    "answer": 30,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "15 + 15 = 30.",
+            "explanation_ar": "15 + 15 = 30."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 15 = 2 × 15 = 30.",
+            "explanation_ar": "ضِعف 15 = 2 × 15 = 30."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 15 is 30.",
+            "explanation_ar": "إذن ضِعف 15 هو 30."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 30",
+        "result_ar": "الجواب: 30"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 15.",
+            "explanation_ar": "اصنع نسختين من 15."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 15 and 15.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 15 و 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 15 + 15 = 30.",
+            "explanation_ar": "المجموع: 15 + 15 = 30."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 30 ÷ 2 = 15. ✓",
+            "explanation_ar": "تحقق: 30 ÷ 2 = 15. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 30",
+        "result_ar": "الجواب: 30"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 15 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 15 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 15 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 30.",
+            "explanation_ar": "إجمالي النقاط = 30."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 15 = 30.",
+            "explanation_ar": "إذن ضِعف 15 = 30."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 30",
+        "result_ar": "الجواب: 30"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "9 + 10 = ?  (Hint: use a near-double.)",
+    "question_ar": "9 + 10 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 19,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "9 and 10 are very close — almost a double.",
+            "explanation_ar": "9 و 10 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 9 + 9 = 18.",
+            "explanation_ar": "أوجد الضِعف أولًا: 9 + 9 = 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 18 + 1 = 19.",
+            "explanation_ar": "الآن أضف 1: 18 + 1 = 19."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 10 = 19.",
+            "explanation_ar": "إذن 9 + 10 = 19."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 19",
+        "result_ar": "الجواب: 19"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 10 as 9 + 1.",
+            "explanation_ar": "اكتب 10 على شكل 9 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 9 + 10 = 9 + 9 + 1.",
+            "explanation_ar": "إذن 9 + 10 = 9 + 9 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 18 + 1 = 19.",
+            "explanation_ar": "= 18 + 1 = 19."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 19 − 9 = 10. ✓",
+            "explanation_ar": "تحقق سريع: 19 − 9 = 10. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 19",
+        "result_ar": "الجواب: 19"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 9, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 9، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 + 9, then add one dot.",
+            "explanation_ar": "ارسم 9 + 9، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 19.",
+            "explanation_ar": "المجموع = 19."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 9 + 10 = 19.",
+            "explanation_ar": "إذن 9 + 10 = 19."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 19",
+        "result_ar": "الجواب: 19"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-021",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 30 = ?",
+    "question_ar": "نصف 30 = ؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "30 ÷ 2 = 15.",
+            "explanation_ar": "30 ÷ 2 = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 30 = 15.",
+            "explanation_ar": "نصف 30 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 30 is 15.",
+            "explanation_ar": "إذن نصف 30 هو 15."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 30 into two equal piles.",
+            "explanation_ar": "قسّم 30 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 15.",
+            "explanation_ar": "كل كومة = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 + 15 = 30. ✓",
+            "explanation_ar": "تحقق: 15 + 15 = 30. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 30 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 30 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 15.",
+            "explanation_ar": "كل طبق فيه 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 30 = 15.",
+            "explanation_ar": "إذن نصف 30 = 15."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-022",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 6 = ?",
+    "question_ar": "ضِعف 6 = ؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 + 6 = 12.",
+            "explanation_ar": "6 + 6 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 6 = 2 × 6 = 12.",
+            "explanation_ar": "ضِعف 6 = 2 × 6 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 6 is 12.",
+            "explanation_ar": "إذن ضِعف 6 هو 12."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 6.",
+            "explanation_ar": "اصنع نسختين من 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 6 and 6.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 6 و 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 6 + 6 = 12.",
+            "explanation_ar": "المجموع: 6 + 6 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 ÷ 2 = 6. ✓",
+            "explanation_ar": "تحقق: 12 ÷ 2 = 6. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 6 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 6 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 6 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 12.",
+            "explanation_ar": "إجمالي النقاط = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 6 = 12.",
+            "explanation_ar": "إذن ضِعف 6 = 12."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-023",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Double 11 = ?",
+    "question_ar": "ضِعف 11 = ؟",
+    "answer": 22,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "11 + 11 = 22.",
+            "explanation_ar": "11 + 11 = 22."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 11 = 2 × 11 = 22.",
+            "explanation_ar": "ضِعف 11 = 2 × 11 = 22."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 11 is 22.",
+            "explanation_ar": "إذن ضِعف 11 هو 22."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 22",
+        "result_ar": "الجواب: 22"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 11.",
+            "explanation_ar": "اصنع نسختين من 11."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 11 and 11.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 11 و 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 11 + 11 = 22.",
+            "explanation_ar": "المجموع: 11 + 11 = 22."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 22 ÷ 2 = 11. ✓",
+            "explanation_ar": "تحقق: 22 ÷ 2 = 11. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 22",
+        "result_ar": "الجواب: 22"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 11 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 11 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 11 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 22.",
+            "explanation_ar": "إجمالي النقاط = 22."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 11 = 22.",
+            "explanation_ar": "إذن ضِعف 11 = 22."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 22",
+        "result_ar": "الجواب: 22"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-024",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 16 = ?",
+    "question_ar": "نصف 16 = ؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "16 ÷ 2 = 8.",
+            "explanation_ar": "16 ÷ 2 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 16 = 8.",
+            "explanation_ar": "نصف 16 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 16 is 8.",
+            "explanation_ar": "إذن نصف 16 هو 8."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 16 into two equal piles.",
+            "explanation_ar": "قسّم 16 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 8.",
+            "explanation_ar": "كل كومة = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 + 8 = 16. ✓",
+            "explanation_ar": "تحقق: 8 + 8 = 16. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 16 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 16 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 8.",
+            "explanation_ar": "كل طبق فيه 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 16 = 8.",
+            "explanation_ar": "إذن نصف 16 = 8."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-medium-025",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Medium",
+    "question_en": "Half of 14 = ?",
+    "question_ar": "نصف 14 = ؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "14 ÷ 2 = 7.",
+            "explanation_ar": "14 ÷ 2 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 14 = 7.",
+            "explanation_ar": "نصف 14 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 14 is 7.",
+            "explanation_ar": "إذن نصف 14 هو 7."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 14 into two equal piles.",
+            "explanation_ar": "قسّم 14 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 7.",
+            "explanation_ar": "كل كومة = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 + 7 = 14. ✓",
+            "explanation_ar": "تحقق: 7 + 7 = 14. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 14 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 14 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 7.",
+            "explanation_ar": "كل طبق فيه 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 14 = 7.",
+            "explanation_ar": "إذن نصف 14 = 7."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 50 = ?",
+    "question_ar": "نصف 50 = ؟",
+    "answer": 25,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "50 ÷ 2 = 25.",
+            "explanation_ar": "50 ÷ 2 = 25."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 50 = 25.",
+            "explanation_ar": "نصف 50 = 25."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 50 is 25.",
+            "explanation_ar": "إذن نصف 50 هو 25."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 25",
+        "result_ar": "الجواب: 25"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 50 into two equal piles.",
+            "explanation_ar": "قسّم 50 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 25.",
+            "explanation_ar": "كل كومة = 25."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 25 + 25 = 50. ✓",
+            "explanation_ar": "تحقق: 25 + 25 = 50. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 25",
+        "result_ar": "الجواب: 25"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 50 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 50 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 25.",
+            "explanation_ar": "كل طبق فيه 25."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 50 = 25.",
+            "explanation_ar": "إذن نصف 50 = 25."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 25",
+        "result_ar": "الجواب: 25"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 20 = ?",
+    "question_ar": "ضِعف 20 = ؟",
+    "answer": 40,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "20 + 20 = 40.",
+            "explanation_ar": "20 + 20 = 40."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 20 = 2 × 20 = 40.",
+            "explanation_ar": "ضِعف 20 = 2 × 20 = 40."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 20 is 40.",
+            "explanation_ar": "إذن ضِعف 20 هو 40."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 40",
+        "result_ar": "الجواب: 40"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 20.",
+            "explanation_ar": "اصنع نسختين من 20."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 20 and 20.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 20 و 20."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 20 + 20 = 40.",
+            "explanation_ar": "المجموع: 20 + 20 = 40."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 40 ÷ 2 = 20. ✓",
+            "explanation_ar": "تحقق: 40 ÷ 2 = 20. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 40",
+        "result_ar": "الجواب: 40"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 20 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 20 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 20 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 20."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 40.",
+            "explanation_ar": "إجمالي النقاط = 40."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 20 = 40.",
+            "explanation_ar": "إذن ضِعف 20 = 40."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 40",
+        "result_ar": "الجواب: 40"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 40 = ?",
+    "question_ar": "نصف 40 = ؟",
+    "answer": 20,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "40 ÷ 2 = 20.",
+            "explanation_ar": "40 ÷ 2 = 20."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 40 = 20.",
+            "explanation_ar": "نصف 40 = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 40 is 20.",
+            "explanation_ar": "إذن نصف 40 هو 20."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 40 into two equal piles.",
+            "explanation_ar": "قسّم 40 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 20.",
+            "explanation_ar": "كل كومة = 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 20 + 20 = 40. ✓",
+            "explanation_ar": "تحقق: 20 + 20 = 40. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 40 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 40 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 20.",
+            "explanation_ar": "كل طبق فيه 20."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 40 = 20.",
+            "explanation_ar": "إذن نصف 40 = 20."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 20",
+        "result_ar": "الجواب: 20"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "9 + 10 = ?  (Hint: use a near-double.)",
+    "question_ar": "9 + 10 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 19,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "9 and 10 are very close — almost a double.",
+            "explanation_ar": "9 و 10 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 9 + 9 = 18.",
+            "explanation_ar": "أوجد الضِعف أولًا: 9 + 9 = 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 18 + 1 = 19.",
+            "explanation_ar": "الآن أضف 1: 18 + 1 = 19."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 10 = 19.",
+            "explanation_ar": "إذن 9 + 10 = 19."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 19",
+        "result_ar": "الجواب: 19"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 10 as 9 + 1.",
+            "explanation_ar": "اكتب 10 على شكل 9 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 9 + 10 = 9 + 9 + 1.",
+            "explanation_ar": "إذن 9 + 10 = 9 + 9 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 18 + 1 = 19.",
+            "explanation_ar": "= 18 + 1 = 19."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 19 − 9 = 10. ✓",
+            "explanation_ar": "تحقق سريع: 19 − 9 = 10. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 19",
+        "result_ar": "الجواب: 19"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 9, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 9، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 + 9, then add one dot.",
+            "explanation_ar": "ارسم 9 + 9، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 19.",
+            "explanation_ar": "المجموع = 19."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 9 + 10 = 19.",
+            "explanation_ar": "إذن 9 + 10 = 19."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 19",
+        "result_ar": "الجواب: 19"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 13 = ?",
+    "question_ar": "ضِعف 13 = ؟",
+    "answer": 26,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "13 + 13 = 26.",
+            "explanation_ar": "13 + 13 = 26."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 13 = 2 × 13 = 26.",
+            "explanation_ar": "ضِعف 13 = 2 × 13 = 26."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 13 is 26.",
+            "explanation_ar": "إذن ضِعف 13 هو 26."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 26",
+        "result_ar": "الجواب: 26"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 13.",
+            "explanation_ar": "اصنع نسختين من 13."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 13 and 13.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 13 و 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 13 + 13 = 26.",
+            "explanation_ar": "المجموع: 13 + 13 = 26."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 26 ÷ 2 = 13. ✓",
+            "explanation_ar": "تحقق: 26 ÷ 2 = 13. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 26",
+        "result_ar": "الجواب: 26"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 13 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 13 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 13 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 26.",
+            "explanation_ar": "إجمالي النقاط = 26."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 13 = 26.",
+            "explanation_ar": "إذن ضِعف 13 = 26."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 26",
+        "result_ar": "الجواب: 26"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "12 + 13 = ?  (Hint: use a near-double.)",
+    "question_ar": "12 + 13 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 25,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "12 and 13 are very close — almost a double.",
+            "explanation_ar": "12 و 13 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 12 + 12 = 24.",
+            "explanation_ar": "أوجد الضِعف أولًا: 12 + 12 = 24."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 24 + 1 = 25.",
+            "explanation_ar": "الآن أضف 1: 24 + 1 = 25."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 12 + 13 = 25.",
+            "explanation_ar": "إذن 12 + 13 = 25."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 25",
+        "result_ar": "الجواب: 25"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 13 as 12 + 1.",
+            "explanation_ar": "اكتب 13 على شكل 12 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 12 + 13 = 12 + 12 + 1.",
+            "explanation_ar": "إذن 12 + 13 = 12 + 12 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 24 + 1 = 25.",
+            "explanation_ar": "= 24 + 1 = 25."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 25 − 12 = 13. ✓",
+            "explanation_ar": "تحقق سريع: 25 − 12 = 13. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 25",
+        "result_ar": "الجواب: 25"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 12, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 12، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 12 + 12, then add one dot.",
+            "explanation_ar": "ارسم 12 + 12، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 25.",
+            "explanation_ar": "المجموع = 25."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 12 + 13 = 25.",
+            "explanation_ar": "إذن 12 + 13 = 25."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 25",
+        "result_ar": "الجواب: 25"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 16 = ?",
+    "question_ar": "ضِعف 16 = ؟",
+    "answer": 32,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "16 + 16 = 32.",
+            "explanation_ar": "16 + 16 = 32."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 16 = 2 × 16 = 32.",
+            "explanation_ar": "ضِعف 16 = 2 × 16 = 32."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 16 is 32.",
+            "explanation_ar": "إذن ضِعف 16 هو 32."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 32",
+        "result_ar": "الجواب: 32"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 16.",
+            "explanation_ar": "اصنع نسختين من 16."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 16 and 16.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 16 و 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 16 + 16 = 32.",
+            "explanation_ar": "المجموع: 16 + 16 = 32."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 32 ÷ 2 = 16. ✓",
+            "explanation_ar": "تحقق: 32 ÷ 2 = 16. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 32",
+        "result_ar": "الجواب: 32"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 16 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 16 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 16 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 32.",
+            "explanation_ar": "إجمالي النقاط = 32."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 16 = 32.",
+            "explanation_ar": "إذن ضِعف 16 = 32."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 32",
+        "result_ar": "الجواب: 32"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 15 = ?",
+    "question_ar": "ضِعف 15 = ؟",
+    "answer": 30,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "15 + 15 = 30.",
+            "explanation_ar": "15 + 15 = 30."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 15 = 2 × 15 = 30.",
+            "explanation_ar": "ضِعف 15 = 2 × 15 = 30."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 15 is 30.",
+            "explanation_ar": "إذن ضِعف 15 هو 30."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 30",
+        "result_ar": "الجواب: 30"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 15.",
+            "explanation_ar": "اصنع نسختين من 15."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 15 and 15.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 15 و 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 15 + 15 = 30.",
+            "explanation_ar": "المجموع: 15 + 15 = 30."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 30 ÷ 2 = 15. ✓",
+            "explanation_ar": "تحقق: 30 ÷ 2 = 15. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 30",
+        "result_ar": "الجواب: 30"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 15 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 15 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 15 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 30.",
+            "explanation_ar": "إجمالي النقاط = 30."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 15 = 30.",
+            "explanation_ar": "إذن ضِعف 15 = 30."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 30",
+        "result_ar": "الجواب: 30"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 14 = ?",
+    "question_ar": "ضِعف 14 = ؟",
+    "answer": 28,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "14 + 14 = 28.",
+            "explanation_ar": "14 + 14 = 28."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 14 = 2 × 14 = 28.",
+            "explanation_ar": "ضِعف 14 = 2 × 14 = 28."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 14 is 28.",
+            "explanation_ar": "إذن ضِعف 14 هو 28."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 28",
+        "result_ar": "الجواب: 28"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 14.",
+            "explanation_ar": "اصنع نسختين من 14."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 14 and 14.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 14 و 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 14 + 14 = 28.",
+            "explanation_ar": "المجموع: 14 + 14 = 28."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 28 ÷ 2 = 14. ✓",
+            "explanation_ar": "تحقق: 28 ÷ 2 = 14. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 28",
+        "result_ar": "الجواب: 28"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 14 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 14 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 14 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 28.",
+            "explanation_ar": "إجمالي النقاط = 28."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 14 = 28.",
+            "explanation_ar": "إذن ضِعف 14 = 28."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 28",
+        "result_ar": "الجواب: 28"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "13 + 14 = ?  (Hint: use a near-double.)",
+    "question_ar": "13 + 14 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 27,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "13 and 14 are very close — almost a double.",
+            "explanation_ar": "13 و 14 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 13 + 13 = 26.",
+            "explanation_ar": "أوجد الضِعف أولًا: 13 + 13 = 26."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 26 + 1 = 27.",
+            "explanation_ar": "الآن أضف 1: 26 + 1 = 27."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 13 + 14 = 27.",
+            "explanation_ar": "إذن 13 + 14 = 27."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 27",
+        "result_ar": "الجواب: 27"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 14 as 13 + 1.",
+            "explanation_ar": "اكتب 14 على شكل 13 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 13 + 14 = 13 + 13 + 1.",
+            "explanation_ar": "إذن 13 + 14 = 13 + 13 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 26 + 1 = 27.",
+            "explanation_ar": "= 26 + 1 = 27."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 27 − 13 = 14. ✓",
+            "explanation_ar": "تحقق سريع: 27 − 13 = 14. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 27",
+        "result_ar": "الجواب: 27"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 13, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 13، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 13 + 13, then add one dot.",
+            "explanation_ar": "ارسم 13 + 13، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 27.",
+            "explanation_ar": "المجموع = 27."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 13 + 14 = 27.",
+            "explanation_ar": "إذن 13 + 14 = 27."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 27",
+        "result_ar": "الجواب: 27"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 24 = ?",
+    "question_ar": "نصف 24 = ؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "24 ÷ 2 = 12.",
+            "explanation_ar": "24 ÷ 2 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 24 = 12.",
+            "explanation_ar": "نصف 24 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 24 is 12.",
+            "explanation_ar": "إذن نصف 24 هو 12."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 24 into two equal piles.",
+            "explanation_ar": "قسّم 24 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 12.",
+            "explanation_ar": "كل كومة = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 12 + 12 = 24. ✓",
+            "explanation_ar": "تحقق: 12 + 12 = 24. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 24 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 24 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 12.",
+            "explanation_ar": "كل طبق فيه 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 24 = 12.",
+            "explanation_ar": "إذن نصف 24 = 12."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "15 + 16 = ?  (Hint: use a near-double.)",
+    "question_ar": "15 + 16 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 31,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "15 and 16 are very close — almost a double.",
+            "explanation_ar": "15 و 16 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 15 + 15 = 30.",
+            "explanation_ar": "أوجد الضِعف أولًا: 15 + 15 = 30."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 30 + 1 = 31.",
+            "explanation_ar": "الآن أضف 1: 30 + 1 = 31."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 15 + 16 = 31.",
+            "explanation_ar": "إذن 15 + 16 = 31."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 31",
+        "result_ar": "الجواب: 31"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 16 as 15 + 1.",
+            "explanation_ar": "اكتب 16 على شكل 15 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 15 + 16 = 15 + 15 + 1.",
+            "explanation_ar": "إذن 15 + 16 = 15 + 15 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 30 + 1 = 31.",
+            "explanation_ar": "= 30 + 1 = 31."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 31 − 15 = 16. ✓",
+            "explanation_ar": "تحقق سريع: 31 − 15 = 16. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 31",
+        "result_ar": "الجواب: 31"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 15, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 15، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 15 + 15, then add one dot.",
+            "explanation_ar": "ارسم 15 + 15، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 31.",
+            "explanation_ar": "المجموع = 31."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 15 + 16 = 31.",
+            "explanation_ar": "إذن 15 + 16 = 31."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 31",
+        "result_ar": "الجواب: 31"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 36 = ?",
+    "question_ar": "نصف 36 = ؟",
+    "answer": 18,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "36 ÷ 2 = 18.",
+            "explanation_ar": "36 ÷ 2 = 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 36 = 18.",
+            "explanation_ar": "نصف 36 = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 36 is 18.",
+            "explanation_ar": "إذن نصف 36 هو 18."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 36 into two equal piles.",
+            "explanation_ar": "قسّم 36 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 18.",
+            "explanation_ar": "كل كومة = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 18 + 18 = 36. ✓",
+            "explanation_ar": "تحقق: 18 + 18 = 36. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 36 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 36 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 18.",
+            "explanation_ar": "كل طبق فيه 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 36 = 18.",
+            "explanation_ar": "إذن نصف 36 = 18."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 30 = ?",
+    "question_ar": "نصف 30 = ؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "30 ÷ 2 = 15.",
+            "explanation_ar": "30 ÷ 2 = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 30 = 15.",
+            "explanation_ar": "نصف 30 = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 30 is 15.",
+            "explanation_ar": "إذن نصف 30 هو 15."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 30 into two equal piles.",
+            "explanation_ar": "قسّم 30 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 15.",
+            "explanation_ar": "كل كومة = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 + 15 = 30. ✓",
+            "explanation_ar": "تحقق: 15 + 15 = 30. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 30 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 30 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 15.",
+            "explanation_ar": "كل طبق فيه 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 30 = 15.",
+            "explanation_ar": "إذن نصف 30 = 15."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "11 + 12 = ?  (Hint: use a near-double.)",
+    "question_ar": "11 + 12 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 23,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "11 and 12 are very close — almost a double.",
+            "explanation_ar": "11 و 12 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 11 + 11 = 22.",
+            "explanation_ar": "أوجد الضِعف أولًا: 11 + 11 = 22."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 22 + 1 = 23.",
+            "explanation_ar": "الآن أضف 1: 22 + 1 = 23."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 11 + 12 = 23.",
+            "explanation_ar": "إذن 11 + 12 = 23."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 23",
+        "result_ar": "الجواب: 23"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 12 as 11 + 1.",
+            "explanation_ar": "اكتب 12 على شكل 11 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 11 + 12 = 11 + 11 + 1.",
+            "explanation_ar": "إذن 11 + 12 = 11 + 11 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 22 + 1 = 23.",
+            "explanation_ar": "= 22 + 1 = 23."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 23 − 11 = 12. ✓",
+            "explanation_ar": "تحقق سريع: 23 − 11 = 12. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 23",
+        "result_ar": "الجواب: 23"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 11, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 11، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 11 + 11, then add one dot.",
+            "explanation_ar": "ارسم 11 + 11، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 23.",
+            "explanation_ar": "المجموع = 23."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 11 + 12 = 23.",
+            "explanation_ar": "إذن 11 + 12 = 23."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 23",
+        "result_ar": "الجواب: 23"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 32 = ?",
+    "question_ar": "نصف 32 = ؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "32 ÷ 2 = 16.",
+            "explanation_ar": "32 ÷ 2 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 32 = 16.",
+            "explanation_ar": "نصف 32 = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 32 is 16.",
+            "explanation_ar": "إذن نصف 32 هو 16."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 32 into two equal piles.",
+            "explanation_ar": "قسّم 32 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 16.",
+            "explanation_ar": "كل كومة = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 + 16 = 32. ✓",
+            "explanation_ar": "تحقق: 16 + 16 = 32. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 32 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 32 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 16.",
+            "explanation_ar": "كل طبق فيه 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 32 = 16.",
+            "explanation_ar": "إذن نصف 32 = 16."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 12 = ?",
+    "question_ar": "ضِعف 12 = ؟",
+    "answer": 24,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 + 12 = 24.",
+            "explanation_ar": "12 + 12 = 24."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 12 = 2 × 12 = 24.",
+            "explanation_ar": "ضِعف 12 = 2 × 12 = 24."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 12 is 24.",
+            "explanation_ar": "إذن ضِعف 12 هو 24."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 24",
+        "result_ar": "الجواب: 24"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 12.",
+            "explanation_ar": "اصنع نسختين من 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 12 and 12.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 12 و 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 12 + 12 = 24.",
+            "explanation_ar": "المجموع: 12 + 12 = 24."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 24 ÷ 2 = 12. ✓",
+            "explanation_ar": "تحقق: 24 ÷ 2 = 12. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 24",
+        "result_ar": "الجواب: 24"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 12 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 12 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 12 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 24.",
+            "explanation_ar": "إجمالي النقاط = 24."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 12 = 24.",
+            "explanation_ar": "إذن ضِعف 12 = 24."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 24",
+        "result_ar": "الجواب: 24"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Double 18 = ?",
+    "question_ar": "ضِعف 18 = ؟",
+    "answer": 36,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Doubling means adding the number to itself.",
+            "explanation_ar": "التضعيف يعني جمع العدد مع نفسه."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "18 + 18 = 36.",
+            "explanation_ar": "18 + 18 = 36."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Double 18 = 2 × 18 = 36.",
+            "explanation_ar": "ضِعف 18 = 2 × 18 = 36."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So double 18 is 36.",
+            "explanation_ar": "إذن ضِعف 18 هو 36."
+          }
+        ],
+        "hint_en": "Double = add the number to itself.",
+        "hint_ar": "التضعيف = جمع العدد مع نفسه.",
+        "result_en": "Answer: 36",
+        "result_ar": "الجواب: 36"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Make two copies of 18.",
+            "explanation_ar": "اصنع نسختين من 18."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Place them side by side: 18 and 18.",
+            "explanation_ar": "ضعهما جنبًا إلى جنب: 18 و 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Total: 18 + 18 = 36.",
+            "explanation_ar": "المجموع: 18 + 18 = 36."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 36 ÷ 2 = 18. ✓",
+            "explanation_ar": "تحقق: 36 ÷ 2 = 18. ✓"
+          }
+        ],
+        "hint_en": "Two copies make a double.",
+        "hint_ar": "نسختان تصنعان الضِعف.",
+        "result_en": "Answer: 36",
+        "result_ar": "الجواب: 36"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Imagine 18 dots in a row, then a second matching row.",
+            "explanation_ar": "تخيّل 18 نقطة في صف، ثم صف ثانٍ مطابق."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 18 grid.",
+            "explanation_ar": "ارسم شبكة 2 × 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 36.",
+            "explanation_ar": "إجمالي النقاط = 36."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So double 18 = 36.",
+            "explanation_ar": "إذن ضِعف 18 = 36."
+          }
+        ],
+        "hint_en": "Two equal rows of dots.",
+        "hint_ar": "صفّان متساويان من النقاط.",
+        "result_en": "Answer: 36",
+        "result_ar": "الجواب: 36"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "14 + 15 = ?  (Hint: use a near-double.)",
+    "question_ar": "14 + 15 = ؟  (تلميح: استخدم ضِعفًا قريبًا.)",
+    "answer": 29,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "14 and 15 are very close — almost a double.",
+            "explanation_ar": "14 و 15 قريبان جدًا — تقريبًا ضِعف."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "First find the double: 14 + 14 = 28.",
+            "explanation_ar": "أوجد الضِعف أولًا: 14 + 14 = 28."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Now add 1 more: 28 + 1 = 29.",
+            "explanation_ar": "الآن أضف 1: 28 + 1 = 29."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 14 + 15 = 29.",
+            "explanation_ar": "إذن 14 + 15 = 29."
+          }
+        ],
+        "hint_en": "Near-double trick: double the smaller, then +1.",
+        "hint_ar": "حيلة الضِعف القريب: ضاعِف الأصغر، ثم +1.",
+        "result_en": "Answer: 29",
+        "result_ar": "الجواب: 29"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Write 15 as 14 + 1.",
+            "explanation_ar": "اكتب 15 على شكل 14 + 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So 14 + 15 = 14 + 14 + 1.",
+            "explanation_ar": "إذن 14 + 15 = 14 + 14 + 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 28 + 1 = 29.",
+            "explanation_ar": "= 28 + 1 = 29."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Quick check: 29 − 14 = 15. ✓",
+            "explanation_ar": "تحقق سريع: 29 − 14 = 15. ✓"
+          }
+        ],
+        "hint_en": "Rewrite the bigger as smaller + 1.",
+        "hint_ar": "أعد كتابة الأكبر على شكل الأصغر + 1.",
+        "result_en": "Answer: 29",
+        "result_ar": "الجواب: 29"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two equal piles of 14, plus one extra.",
+            "explanation_ar": "تخيّل كومتين متساويتين من 14، مع واحدة إضافية."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 14 + 14, then add one dot.",
+            "explanation_ar": "ارسم 14 + 14، ثم أضف نقطة."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total = 29.",
+            "explanation_ar": "المجموع = 29."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 14 + 15 = 29.",
+            "explanation_ar": "إذن 14 + 15 = 29."
+          }
+        ],
+        "hint_en": "Double + 1 = near-double.",
+        "hint_ar": "ضِعف + 1 = ضِعف قريب.",
+        "result_en": "Answer: 29",
+        "result_ar": "الجواب: 29"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-dbl-hard-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Double & Half",
+    "level": "Hard",
+    "question_en": "Half of 28 = ?",
+    "question_ar": "نصف 28 = ؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Half means splitting into two equal parts.",
+            "explanation_ar": "النصف يعني التقسيم إلى جزأين متساويين."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "28 ÷ 2 = 14.",
+            "explanation_ar": "28 ÷ 2 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Half of 28 = 14.",
+            "explanation_ar": "نصف 28 = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So half of 28 is 14.",
+            "explanation_ar": "إذن نصف 28 هو 14."
+          }
+        ],
+        "hint_en": "Half = divide by 2.",
+        "hint_ar": "النصف = اقسم على 2.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Split 28 into two equal piles.",
+            "explanation_ar": "قسّم 28 إلى كومتين متساويتين."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each pile gets the same amount.",
+            "explanation_ar": "كل كومة تأخذ نفس المقدار."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each pile = 14.",
+            "explanation_ar": "كل كومة = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 + 14 = 28. ✓",
+            "explanation_ar": "تحقق: 14 + 14 = 28. ✓"
+          }
+        ],
+        "hint_en": "Two equal piles → halves.",
+        "hint_ar": "كومتان متساويتان ← نصفان.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 28 cookies shared fairly between 2 friends.",
+            "explanation_ar": "تخيّل 28 حبة بسكويت تُقسَّم بالعدل بين صديقين."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw two equal plates.",
+            "explanation_ar": "ارسم طبقين متساويين."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 14.",
+            "explanation_ar": "كل طبق فيه 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So half of 28 = 14.",
+            "explanation_ar": "إذن نصف 28 = 14."
+          }
+        ],
+        "hint_en": "Share equally between 2.",
+        "hint_ar": "قسّم بالتساوي بين اثنين.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "doubles_halves"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A child in Dubai has 5 red apples and 3 green apples. How many apples in all?",
+    "question_ar": "طفل في دبي لديه 5 تفاحة حمراء و 3 تفاحة خضراء. كم تفاحة في المجموع؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 5 and 3.",
+            "explanation_ar": "اجمع 5 و 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "5 + 3 = 8.",
+            "explanation_ar": "5 + 3 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 5 + 3 = 8.",
+            "explanation_ar": "إذن 5 + 3 = 8."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 5 first, then keep counting 3 more.",
+            "explanation_ar": "عُدّ 5 أولًا، ثم تابع العدّ 3 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 5: 6, 7, 8.",
+            "explanation_ar": "عُدّ للأمام من 5: 6، 7، 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 8.",
+            "explanation_ar": "تتوقف عند 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 − 3 = 5. ✓",
+            "explanation_ar": "تحقق: 8 − 3 = 5. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 5 dots, then 3 more.",
+            "explanation_ar": "ارسم 5 نقطة، ثم 3 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 8.",
+            "explanation_ar": "كل النقاط معًا = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "There are 4 ducks in a pond. 4 more ducks join. How many ducks now?",
+    "question_ar": "يوجد 4 بطة في بركة. تنضم 4 بطة أخرى. كم بطة الآن؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 4 and 4.",
+            "explanation_ar": "اجمع 4 و 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 + 4 = 8.",
+            "explanation_ar": "4 + 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 4 + 4 = 8.",
+            "explanation_ar": "إذن 4 + 4 = 8."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 4 first, then keep counting 4 more.",
+            "explanation_ar": "عُدّ 4 أولًا، ثم تابع العدّ 4 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 4: 5, 6, 7, 8.",
+            "explanation_ar": "عُدّ للأمام من 4: 5، 6، 7، 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 8.",
+            "explanation_ar": "تتوقف عند 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 − 4 = 4. ✓",
+            "explanation_ar": "تحقق: 8 − 4 = 4. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 dots, then 4 more.",
+            "explanation_ar": "ارسم 4 نقطة، ثم 4 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 8.",
+            "explanation_ar": "كل النقاط معًا = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A boy has 2 toy cars. His friend gives him 6 more. How many cars now?",
+    "question_ar": "ولد لديه 2 سيارة لعبة. صديقه أعطاه 6 أخرى. كم سيارة الآن؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 2 and 6.",
+            "explanation_ar": "اجمع 2 و 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "2 + 6 = 8.",
+            "explanation_ar": "2 + 6 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 2 + 6 = 8.",
+            "explanation_ar": "إذن 2 + 6 = 8."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 2 first, then keep counting 6 more.",
+            "explanation_ar": "عُدّ 2 أولًا، ثم تابع العدّ 6 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 2: 3, 4, 5, 6, 7, 8.",
+            "explanation_ar": "عُدّ للأمام من 2: 3، 4، 5، 6، 7، 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 8.",
+            "explanation_ar": "تتوقف عند 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 − 6 = 2. ✓",
+            "explanation_ar": "تحقق: 8 − 6 = 2. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 2 dots, then 6 more.",
+            "explanation_ar": "ارسم 2 نقطة، ثم 6 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 8.",
+            "explanation_ar": "كل النقاط معًا = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A child has 6 candies. He eats 3. How many candies remain?",
+    "question_ar": "طفل لديه 6 حبة حلوى. أكل 3. كم حبة تبقّت؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 3 away from 6.",
+            "explanation_ar": "أزل 3 من 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 − 3 = 3.",
+            "explanation_ar": "6 − 3 = 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 3.",
+            "explanation_ar": "المتبقي = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 3.",
+            "explanation_ar": "الجواب: 3."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 6; count back 3.",
+            "explanation_ar": "ابدأ من 6؛ عُدّ للخلف 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 3.",
+            "explanation_ar": "تصل إلى 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "3 + 3 = 6. ✓",
+            "explanation_ar": "3 + 3 = 6. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 6 items; remove 3.",
+            "explanation_ar": "تخيّل 6 عناصر؛ أزل 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 6, hop back 3.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 6، اقفز للخلف 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 3.",
+            "explanation_ar": "تصل إلى 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 3 remain.",
+            "explanation_ar": "إذن يتبقى 3."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "There are 10 birds on a branch. 9 fly away. How many birds remain?",
+    "question_ar": "يوجد 10 طائر على غصن. يطير 9. كم طائرًا تبقّى؟",
+    "answer": 1,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 9 away from 10.",
+            "explanation_ar": "أزل 9 من 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "10 − 9 = 1.",
+            "explanation_ar": "10 − 9 = 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 1.",
+            "explanation_ar": "المتبقي = 1."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 1.",
+            "explanation_ar": "الجواب: 1."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 1",
+        "result_ar": "الجواب: 1"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 10; count back 9.",
+            "explanation_ar": "ابدأ من 10؛ عُدّ للخلف 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 1.",
+            "explanation_ar": "تصل إلى 1."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "1 + 9 = 10. ✓",
+            "explanation_ar": "1 + 9 = 10. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 1",
+        "result_ar": "الجواب: 1"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 10 items; remove 9.",
+            "explanation_ar": "تخيّل 10 عناصر؛ أزل 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 10, hop back 9.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 10، اقفز للخلف 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 1.",
+            "explanation_ar": "تصل إلى 1."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 1 remain.",
+            "explanation_ar": "إذن يتبقى 1."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 1",
+        "result_ar": "الجواب: 1"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A jar has 9 marbles. 6 marbles are taken out. How many marbles remain?",
+    "question_ar": "في الجرّة 9 كرة. أُخرج 6 كرة. كم كرة تبقّت؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 6 away from 9.",
+            "explanation_ar": "أزل 6 من 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 − 6 = 3.",
+            "explanation_ar": "9 − 6 = 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 3.",
+            "explanation_ar": "المتبقي = 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 3.",
+            "explanation_ar": "الجواب: 3."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 9; count back 6.",
+            "explanation_ar": "ابدأ من 9؛ عُدّ للخلف 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 3.",
+            "explanation_ar": "تصل إلى 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "3 + 6 = 9. ✓",
+            "explanation_ar": "3 + 6 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 9 items; remove 6.",
+            "explanation_ar": "تخيّل 9 عناصر؛ أزل 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 9, hop back 6.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 9، اقفز للخلف 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 3.",
+            "explanation_ar": "تصل إلى 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 3 remain.",
+            "explanation_ar": "إذن يتبقى 3."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A flower has 4 petals. How many petals on 2 flowers?",
+    "question_ar": "للزهرة 4 بتلة. كم بتلة على 2 زهرات؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 4 × 2.",
+            "explanation_ar": "هذه عملية ضرب: 4 × 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 × 2 = 8.",
+            "explanation_ar": "4 × 2 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 8.",
+            "explanation_ar": "الجواب 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 8.",
+            "explanation_ar": "إذن المجموع 8."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 2 equal groups of 4.",
+            "explanation_ar": "لدينا 2 مجموعات متساوية من 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 4 repeatedly: 4 × 2.",
+            "explanation_ar": "اجمع 4 مرارًا: 4 × 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 8.",
+            "explanation_ar": "= 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 2 groups of 4 items.",
+            "explanation_ar": "تخيّل 2 مجموعات من 4 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 4 × 2 grid of dots.",
+            "explanation_ar": "ارسم شبكة 4 × 2 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 8.",
+            "explanation_ar": "إجمالي النقاط = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A bag has 4 stickers. How many stickers in 3 bags?",
+    "question_ar": "في الكيس 4 ملصق. كم ملصقًا في 3 أكياس؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 4 × 3.",
+            "explanation_ar": "هذه عملية ضرب: 4 × 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 × 3 = 12.",
+            "explanation_ar": "4 × 3 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 12.",
+            "explanation_ar": "الجواب 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 12.",
+            "explanation_ar": "إذن المجموع 12."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 3 equal groups of 4.",
+            "explanation_ar": "لدينا 3 مجموعات متساوية من 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 4 repeatedly: 4 × 3.",
+            "explanation_ar": "اجمع 4 مرارًا: 4 × 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 12.",
+            "explanation_ar": "= 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 12.",
+            "explanation_ar": "المجموع = 12."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 3 groups of 4 items.",
+            "explanation_ar": "تخيّل 3 مجموعات من 4 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 4 × 3 grid of dots.",
+            "explanation_ar": "ارسم شبكة 4 × 3 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 12.",
+            "explanation_ar": "إجمالي النقاط = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 12.",
+            "explanation_ar": "إذن المجموع = 12."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "6 cookies are shared equally between 3 children. How many cookies per child?",
+    "question_ar": "6 حبة بسكويت تُقسَّم بالتساوي بين 3 طفل. كم حبة لكل طفل؟",
+    "answer": 2,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 6 equally into 3 parts.",
+            "explanation_ar": "قسّم 6 بالتساوي إلى 3 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 3 = 6? Answer 2.",
+            "explanation_ar": "ماذا × 3 = 6؟ الجواب 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 2.",
+            "explanation_ar": "كل جزء يحتوي 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 6 ÷ 3 = 2.",
+            "explanation_ar": "إذن 6 ÷ 3 = 2."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 6 one-by-one into 3 cups.",
+            "explanation_ar": "وزّع 6 واحدًا تلو الآخر في 3 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 2.",
+            "explanation_ar": "ينتهي كل كوب بـ 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "2 × 3 = 6. ✓",
+            "explanation_ar": "2 × 3 = 6. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 6 items shared between 3 friends.",
+            "explanation_ar": "تخيّل 6 عناصر تُقسَّم بين 3 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 3 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 3 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 2.",
+            "explanation_ar": "كل طبق فيه 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 2.",
+            "explanation_ar": "إذن كل جزء = 2."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "9 candies are placed equally into 3 jars. How many candies per jar?",
+    "question_ar": "9 حبة حلوى تُوضَع بالتساوي في 3 جرّتين. كم حبة في كل جرّة؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 9 equally into 3 parts.",
+            "explanation_ar": "قسّم 9 بالتساوي إلى 3 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 3 = 9? Answer 3.",
+            "explanation_ar": "ماذا × 3 = 9؟ الجواب 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 3.",
+            "explanation_ar": "كل جزء يحتوي 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 ÷ 3 = 3.",
+            "explanation_ar": "إذن 9 ÷ 3 = 3."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 9 one-by-one into 3 cups.",
+            "explanation_ar": "وزّع 9 واحدًا تلو الآخر في 3 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 3.",
+            "explanation_ar": "ينتهي كل كوب بـ 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "3 × 3 = 9. ✓",
+            "explanation_ar": "3 × 3 = 9. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 9 items shared between 3 friends.",
+            "explanation_ar": "تخيّل 9 عناصر تُقسَّم بين 3 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 3 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 3 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 3.",
+            "explanation_ar": "كل طبق فيه 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 3.",
+            "explanation_ar": "إذن كل جزء = 3."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A child in Doha has 2 red apples and 6 green apples. How many apples in all?",
+    "question_ar": "طفل في الدوحة لديه 2 تفاحة حمراء و 6 تفاحة خضراء. كم تفاحة في المجموع؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 2 and 6.",
+            "explanation_ar": "اجمع 2 و 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "2 + 6 = 8.",
+            "explanation_ar": "2 + 6 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 2 + 6 = 8.",
+            "explanation_ar": "إذن 2 + 6 = 8."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 2 first, then keep counting 6 more.",
+            "explanation_ar": "عُدّ 2 أولًا، ثم تابع العدّ 6 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 2: 3, 4, 5, 6, 7, 8.",
+            "explanation_ar": "عُدّ للأمام من 2: 3، 4، 5، 6، 7، 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 8.",
+            "explanation_ar": "تتوقف عند 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 8 − 6 = 2. ✓",
+            "explanation_ar": "تحقق: 8 − 6 = 2. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 2 dots, then 6 more.",
+            "explanation_ar": "ارسم 2 نقطة، ثم 6 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 8.",
+            "explanation_ar": "كل النقاط معًا = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "There are 2 ducks in a pond. 5 more ducks join. How many ducks now?",
+    "question_ar": "يوجد 2 بطة في بركة. تنضم 5 بطة أخرى. كم بطة الآن؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 2 and 5.",
+            "explanation_ar": "اجمع 2 و 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "2 + 5 = 7.",
+            "explanation_ar": "2 + 5 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 7.",
+            "explanation_ar": "المجموع = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 2 + 5 = 7.",
+            "explanation_ar": "إذن 2 + 5 = 7."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 2 first, then keep counting 5 more.",
+            "explanation_ar": "عُدّ 2 أولًا، ثم تابع العدّ 5 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 2: 3, 4, 5, 6, 7.",
+            "explanation_ar": "عُدّ للأمام من 2: 3، 4، 5، 6، 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 7.",
+            "explanation_ar": "تتوقف عند 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 7 − 5 = 2. ✓",
+            "explanation_ar": "تحقق: 7 − 5 = 2. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 2 dots, then 5 more.",
+            "explanation_ar": "ارسم 2 نقطة، ثم 5 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 7.",
+            "explanation_ar": "كل النقاط معًا = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 7.",
+            "explanation_ar": "إذن المجموع = 7."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A boy has 4 toy cars. His friend gives him 6 more. How many cars now?",
+    "question_ar": "ولد لديه 4 سيارة لعبة. صديقه أعطاه 6 أخرى. كم سيارة الآن؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 4 and 6.",
+            "explanation_ar": "اجمع 4 و 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 + 6 = 10.",
+            "explanation_ar": "4 + 6 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 10.",
+            "explanation_ar": "المجموع = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 4 + 6 = 10.",
+            "explanation_ar": "إذن 4 + 6 = 10."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 4 first, then keep counting 6 more.",
+            "explanation_ar": "عُدّ 4 أولًا، ثم تابع العدّ 6 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 4: 5, 6, 7, 8, 9, 10.",
+            "explanation_ar": "عُدّ للأمام من 4: 5، 6، 7، 8، 9، 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 10.",
+            "explanation_ar": "تتوقف عند 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 − 6 = 4. ✓",
+            "explanation_ar": "تحقق: 10 − 6 = 4. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 dots, then 6 more.",
+            "explanation_ar": "ارسم 4 نقطة، ثم 6 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 10.",
+            "explanation_ar": "كل النقاط معًا = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 10.",
+            "explanation_ar": "إذن المجموع = 10."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A child has 10 candies. He eats 1. How many candies remain?",
+    "question_ar": "طفل لديه 10 حبة حلوى. أكل 1. كم حبة تبقّت؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 1 away from 10.",
+            "explanation_ar": "أزل 1 من 10."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "10 − 1 = 9.",
+            "explanation_ar": "10 − 1 = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 9.",
+            "explanation_ar": "المتبقي = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 9.",
+            "explanation_ar": "الجواب: 9."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 10; count back 1.",
+            "explanation_ar": "ابدأ من 10؛ عُدّ للخلف 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تصل إلى 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "9 + 1 = 10. ✓",
+            "explanation_ar": "9 + 1 = 10. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 10 items; remove 1.",
+            "explanation_ar": "تخيّل 10 عناصر؛ أزل 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 10, hop back 1.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 10، اقفز للخلف 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تصل إلى 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 9 remain.",
+            "explanation_ar": "إذن يتبقى 9."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "There are 8 birds on a branch. 3 fly away. How many birds remain?",
+    "question_ar": "يوجد 8 طائر على غصن. يطير 3. كم طائرًا تبقّى؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 3 away from 8.",
+            "explanation_ar": "أزل 3 من 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "8 − 3 = 5.",
+            "explanation_ar": "8 − 3 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 5.",
+            "explanation_ar": "المتبقي = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 5.",
+            "explanation_ar": "الجواب: 5."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 8; count back 3.",
+            "explanation_ar": "ابدأ من 8؛ عُدّ للخلف 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تصل إلى 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "5 + 3 = 8. ✓",
+            "explanation_ar": "5 + 3 = 8. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 8 items; remove 3.",
+            "explanation_ar": "تخيّل 8 عناصر؛ أزل 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 8, hop back 3.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 8، اقفز للخلف 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تصل إلى 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 5 remain.",
+            "explanation_ar": "إذن يتبقى 5."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A jar has 6 marbles. 1 marbles are taken out. How many marbles remain?",
+    "question_ar": "في الجرّة 6 كرة. أُخرج 1 كرة. كم كرة تبقّت؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 1 away from 6.",
+            "explanation_ar": "أزل 1 من 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 − 1 = 5.",
+            "explanation_ar": "6 − 1 = 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 5.",
+            "explanation_ar": "المتبقي = 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 5.",
+            "explanation_ar": "الجواب: 5."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 6; count back 1.",
+            "explanation_ar": "ابدأ من 6؛ عُدّ للخلف 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تصل إلى 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "5 + 1 = 6. ✓",
+            "explanation_ar": "5 + 1 = 6. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 6 items; remove 1.",
+            "explanation_ar": "تخيّل 6 عناصر؛ أزل 1."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 6, hop back 1.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 6، اقفز للخلف 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 5.",
+            "explanation_ar": "تصل إلى 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 5 remain.",
+            "explanation_ar": "إذن يتبقى 5."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A flower has 3 petals. How many petals on 2 flowers?",
+    "question_ar": "للزهرة 3 بتلة. كم بتلة على 2 زهرات؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 3 × 2.",
+            "explanation_ar": "هذه عملية ضرب: 3 × 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "3 × 2 = 6.",
+            "explanation_ar": "3 × 2 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 6.",
+            "explanation_ar": "الجواب 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 6.",
+            "explanation_ar": "إذن المجموع 6."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 2 equal groups of 3.",
+            "explanation_ar": "لدينا 2 مجموعات متساوية من 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 3 repeatedly: 3 × 2.",
+            "explanation_ar": "اجمع 3 مرارًا: 3 × 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 6.",
+            "explanation_ar": "= 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 6.",
+            "explanation_ar": "المجموع = 6."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 2 groups of 3 items.",
+            "explanation_ar": "تخيّل 2 مجموعات من 3 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 3 × 2 grid of dots.",
+            "explanation_ar": "ارسم شبكة 3 × 2 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 6.",
+            "explanation_ar": "إجمالي النقاط = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 6.",
+            "explanation_ar": "إذن المجموع = 6."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "A bag has 4 stickers. How many stickers in 2 bags?",
+    "question_ar": "في الكيس 4 ملصق. كم ملصقًا في 2 أكياس؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 4 × 2.",
+            "explanation_ar": "هذه عملية ضرب: 4 × 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 × 2 = 8.",
+            "explanation_ar": "4 × 2 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 8.",
+            "explanation_ar": "الجواب 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 8.",
+            "explanation_ar": "إذن المجموع 8."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 2 equal groups of 4.",
+            "explanation_ar": "لدينا 2 مجموعات متساوية من 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 4 repeatedly: 4 × 2.",
+            "explanation_ar": "اجمع 4 مرارًا: 4 × 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 8.",
+            "explanation_ar": "= 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 2 groups of 4 items.",
+            "explanation_ar": "تخيّل 2 مجموعات من 4 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 4 × 2 grid of dots.",
+            "explanation_ar": "ارسم شبكة 4 × 2 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 8.",
+            "explanation_ar": "إجمالي النقاط = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "6 cookies are shared equally between 3 children. How many cookies per child?",
+    "question_ar": "6 حبة بسكويت تُقسَّم بالتساوي بين 3 طفل. كم حبة لكل طفل؟",
+    "answer": 2,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 6 equally into 3 parts.",
+            "explanation_ar": "قسّم 6 بالتساوي إلى 3 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 3 = 6? Answer 2.",
+            "explanation_ar": "ماذا × 3 = 6؟ الجواب 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 2.",
+            "explanation_ar": "كل جزء يحتوي 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 6 ÷ 3 = 2.",
+            "explanation_ar": "إذن 6 ÷ 3 = 2."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 6 one-by-one into 3 cups.",
+            "explanation_ar": "وزّع 6 واحدًا تلو الآخر في 3 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 2.",
+            "explanation_ar": "ينتهي كل كوب بـ 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "2 × 3 = 6. ✓",
+            "explanation_ar": "2 × 3 = 6. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 6 items shared between 3 friends.",
+            "explanation_ar": "تخيّل 6 عناصر تُقسَّم بين 3 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 3 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 3 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 2.",
+            "explanation_ar": "كل طبق فيه 2."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 2.",
+            "explanation_ar": "إذن كل جزء = 2."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 2",
+        "result_ar": "الجواب: 2"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-easy-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Easy",
+    "question_en": "6 candies are placed equally into 2 jars. How many candies per jar?",
+    "question_ar": "6 حبة حلوى تُوضَع بالتساوي في 2 جرّتين. كم حبة في كل جرّة؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 6 equally into 2 parts.",
+            "explanation_ar": "قسّم 6 بالتساوي إلى 2 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 2 = 6? Answer 3.",
+            "explanation_ar": "ماذا × 2 = 6؟ الجواب 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 3.",
+            "explanation_ar": "كل جزء يحتوي 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 6 ÷ 2 = 3.",
+            "explanation_ar": "إذن 6 ÷ 2 = 3."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 6 one-by-one into 2 cups.",
+            "explanation_ar": "وزّع 6 واحدًا تلو الآخر في 2 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 3.",
+            "explanation_ar": "ينتهي كل كوب بـ 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "3 × 2 = 6. ✓",
+            "explanation_ar": "3 × 2 = 6. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 6 items shared between 2 friends.",
+            "explanation_ar": "تخيّل 6 عناصر تُقسَّم بين 2 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 2 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 2 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 3.",
+            "explanation_ar": "كل طبق فيه 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 3.",
+            "explanation_ar": "إذن كل جزء = 3."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A child in Dubai has 6 balloons. She gets 8 more. How many balloons in total?",
+    "question_ar": "طفلة في دبي لديها 6 بالون. حصلت على 8 أخرى. كم بالونًا في المجموع؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 6 and 8.",
+            "explanation_ar": "اجمع 6 و 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 + 8 = 14.",
+            "explanation_ar": "6 + 8 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 14.",
+            "explanation_ar": "المجموع = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 6 + 8 = 14.",
+            "explanation_ar": "إذن 6 + 8 = 14."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 6 first, then keep counting 8 more.",
+            "explanation_ar": "عُدّ 6 أولًا، ثم تابع العدّ 8 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 6: 7, 8, 9, 10, 11, 12, 13, 14.",
+            "explanation_ar": "عُدّ للأمام من 6: 7، 8، 9، 10، 11، 12، 13، 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 14.",
+            "explanation_ar": "تتوقف عند 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 − 8 = 6. ✓",
+            "explanation_ar": "تحقق: 14 − 8 = 6. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 6 dots, then 8 more.",
+            "explanation_ar": "ارسم 6 نقطة، ثم 8 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 14.",
+            "explanation_ar": "كل النقاط معًا = 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 14.",
+            "explanation_ar": "إذن المجموع = 14."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "There are 9 pencils in a box and 7 pencils on the desk. How many pencils in all?",
+    "question_ar": "في الصندوق 9 قلم وعلى المكتب 7 قلم. كم قلمًا في المجموع؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 9 and 7.",
+            "explanation_ar": "اجمع 9 و 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 7 = 16.",
+            "explanation_ar": "9 + 7 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 16.",
+            "explanation_ar": "المجموع = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 7 = 16.",
+            "explanation_ar": "إذن 9 + 7 = 16."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 9 first, then keep counting 7 more.",
+            "explanation_ar": "عُدّ 9 أولًا، ثم تابع العدّ 7 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 9: 10, 11, 12, 13, 14, 15, 16.",
+            "explanation_ar": "عُدّ للأمام من 9: 10، 11، 12، 13، 14، 15، 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 16.",
+            "explanation_ar": "تتوقف عند 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 − 7 = 9. ✓",
+            "explanation_ar": "تحقق: 16 − 7 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 dots, then 7 more.",
+            "explanation_ar": "ارسم 9 نقطة، ثم 7 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 16.",
+            "explanation_ar": "كل النقاط معًا = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 16.",
+            "explanation_ar": "إذن المجموع = 16."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A child in Tokyo has 12 stickers. He gives 4 to his sister. How many remain?",
+    "question_ar": "طفل في طوكيو لديه 12 ملصق. أعطى 4 لأخته. كم تبقّى؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 4 away from 12.",
+            "explanation_ar": "أزل 4 من 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 − 4 = 8.",
+            "explanation_ar": "12 − 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 8.",
+            "explanation_ar": "المتبقي = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 8.",
+            "explanation_ar": "الجواب: 8."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 12; count back 4.",
+            "explanation_ar": "ابدأ من 12؛ عُدّ للخلف 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تصل إلى 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "8 + 4 = 12. ✓",
+            "explanation_ar": "8 + 4 = 12. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items; remove 4.",
+            "explanation_ar": "تخيّل 12 عناصر؛ أزل 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 12, hop back 4.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 12، اقفز للخلف 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تصل إلى 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 8 remain.",
+            "explanation_ar": "إذن يتبقى 8."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "There are 12 fish in a tank. 5 are sold. How many fish remain?",
+    "question_ar": "في الحوض 12 سمكة. بيع 5. كم سمكة تبقّت؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 5 away from 12.",
+            "explanation_ar": "أزل 5 من 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 − 5 = 7.",
+            "explanation_ar": "12 − 5 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 7.",
+            "explanation_ar": "المتبقي = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 12; count back 5.",
+            "explanation_ar": "ابدأ من 12؛ عُدّ للخلف 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تصل إلى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "7 + 5 = 12. ✓",
+            "explanation_ar": "7 + 5 = 12. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items; remove 5.",
+            "explanation_ar": "تخيّل 12 عناصر؛ أزل 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 12, hop back 5.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 12، اقفز للخلف 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تصل إلى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 7 remain.",
+            "explanation_ar": "إذن يتبقى 7."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "Each box has 5 crayons. How many crayons in 3 boxes?",
+    "question_ar": "في كل صندوق 5 طبشورة. كم طبشورة في 3 صناديق؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 5 × 3.",
+            "explanation_ar": "هذه عملية ضرب: 5 × 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "5 × 3 = 15.",
+            "explanation_ar": "5 × 3 = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 15.",
+            "explanation_ar": "الجواب 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 15.",
+            "explanation_ar": "إذن المجموع 15."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 3 equal groups of 5.",
+            "explanation_ar": "لدينا 3 مجموعات متساوية من 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 5 repeatedly: 5 × 3.",
+            "explanation_ar": "اجمع 5 مرارًا: 5 × 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 15.",
+            "explanation_ar": "= 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 15.",
+            "explanation_ar": "المجموع = 15."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 3 groups of 5 items.",
+            "explanation_ar": "تخيّل 3 مجموعات من 5 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 5 × 3 grid of dots.",
+            "explanation_ar": "ارسم شبكة 5 × 3 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 15.",
+            "explanation_ar": "إجمالي النقاط = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 15.",
+            "explanation_ar": "إذن المجموع = 15."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A page shows 4 stars. How many stars on 2 pages?",
+    "question_ar": "تُظهِر الصفحة 4 نجمة. كم نجمة على 2 صفحات؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 4 × 2.",
+            "explanation_ar": "هذه عملية ضرب: 4 × 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 × 2 = 8.",
+            "explanation_ar": "4 × 2 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 8.",
+            "explanation_ar": "الجواب 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 8.",
+            "explanation_ar": "إذن المجموع 8."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 2 equal groups of 4.",
+            "explanation_ar": "لدينا 2 مجموعات متساوية من 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 4 repeatedly: 4 × 2.",
+            "explanation_ar": "اجمع 4 مرارًا: 4 × 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 8.",
+            "explanation_ar": "= 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 2 groups of 4 items.",
+            "explanation_ar": "تخيّل 2 مجموعات من 4 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 4 × 2 grid of dots.",
+            "explanation_ar": "ارسم شبكة 4 × 2 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 8.",
+            "explanation_ar": "إجمالي النقاط = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "12 biscuits are shared equally among 4 children. How many biscuits per child?",
+    "question_ar": "12 حبة بسكويت تُقسَّم بالتساوي على 4 طفل. كم حبة لكل طفل؟",
+    "answer": 3,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 12 equally into 4 parts.",
+            "explanation_ar": "قسّم 12 بالتساوي إلى 4 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 4 = 12? Answer 3.",
+            "explanation_ar": "ماذا × 4 = 12؟ الجواب 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 3.",
+            "explanation_ar": "كل جزء يحتوي 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 12 ÷ 4 = 3.",
+            "explanation_ar": "إذن 12 ÷ 4 = 3."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 12 one-by-one into 4 cups.",
+            "explanation_ar": "وزّع 12 واحدًا تلو الآخر في 4 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 3.",
+            "explanation_ar": "ينتهي كل كوب بـ 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "3 × 4 = 12. ✓",
+            "explanation_ar": "3 × 4 = 12. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items shared between 4 friends.",
+            "explanation_ar": "تخيّل 12 عناصر تُقسَّم بين 4 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 4 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 3.",
+            "explanation_ar": "كل طبق فيه 3."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 3.",
+            "explanation_ar": "إذن كل جزء = 3."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 3",
+        "result_ar": "الجواب: 3"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A teacher in Mumbai gives 12 pencils equally to 3 students. How many pencils per student?",
+    "question_ar": "تعطي المعلّمة في مومباي 12 قلمًا بالتساوي لـ 3 طلاب. كم قلمًا لكل طالب؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 12 equally into 3 parts.",
+            "explanation_ar": "قسّم 12 بالتساوي إلى 3 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 3 = 12? Answer 4.",
+            "explanation_ar": "ماذا × 3 = 12؟ الجواب 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 4.",
+            "explanation_ar": "كل جزء يحتوي 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 12 ÷ 3 = 4.",
+            "explanation_ar": "إذن 12 ÷ 3 = 4."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 12 one-by-one into 3 cups.",
+            "explanation_ar": "وزّع 12 واحدًا تلو الآخر في 3 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 4.",
+            "explanation_ar": "ينتهي كل كوب بـ 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "4 × 3 = 12. ✓",
+            "explanation_ar": "4 × 3 = 12. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items shared between 3 friends.",
+            "explanation_ar": "تخيّل 12 عناصر تُقسَّم بين 3 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 3 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 3 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 4.",
+            "explanation_ar": "كل طبق فيه 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 4.",
+            "explanation_ar": "إذن كل جزء = 4."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A child in Sydney has 9 balloons. She gets 9 more. How many balloons in total?",
+    "question_ar": "طفلة في سيدني لديها 9 بالون. حصلت على 9 أخرى. كم بالونًا في المجموع؟",
+    "answer": 18,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 9 and 9.",
+            "explanation_ar": "اجمع 9 و 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 9 = 18.",
+            "explanation_ar": "9 + 9 = 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 18.",
+            "explanation_ar": "المجموع = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 9 = 18.",
+            "explanation_ar": "إذن 9 + 9 = 18."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 9 first, then keep counting 9 more.",
+            "explanation_ar": "عُدّ 9 أولًا، ثم تابع العدّ 9 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 9: 10, 11, 12, 13, 14, 15, 16, 17, 18.",
+            "explanation_ar": "عُدّ للأمام من 9: 10، 11، 12، 13، 14، 15، 16، 17، 18."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 18.",
+            "explanation_ar": "تتوقف عند 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 18 − 9 = 9. ✓",
+            "explanation_ar": "تحقق: 18 − 9 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 dots, then 9 more.",
+            "explanation_ar": "ارسم 9 نقطة، ثم 9 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 18.",
+            "explanation_ar": "كل النقاط معًا = 18."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 18.",
+            "explanation_ar": "إذن المجموع = 18."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 18",
+        "result_ar": "الجواب: 18"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "There are 5 pencils in a box and 6 pencils on the desk. How many pencils in all?",
+    "question_ar": "في الصندوق 5 قلم وعلى المكتب 6 قلم. كم قلمًا في المجموع؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 5 and 6.",
+            "explanation_ar": "اجمع 5 و 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "5 + 6 = 11.",
+            "explanation_ar": "5 + 6 = 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 11.",
+            "explanation_ar": "المجموع = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 5 + 6 = 11.",
+            "explanation_ar": "إذن 5 + 6 = 11."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 5 first, then keep counting 6 more.",
+            "explanation_ar": "عُدّ 5 أولًا، ثم تابع العدّ 6 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 5: 6, 7, 8, 9, 10, 11.",
+            "explanation_ar": "عُدّ للأمام من 5: 6، 7، 8، 9، 10، 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 11.",
+            "explanation_ar": "تتوقف عند 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 − 6 = 5. ✓",
+            "explanation_ar": "تحقق: 11 − 6 = 5. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 5 dots, then 6 more.",
+            "explanation_ar": "ارسم 5 نقطة، ثم 6 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 11.",
+            "explanation_ar": "كل النقاط معًا = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 11.",
+            "explanation_ar": "إذن المجموع = 11."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A child in Doha has 13 stickers. He gives 3 to his sister. How many remain?",
+    "question_ar": "طفل في الدوحة لديه 13 ملصق. أعطى 3 لأخته. كم تبقّى؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 3 away from 13.",
+            "explanation_ar": "أزل 3 من 13."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "13 − 3 = 10.",
+            "explanation_ar": "13 − 3 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 10.",
+            "explanation_ar": "المتبقي = 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 10.",
+            "explanation_ar": "الجواب: 10."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 13; count back 3.",
+            "explanation_ar": "ابدأ من 13؛ عُدّ للخلف 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تصل إلى 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "10 + 3 = 13. ✓",
+            "explanation_ar": "10 + 3 = 13. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 13 items; remove 3.",
+            "explanation_ar": "تخيّل 13 عناصر؛ أزل 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 13, hop back 3.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 13، اقفز للخلف 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تصل إلى 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 10 remain.",
+            "explanation_ar": "إذن يتبقى 10."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "There are 12 fish in a tank. 5 are sold. How many fish remain?",
+    "question_ar": "في الحوض 12 سمكة. بيع 5. كم سمكة تبقّت؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 5 away from 12.",
+            "explanation_ar": "أزل 5 من 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 − 5 = 7.",
+            "explanation_ar": "12 − 5 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 7.",
+            "explanation_ar": "المتبقي = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 12; count back 5.",
+            "explanation_ar": "ابدأ من 12؛ عُدّ للخلف 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تصل إلى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "7 + 5 = 12. ✓",
+            "explanation_ar": "7 + 5 = 12. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items; remove 5.",
+            "explanation_ar": "تخيّل 12 عناصر؛ أزل 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 12, hop back 5.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 12، اقفز للخلف 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 7.",
+            "explanation_ar": "تصل إلى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 7 remain.",
+            "explanation_ar": "إذن يتبقى 7."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "Each box has 3 crayons. How many crayons in 3 boxes?",
+    "question_ar": "في كل صندوق 3 طبشورة. كم طبشورة في 3 صناديق؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 3 × 3.",
+            "explanation_ar": "هذه عملية ضرب: 3 × 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "3 × 3 = 9.",
+            "explanation_ar": "3 × 3 = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 9.",
+            "explanation_ar": "الجواب 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 9.",
+            "explanation_ar": "إذن المجموع 9."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 3 equal groups of 3.",
+            "explanation_ar": "لدينا 3 مجموعات متساوية من 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 3 repeatedly: 3 × 3.",
+            "explanation_ar": "اجمع 3 مرارًا: 3 × 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 9.",
+            "explanation_ar": "= 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 9.",
+            "explanation_ar": "المجموع = 9."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 3 groups of 3 items.",
+            "explanation_ar": "تخيّل 3 مجموعات من 3 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 3 × 3 grid of dots.",
+            "explanation_ar": "ارسم شبكة 3 × 3 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 9.",
+            "explanation_ar": "إجمالي النقاط = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 9.",
+            "explanation_ar": "إذن المجموع = 9."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A page shows 2 stars. How many stars on 4 pages?",
+    "question_ar": "تُظهِر الصفحة 2 نجمة. كم نجمة على 4 صفحات؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "This is multiplication: 2 × 4.",
+            "explanation_ar": "هذه عملية ضرب: 2 × 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "2 × 4 = 8.",
+            "explanation_ar": "2 × 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "The answer is 8.",
+            "explanation_ar": "الجواب 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So the total is 8.",
+            "explanation_ar": "إذن المجموع 8."
+          }
+        ],
+        "hint_en": "Equal groups → multiply.",
+        "hint_ar": "مجموعات متساوية ← ضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "We have 4 equal groups of 2.",
+            "explanation_ar": "لدينا 4 مجموعات متساوية من 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Add 2 repeatedly: 2 × 4.",
+            "explanation_ar": "اجمع 2 مرارًا: 2 × 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 8.",
+            "explanation_ar": "= 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Total = 8.",
+            "explanation_ar": "المجموع = 8."
+          }
+        ],
+        "hint_en": "Repeated addition = multiplication.",
+        "hint_ar": "الجمع المتكرر = الضرب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 4 groups of 2 items.",
+            "explanation_ar": "تخيّل 4 مجموعات من 2 عناصر."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw a 2 × 4 grid of dots.",
+            "explanation_ar": "ارسم شبكة 2 × 4 من النقاط."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Total dots = 8.",
+            "explanation_ar": "إجمالي النقاط = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 8.",
+            "explanation_ar": "إذن المجموع = 8."
+          }
+        ],
+        "hint_en": "Visualize the array of dots.",
+        "hint_ar": "تخيّل مصفوفة النقاط.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "16 biscuits are shared equally among 4 children. How many biscuits per child?",
+    "question_ar": "16 حبة بسكويت تُقسَّم بالتساوي على 4 طفل. كم حبة لكل طفل؟",
+    "answer": 4,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 16 equally into 4 parts.",
+            "explanation_ar": "قسّم 16 بالتساوي إلى 4 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 4 = 16? Answer 4.",
+            "explanation_ar": "ماذا × 4 = 16؟ الجواب 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 4.",
+            "explanation_ar": "كل جزء يحتوي 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 16 ÷ 4 = 4.",
+            "explanation_ar": "إذن 16 ÷ 4 = 4."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 16 one-by-one into 4 cups.",
+            "explanation_ar": "وزّع 16 واحدًا تلو الآخر في 4 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 4.",
+            "explanation_ar": "ينتهي كل كوب بـ 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "4 × 4 = 16. ✓",
+            "explanation_ar": "4 × 4 = 16. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 16 items shared between 4 friends.",
+            "explanation_ar": "تخيّل 16 عناصر تُقسَّم بين 4 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 4 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 4.",
+            "explanation_ar": "كل طبق فيه 4."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 4.",
+            "explanation_ar": "إذن كل جزء = 4."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 4",
+        "result_ar": "الجواب: 4"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A teacher in Manama gives 15 pencils equally to 3 students. How many pencils per student?",
+    "question_ar": "تعطي المعلّمة في المنامة 15 قلمًا بالتساوي لـ 3 طلاب. كم قلمًا لكل طالب؟",
+    "answer": 5,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Share 15 equally into 3 parts.",
+            "explanation_ar": "قسّم 15 بالتساوي إلى 3 أجزاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "Which × 3 = 15? Answer 5.",
+            "explanation_ar": "ماذا × 3 = 15؟ الجواب 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Each part holds 5.",
+            "explanation_ar": "كل جزء يحتوي 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 15 ÷ 3 = 5.",
+            "explanation_ar": "إذن 15 ÷ 3 = 5."
+          }
+        ],
+        "hint_en": "Division = inverse of multiplication.",
+        "hint_ar": "القسمة = عكس الضرب.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Distribute 15 one-by-one into 3 cups.",
+            "explanation_ar": "وزّع 15 واحدًا تلو الآخر في 3 أكواب."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each round, every cup gets one more.",
+            "explanation_ar": "في كل جولة، كل كوب يأخذ واحدًا إضافيًا."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "Each cup ends with 5.",
+            "explanation_ar": "ينتهي كل كوب بـ 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "5 × 3 = 15. ✓",
+            "explanation_ar": "5 × 3 = 15. ✓"
+          }
+        ],
+        "hint_en": "Deal items round-robin.",
+        "hint_ar": "وزّع بالتدوير.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 15 items shared between 3 friends.",
+            "explanation_ar": "تخيّل 15 عناصر تُقسَّم بين 3 أصدقاء."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 3 equal plates; fill them evenly.",
+            "explanation_ar": "ارسم 3 أطباق متساوية؛ املأها بالتساوي."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Each plate has 5.",
+            "explanation_ar": "كل طبق فيه 5."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So each part = 5.",
+            "explanation_ar": "إذن كل جزء = 5."
+          }
+        ],
+        "hint_en": "Fair share between friends.",
+        "hint_ar": "قسمة عادلة بين الأصدقاء.",
+        "result_en": "Answer: 5",
+        "result_ar": "الجواب: 5"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A child in Dubai has 9 balloons. She gets 7 more. How many balloons in total?",
+    "question_ar": "طفلة في دبي لديها 9 بالون. حصلت على 7 أخرى. كم بالونًا في المجموع؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 9 and 7.",
+            "explanation_ar": "اجمع 9 و 7."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 7 = 16.",
+            "explanation_ar": "9 + 7 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 16.",
+            "explanation_ar": "المجموع = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 7 = 16.",
+            "explanation_ar": "إذن 9 + 7 = 16."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 9 first, then keep counting 7 more.",
+            "explanation_ar": "عُدّ 9 أولًا، ثم تابع العدّ 7 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 9: 10, 11, 12, 13, 14, 15, 16.",
+            "explanation_ar": "عُدّ للأمام من 9: 10، 11، 12، 13، 14، 15، 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 16.",
+            "explanation_ar": "تتوقف عند 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 − 7 = 9. ✓",
+            "explanation_ar": "تحقق: 16 − 7 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 dots, then 7 more.",
+            "explanation_ar": "ارسم 9 نقطة، ثم 7 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 16.",
+            "explanation_ar": "كل النقاط معًا = 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 16.",
+            "explanation_ar": "إذن المجموع = 16."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "There are 9 pencils in a box and 6 pencils on the desk. How many pencils in all?",
+    "question_ar": "في الصندوق 9 قلم وعلى المكتب 6 قلم. كم قلمًا في المجموع؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 9 and 6.",
+            "explanation_ar": "اجمع 9 و 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 6 = 15.",
+            "explanation_ar": "9 + 6 = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 15.",
+            "explanation_ar": "المجموع = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 6 = 15.",
+            "explanation_ar": "إذن 9 + 6 = 15."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 9 first, then keep counting 6 more.",
+            "explanation_ar": "عُدّ 9 أولًا، ثم تابع العدّ 6 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 9: 10, 11, 12, 13, 14, 15.",
+            "explanation_ar": "عُدّ للأمام من 9: 10، 11، 12، 13، 14، 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 15.",
+            "explanation_ar": "تتوقف عند 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 − 6 = 9. ✓",
+            "explanation_ar": "تحقق: 15 − 6 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 dots, then 6 more.",
+            "explanation_ar": "ارسم 9 نقطة، ثم 6 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 15.",
+            "explanation_ar": "كل النقاط معًا = 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 15.",
+            "explanation_ar": "إذن المجموع = 15."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "A child in Tokyo has 16 stickers. He gives 8 to his sister. How many remain?",
+    "question_ar": "طفل في طوكيو لديه 16 ملصق. أعطى 8 لأخته. كم تبقّى؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 8 away from 16.",
+            "explanation_ar": "أزل 8 من 16."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "16 − 8 = 8.",
+            "explanation_ar": "16 − 8 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 8.",
+            "explanation_ar": "المتبقي = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 8.",
+            "explanation_ar": "الجواب: 8."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 16; count back 8.",
+            "explanation_ar": "ابدأ من 16؛ عُدّ للخلف 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تصل إلى 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "8 + 8 = 16. ✓",
+            "explanation_ar": "8 + 8 = 16. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 16 items; remove 8.",
+            "explanation_ar": "تخيّل 16 عناصر؛ أزل 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 16, hop back 8.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 16، اقفز للخلف 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 8.",
+            "explanation_ar": "تصل إلى 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 8 remain.",
+            "explanation_ar": "إذن يتبقى 8."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-medium-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Medium",
+    "question_en": "There are 12 fish in a tank. 3 are sold. How many fish remain?",
+    "question_ar": "في الحوض 12 سمكة. بيع 3. كم سمكة تبقّت؟",
+    "answer": 9,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Take 3 away from 12.",
+            "explanation_ar": "أزل 3 من 12."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 − 3 = 9.",
+            "explanation_ar": "12 − 3 = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Remaining = 9.",
+            "explanation_ar": "المتبقي = 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 9.",
+            "explanation_ar": "الجواب: 9."
+          }
+        ],
+        "hint_en": "'Remain/left' → subtract.",
+        "hint_ar": "'تبقّى' ← اطرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Start at 12; count back 3.",
+            "explanation_ar": "ابدأ من 12؛ عُدّ للخلف 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Each step back removes 1.",
+            "explanation_ar": "كل خطوة للخلف تطرح 1."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تصل إلى 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "9 + 3 = 12. ✓",
+            "explanation_ar": "9 + 3 = 12. ✓"
+          }
+        ],
+        "hint_en": "Count back to subtract.",
+        "hint_ar": "عُدّ للخلف للطرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items; remove 3.",
+            "explanation_ar": "تخيّل 12 عناصر؛ أزل 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 12, hop back 3.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 12، اقفز للخلف 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 9.",
+            "explanation_ar": "تصل إلى 9."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 9 remain.",
+            "explanation_ar": "إذن يتبقى 9."
+          }
+        ],
+        "hint_en": "Hop backward to subtract.",
+        "hint_ar": "اقفز للخلف للطرح.",
+        "result_en": "Answer: 9",
+        "result_ar": "الجواب: 9"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-001",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child in Dubai has 4 red marbles and 8 blue marbles. He gives 5 marbles away. How many marbles remain?",
+    "question_ar": "طفل في دبي لديه 4 كرة حمراء و 8 كرة زرقاء. أعطى 5 كرة. كم كرة تبقّت؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 4 + 8, then subtract 5.",
+            "explanation_ar": "اجمع 4 + 8 أولًا، ثم اطرح 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 + 8 = 12; 12 − 5 = 7.",
+            "explanation_ar": "4 + 8 = 12؛ 12 − 5 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 12.",
+            "explanation_ar": "المجموع البدائي = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 12 − 5 = 7.",
+            "explanation_ar": "بعد العطاء: 12 − 5 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(7) + 5 = 12. ✓",
+            "explanation_ar": "(7) + 5 = 12. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 + 8 dots side by side.",
+            "explanation_ar": "ارسم 4 + 8 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 5; left with 7.",
+            "explanation_ar": "اشطب 5؛ يتبقى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-002",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A bag has 8 pencils and 7 pens. The teacher takes 3 away. How many remain?",
+    "question_ar": "في الكيس 8 قلم رصاص و 7 قلم حبر. أخذت المعلّمة 3. كم تبقّى؟",
+    "answer": 12,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 8 + 7, then subtract 3.",
+            "explanation_ar": "اجمع 8 + 7 أولًا، ثم اطرح 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "8 + 7 = 15; 15 − 3 = 12.",
+            "explanation_ar": "8 + 7 = 15؛ 15 − 3 = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 12.",
+            "explanation_ar": "الجواب: 12."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 15.",
+            "explanation_ar": "المجموع البدائي = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 15 − 3 = 12.",
+            "explanation_ar": "بعد العطاء: 15 − 3 = 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(12) + 3 = 15. ✓",
+            "explanation_ar": "(12) + 3 = 15. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 8 + 7 dots side by side.",
+            "explanation_ar": "ارسم 8 + 7 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 3; left with 12.",
+            "explanation_ar": "اشطب 3؛ يتبقى 12."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 12.",
+            "explanation_ar": "الجواب: 12."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 12",
+        "result_ar": "الجواب: 12"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-003",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A jar has 20 candies. The child eats 2, then his sister eats 2. How many remain?",
+    "question_ar": "في الجرّة 20 حبة حلوى. أكل الطفل 2، ثم أكلت أخته 2. كم تبقّى؟",
+    "answer": 16,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Subtract 2, then subtract 2.",
+            "explanation_ar": "اطرح 2، ثم اطرح 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "20 − 2 = 18; 18 − 2 = 16.",
+            "explanation_ar": "20 − 2 = 18؛ 18 − 2 = 16."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Take away twice in a row.",
+            "explanation_ar": "اطرح مرتين على التوالي."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 16.",
+            "explanation_ar": "الجواب: 16."
+          }
+        ],
+        "hint_en": "Subtract once, then again.",
+        "hint_ar": "اطرح مرة، ثم مرة أخرى.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Total removed = 2 + 2 = 4.",
+            "explanation_ar": "إجمالي المُزال = 2 + 2 = 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So we can do one subtraction: 20 − 4.",
+            "explanation_ar": "إذن يمكننا الطرح مرة واحدة: 20 − 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 16.",
+            "explanation_ar": "= 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 16 + 2 + 2 = 20. ✓",
+            "explanation_ar": "تحقق: 16 + 2 + 2 = 20. ✓"
+          }
+        ],
+        "hint_en": "Add the removals, then subtract once.",
+        "hint_ar": "اجمع الإزالات، ثم اطرح مرة واحدة.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 20 items; first 2 are taken, then 2 more.",
+            "explanation_ar": "تخيّل 20 عناصر؛ أُخذ 2 أولًا، ثم 2 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 20, hop back 2, then hop back 2.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 20، اقفز للخلف 2، ثم 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 16.",
+            "explanation_ar": "تصل إلى 16."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 16 remain.",
+            "explanation_ar": "إذن يتبقى 16."
+          }
+        ],
+        "hint_en": "Two backward hops on a number line.",
+        "hint_ar": "قفزتان للخلف على خط الأعداد.",
+        "result_en": "Answer: 16",
+        "result_ar": "الجواب: 16"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-004",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child has 9 stickers. He gets 4 more, then gives away 6. How many stickers remain?",
+    "question_ar": "طفل لديه 9 ملصق. حصل على 4 أخرى، ثم أعطى 6. كم ملصقًا تبقّى؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 9 + 4, then subtract 6.",
+            "explanation_ar": "اجمع 9 + 4 أولًا، ثم اطرح 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 4 = 13; 13 − 6 = 7.",
+            "explanation_ar": "9 + 4 = 13؛ 13 − 6 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 13.",
+            "explanation_ar": "المجموع البدائي = 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 13 − 6 = 7.",
+            "explanation_ar": "بعد العطاء: 13 − 6 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(7) + 6 = 13. ✓",
+            "explanation_ar": "(7) + 6 = 13. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 + 4 dots side by side.",
+            "explanation_ar": "ارسم 9 + 4 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 6; left with 7.",
+            "explanation_ar": "اشطب 6؛ يتبقى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-005",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A teacher in Nairobi has 20 pencils. She gives 2 to one student and 4 to another. How many pencils remain?",
+    "question_ar": "معلّمة في نيروبي لديها 20 قلم. أعطت 2 لطالب و 4 لآخر. كم قلمًا تبقّى؟",
+    "answer": 14,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Subtract 2, then subtract 4.",
+            "explanation_ar": "اطرح 2، ثم اطرح 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "20 − 2 = 18; 18 − 4 = 14.",
+            "explanation_ar": "20 − 2 = 18؛ 18 − 4 = 14."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Take away twice in a row.",
+            "explanation_ar": "اطرح مرتين على التوالي."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 14.",
+            "explanation_ar": "الجواب: 14."
+          }
+        ],
+        "hint_en": "Subtract once, then again.",
+        "hint_ar": "اطرح مرة، ثم مرة أخرى.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Total removed = 2 + 4 = 6.",
+            "explanation_ar": "إجمالي المُزال = 2 + 4 = 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So we can do one subtraction: 20 − 6.",
+            "explanation_ar": "إذن يمكننا الطرح مرة واحدة: 20 − 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 14.",
+            "explanation_ar": "= 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 14 + 2 + 4 = 20. ✓",
+            "explanation_ar": "تحقق: 14 + 2 + 4 = 20. ✓"
+          }
+        ],
+        "hint_en": "Add the removals, then subtract once.",
+        "hint_ar": "اجمع الإزالات، ثم اطرح مرة واحدة.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 20 items; first 2 are taken, then 4 more.",
+            "explanation_ar": "تخيّل 20 عناصر؛ أُخذ 2 أولًا، ثم 4 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 20, hop back 2, then hop back 4.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 20، اقفز للخلف 2، ثم 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 14.",
+            "explanation_ar": "تصل إلى 14."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 14 remain.",
+            "explanation_ar": "إذن يتبقى 14."
+          }
+        ],
+        "hint_en": "Two backward hops on a number line.",
+        "hint_ar": "قفزتان للخلف على خط الأعداد.",
+        "result_en": "Answer: 14",
+        "result_ar": "الجواب: 14"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-006",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A boy has 13 apples. He buys 8 more. How many apples in total?",
+    "question_ar": "ولد لديه 13 تفاحة. اشترى 8 أخرى. كم تفاحة في المجموع؟",
+    "answer": 21,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 13 and 8.",
+            "explanation_ar": "اجمع 13 و 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "13 + 8 = 21.",
+            "explanation_ar": "13 + 8 = 21."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 21.",
+            "explanation_ar": "المجموع = 21."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 13 + 8 = 21.",
+            "explanation_ar": "إذن 13 + 8 = 21."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 21",
+        "result_ar": "الجواب: 21"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 13 first, then keep counting 8 more.",
+            "explanation_ar": "عُدّ 13 أولًا، ثم تابع العدّ 8 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 13: 14, 15, 16, 17, 18, 19, 20, 21.",
+            "explanation_ar": "عُدّ للأمام من 13: 14، 15، 16، 17، 18، 19، 20، 21."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 21.",
+            "explanation_ar": "تتوقف عند 21."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 21 − 8 = 13. ✓",
+            "explanation_ar": "تحقق: 21 − 8 = 13. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 21",
+        "result_ar": "الجواب: 21"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 13 dots, then 8 more.",
+            "explanation_ar": "ارسم 13 نقطة، ثم 8 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 21.",
+            "explanation_ar": "كل النقاط معًا = 21."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 21.",
+            "explanation_ar": "إذن المجموع = 21."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 21",
+        "result_ar": "الجواب: 21"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-007",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child in London has 5 red marbles and 5 blue marbles. He gives 4 marbles away. How many marbles remain?",
+    "question_ar": "طفل في لندن لديه 5 كرة حمراء و 5 كرة زرقاء. أعطى 4 كرة. كم كرة تبقّت؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 5 + 5, then subtract 4.",
+            "explanation_ar": "اجمع 5 + 5 أولًا، ثم اطرح 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "5 + 5 = 10; 10 − 4 = 6.",
+            "explanation_ar": "5 + 5 = 10؛ 10 − 4 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 6.",
+            "explanation_ar": "الجواب: 6."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 10.",
+            "explanation_ar": "المجموع البدائي = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 10 − 4 = 6.",
+            "explanation_ar": "بعد العطاء: 10 − 4 = 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(6) + 4 = 10. ✓",
+            "explanation_ar": "(6) + 4 = 10. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 5 + 5 dots side by side.",
+            "explanation_ar": "ارسم 5 + 5 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 4; left with 6.",
+            "explanation_ar": "اشطب 4؛ يتبقى 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 6.",
+            "explanation_ar": "الجواب: 6."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-008",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A bag has 6 pencils and 4 pens. The teacher takes 3 away. How many remain?",
+    "question_ar": "في الكيس 6 قلم رصاص و 4 قلم حبر. أخذت المعلّمة 3. كم تبقّى؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 6 + 4, then subtract 3.",
+            "explanation_ar": "اجمع 6 + 4 أولًا، ثم اطرح 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 + 4 = 10; 10 − 3 = 7.",
+            "explanation_ar": "6 + 4 = 10؛ 10 − 3 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 10.",
+            "explanation_ar": "المجموع البدائي = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 10 − 3 = 7.",
+            "explanation_ar": "بعد العطاء: 10 − 3 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(7) + 3 = 10. ✓",
+            "explanation_ar": "(7) + 3 = 10. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 6 + 4 dots side by side.",
+            "explanation_ar": "ارسم 6 + 4 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 3; left with 7.",
+            "explanation_ar": "اشطب 3؛ يتبقى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-009",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A jar has 19 candies. The child eats 4, then his sister eats 4. How many remain?",
+    "question_ar": "في الجرّة 19 حبة حلوى. أكل الطفل 4، ثم أكلت أخته 4. كم تبقّى؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Subtract 4, then subtract 4.",
+            "explanation_ar": "اطرح 4، ثم اطرح 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "19 − 4 = 15; 15 − 4 = 11.",
+            "explanation_ar": "19 − 4 = 15؛ 15 − 4 = 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Take away twice in a row.",
+            "explanation_ar": "اطرح مرتين على التوالي."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 11.",
+            "explanation_ar": "الجواب: 11."
+          }
+        ],
+        "hint_en": "Subtract once, then again.",
+        "hint_ar": "اطرح مرة، ثم مرة أخرى.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Total removed = 4 + 4 = 8.",
+            "explanation_ar": "إجمالي المُزال = 4 + 4 = 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So we can do one subtraction: 19 − 8.",
+            "explanation_ar": "إذن يمكننا الطرح مرة واحدة: 19 − 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 11.",
+            "explanation_ar": "= 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 11 + 4 + 4 = 19. ✓",
+            "explanation_ar": "تحقق: 11 + 4 + 4 = 19. ✓"
+          }
+        ],
+        "hint_en": "Add the removals, then subtract once.",
+        "hint_ar": "اجمع الإزالات، ثم اطرح مرة واحدة.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 19 items; first 4 are taken, then 4 more.",
+            "explanation_ar": "تخيّل 19 عناصر؛ أُخذ 4 أولًا، ثم 4 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 19, hop back 4, then hop back 4.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 19، اقفز للخلف 4، ثم 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 11.",
+            "explanation_ar": "تصل إلى 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 11 remain.",
+            "explanation_ar": "إذن يتبقى 11."
+          }
+        ],
+        "hint_en": "Two backward hops on a number line.",
+        "hint_ar": "قفزتان للخلف على خط الأعداد.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-010",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child has 7 stickers. He gets 6 more, then gives away 5. How many stickers remain?",
+    "question_ar": "طفل لديه 7 ملصق. حصل على 6 أخرى، ثم أعطى 5. كم ملصقًا تبقّى؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 7 + 6, then subtract 5.",
+            "explanation_ar": "اجمع 7 + 6 أولًا، ثم اطرح 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "7 + 6 = 13; 13 − 5 = 8.",
+            "explanation_ar": "7 + 6 = 13؛ 13 − 5 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 8.",
+            "explanation_ar": "الجواب: 8."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 13.",
+            "explanation_ar": "المجموع البدائي = 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 13 − 5 = 8.",
+            "explanation_ar": "بعد العطاء: 13 − 5 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(8) + 5 = 13. ✓",
+            "explanation_ar": "(8) + 5 = 13. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 7 + 6 dots side by side.",
+            "explanation_ar": "ارسم 7 + 6 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 5; left with 8.",
+            "explanation_ar": "اشطب 5؛ يتبقى 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 8.",
+            "explanation_ar": "الجواب: 8."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-011",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A teacher in Doha has 15 pencils. She gives 2 to one student and 3 to another. How many pencils remain?",
+    "question_ar": "معلّمة في الدوحة لديها 15 قلم. أعطت 2 لطالب و 3 لآخر. كم قلمًا تبقّى؟",
+    "answer": 10,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Subtract 2, then subtract 3.",
+            "explanation_ar": "اطرح 2، ثم اطرح 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "15 − 2 = 13; 13 − 3 = 10.",
+            "explanation_ar": "15 − 2 = 13؛ 13 − 3 = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Take away twice in a row.",
+            "explanation_ar": "اطرح مرتين على التوالي."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 10.",
+            "explanation_ar": "الجواب: 10."
+          }
+        ],
+        "hint_en": "Subtract once, then again.",
+        "hint_ar": "اطرح مرة، ثم مرة أخرى.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Total removed = 2 + 3 = 5.",
+            "explanation_ar": "إجمالي المُزال = 2 + 3 = 5."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So we can do one subtraction: 15 − 5.",
+            "explanation_ar": "إذن يمكننا الطرح مرة واحدة: 15 − 5."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 10.",
+            "explanation_ar": "= 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 10 + 2 + 3 = 15. ✓",
+            "explanation_ar": "تحقق: 10 + 2 + 3 = 15. ✓"
+          }
+        ],
+        "hint_en": "Add the removals, then subtract once.",
+        "hint_ar": "اجمع الإزالات، ثم اطرح مرة واحدة.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 15 items; first 2 are taken, then 3 more.",
+            "explanation_ar": "تخيّل 15 عناصر؛ أُخذ 2 أولًا، ثم 3 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 15, hop back 2, then hop back 3.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 15، اقفز للخلف 2، ثم 3."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 10.",
+            "explanation_ar": "تصل إلى 10."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 10 remain.",
+            "explanation_ar": "إذن يتبقى 10."
+          }
+        ],
+        "hint_en": "Two backward hops on a number line.",
+        "hint_ar": "قفزتان للخلف على خط الأعداد.",
+        "result_en": "Answer: 10",
+        "result_ar": "الجواب: 10"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-012",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A boy has 9 apples. He buys 8 more. How many apples in total?",
+    "question_ar": "ولد لديه 9 تفاحة. اشترى 8 أخرى. كم تفاحة في المجموع؟",
+    "answer": 17,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 9 and 8.",
+            "explanation_ar": "اجمع 9 و 8."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 8 = 17.",
+            "explanation_ar": "9 + 8 = 17."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 17.",
+            "explanation_ar": "المجموع = 17."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 9 + 8 = 17.",
+            "explanation_ar": "إذن 9 + 8 = 17."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 17",
+        "result_ar": "الجواب: 17"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 9 first, then keep counting 8 more.",
+            "explanation_ar": "عُدّ 9 أولًا، ثم تابع العدّ 8 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 9: 10, 11, 12, 13, 14, 15, 16, 17.",
+            "explanation_ar": "عُدّ للأمام من 9: 10، 11، 12، 13، 14، 15، 16، 17."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 17.",
+            "explanation_ar": "تتوقف عند 17."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 17 − 8 = 9. ✓",
+            "explanation_ar": "تحقق: 17 − 8 = 9. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 17",
+        "result_ar": "الجواب: 17"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 dots, then 8 more.",
+            "explanation_ar": "ارسم 9 نقطة، ثم 8 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 17.",
+            "explanation_ar": "كل النقاط معًا = 17."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 17.",
+            "explanation_ar": "إذن المجموع = 17."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 17",
+        "result_ar": "الجواب: 17"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-013",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child in Beirut has 9 red marbles and 6 blue marbles. He gives 2 marbles away. How many marbles remain?",
+    "question_ar": "طفل في بيروت لديه 9 كرة حمراء و 6 كرة زرقاء. أعطى 2 كرة. كم كرة تبقّت؟",
+    "answer": 13,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 9 + 6, then subtract 2.",
+            "explanation_ar": "اجمع 9 + 6 أولًا، ثم اطرح 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "9 + 6 = 15; 15 − 2 = 13.",
+            "explanation_ar": "9 + 6 = 15؛ 15 − 2 = 13."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 13.",
+            "explanation_ar": "الجواب: 13."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 15.",
+            "explanation_ar": "المجموع البدائي = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 15 − 2 = 13.",
+            "explanation_ar": "بعد العطاء: 15 − 2 = 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(13) + 2 = 15. ✓",
+            "explanation_ar": "(13) + 2 = 15. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 9 + 6 dots side by side.",
+            "explanation_ar": "ارسم 9 + 6 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 2; left with 13.",
+            "explanation_ar": "اشطب 2؛ يتبقى 13."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 13.",
+            "explanation_ar": "الجواب: 13."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 13",
+        "result_ar": "الجواب: 13"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-014",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A bag has 4 pencils and 5 pens. The teacher takes 2 away. How many remain?",
+    "question_ar": "في الكيس 4 قلم رصاص و 5 قلم حبر. أخذت المعلّمة 2. كم تبقّى؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 4 + 5, then subtract 2.",
+            "explanation_ar": "اجمع 4 + 5 أولًا، ثم اطرح 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 + 5 = 9; 9 − 2 = 7.",
+            "explanation_ar": "4 + 5 = 9؛ 9 − 2 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 9.",
+            "explanation_ar": "المجموع البدائي = 9."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 9 − 2 = 7.",
+            "explanation_ar": "بعد العطاء: 9 − 2 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(7) + 2 = 9. ✓",
+            "explanation_ar": "(7) + 2 = 9. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 + 5 dots side by side.",
+            "explanation_ar": "ارسم 4 + 5 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 2; left with 7.",
+            "explanation_ar": "اشطب 2؛ يتبقى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-015",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A jar has 19 candies. The child eats 2, then his sister eats 2. How many remain?",
+    "question_ar": "في الجرّة 19 حبة حلوى. أكل الطفل 2، ثم أكلت أخته 2. كم تبقّى؟",
+    "answer": 15,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Subtract 2, then subtract 2.",
+            "explanation_ar": "اطرح 2، ثم اطرح 2."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "19 − 2 = 17; 17 − 2 = 15.",
+            "explanation_ar": "19 − 2 = 17؛ 17 − 2 = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Take away twice in a row.",
+            "explanation_ar": "اطرح مرتين على التوالي."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 15.",
+            "explanation_ar": "الجواب: 15."
+          }
+        ],
+        "hint_en": "Subtract once, then again.",
+        "hint_ar": "اطرح مرة، ثم مرة أخرى.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Total removed = 2 + 2 = 4.",
+            "explanation_ar": "إجمالي المُزال = 2 + 2 = 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So we can do one subtraction: 19 − 4.",
+            "explanation_ar": "إذن يمكننا الطرح مرة واحدة: 19 − 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 15.",
+            "explanation_ar": "= 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 15 + 2 + 2 = 19. ✓",
+            "explanation_ar": "تحقق: 15 + 2 + 2 = 19. ✓"
+          }
+        ],
+        "hint_en": "Add the removals, then subtract once.",
+        "hint_ar": "اجمع الإزالات، ثم اطرح مرة واحدة.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 19 items; first 2 are taken, then 2 more.",
+            "explanation_ar": "تخيّل 19 عناصر؛ أُخذ 2 أولًا، ثم 2 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 19, hop back 2, then hop back 2.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 19، اقفز للخلف 2، ثم 2."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 15.",
+            "explanation_ar": "تصل إلى 15."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 15 remain.",
+            "explanation_ar": "إذن يتبقى 15."
+          }
+        ],
+        "hint_en": "Two backward hops on a number line.",
+        "hint_ar": "قفزتان للخلف على خط الأعداد.",
+        "result_en": "Answer: 15",
+        "result_ar": "الجواب: 15"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-016",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child has 6 stickers. He gets 4 more, then gives away 3. How many stickers remain?",
+    "question_ar": "طفل لديه 6 ملصق. حصل على 4 أخرى، ثم أعطى 3. كم ملصقًا تبقّى؟",
+    "answer": 7,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 6 + 4, then subtract 3.",
+            "explanation_ar": "اجمع 6 + 4 أولًا، ثم اطرح 3."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "6 + 4 = 10; 10 − 3 = 7.",
+            "explanation_ar": "6 + 4 = 10؛ 10 − 3 = 7."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 10.",
+            "explanation_ar": "المجموع البدائي = 10."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 10 − 3 = 7.",
+            "explanation_ar": "بعد العطاء: 10 − 3 = 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(7) + 3 = 10. ✓",
+            "explanation_ar": "(7) + 3 = 10. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 6 + 4 dots side by side.",
+            "explanation_ar": "ارسم 6 + 4 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 3; left with 7.",
+            "explanation_ar": "اشطب 3؛ يتبقى 7."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 7.",
+            "explanation_ar": "الجواب: 7."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 7",
+        "result_ar": "الجواب: 7"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-017",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A teacher in Dubai has 12 pencils. She gives 2 to one student and 4 to another. How many pencils remain?",
+    "question_ar": "معلّمة في دبي لديها 12 قلم. أعطت 2 لطالب و 4 لآخر. كم قلمًا تبقّى؟",
+    "answer": 6,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Subtract 2, then subtract 4.",
+            "explanation_ar": "اطرح 2، ثم اطرح 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "12 − 2 = 10; 10 − 4 = 6.",
+            "explanation_ar": "12 − 2 = 10؛ 10 − 4 = 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Take away twice in a row.",
+            "explanation_ar": "اطرح مرتين على التوالي."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 6.",
+            "explanation_ar": "الجواب: 6."
+          }
+        ],
+        "hint_en": "Subtract once, then again.",
+        "hint_ar": "اطرح مرة، ثم مرة أخرى.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Total removed = 2 + 4 = 6.",
+            "explanation_ar": "إجمالي المُزال = 2 + 4 = 6."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "So we can do one subtraction: 12 − 6.",
+            "explanation_ar": "إذن يمكننا الطرح مرة واحدة: 12 − 6."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "= 6.",
+            "explanation_ar": "= 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 6 + 2 + 4 = 12. ✓",
+            "explanation_ar": "تحقق: 6 + 2 + 4 = 12. ✓"
+          }
+        ],
+        "hint_en": "Add the removals, then subtract once.",
+        "hint_ar": "اجمع الإزالات، ثم اطرح مرة واحدة.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture 12 items; first 2 are taken, then 4 more.",
+            "explanation_ar": "تخيّل 12 عناصر؛ أُخذ 2 أولًا، ثم 4 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "On a number line, start at 12, hop back 2, then hop back 4.",
+            "explanation_ar": "على خط الأعداد، ابدأ من 12، اقفز للخلف 2، ثم 4."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "You land on 6.",
+            "explanation_ar": "تصل إلى 6."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So 6 remain.",
+            "explanation_ar": "إذن يتبقى 6."
+          }
+        ],
+        "hint_en": "Two backward hops on a number line.",
+        "hint_ar": "قفزتان للخلف على خط الأعداد.",
+        "result_en": "Answer: 6",
+        "result_ar": "الجواب: 6"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-018",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A boy has 14 apples. He buys 9 more. How many apples in total?",
+    "question_ar": "ولد لديه 14 تفاحة. اشترى 9 أخرى. كم تفاحة في المجموع؟",
+    "answer": 23,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "Combine 14 and 9.",
+            "explanation_ar": "اجمع 14 و 9."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "14 + 9 = 23.",
+            "explanation_ar": "14 + 9 = 23."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Total = 23.",
+            "explanation_ar": "المجموع = 23."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "So 14 + 9 = 23.",
+            "explanation_ar": "إذن 14 + 9 = 23."
+          }
+        ],
+        "hint_en": "'In all' → add.",
+        "hint_ar": "'في المجموع' ← اجمع.",
+        "result_en": "Answer: 23",
+        "result_ar": "الجواب: 23"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Count 14 first, then keep counting 9 more.",
+            "explanation_ar": "عُدّ 14 أولًا، ثم تابع العدّ 9 أخرى."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Count on from 14: 15, 16, 17, 18, 19, 20, 21, 22, 23.",
+            "explanation_ar": "عُدّ للأمام من 14: 15، 16، 17، 18، 19، 20، 21، 22، 23."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "You stop at 23.",
+            "explanation_ar": "تتوقف عند 23."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "Check: 23 − 9 = 14. ✓",
+            "explanation_ar": "تحقق: 23 − 9 = 14. ✓"
+          }
+        ],
+        "hint_en": "Count on from the bigger number.",
+        "hint_ar": "عُدّ للأمام من العدد الأكبر.",
+        "result_en": "Answer: 23",
+        "result_ar": "الجواب: 23"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two groups joining together.",
+            "explanation_ar": "تخيّل مجموعتين تجتمعان."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 14 dots, then 9 more.",
+            "explanation_ar": "ارسم 14 نقطة، ثم 9 أخرى."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "All dots together = 23.",
+            "explanation_ar": "كل النقاط معًا = 23."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "So total = 23.",
+            "explanation_ar": "إذن المجموع = 23."
+          }
+        ],
+        "hint_en": "Combine dots from both groups.",
+        "hint_ar": "ادمج نقاط المجموعتين.",
+        "result_en": "Answer: 23",
+        "result_ar": "الجواب: 23"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-019",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A child in Tokyo has 4 red marbles and 8 blue marbles. He gives 4 marbles away. How many marbles remain?",
+    "question_ar": "طفل في طوكيو لديه 4 كرة حمراء و 8 كرة زرقاء. أعطى 4 كرة. كم كرة تبقّت؟",
+    "answer": 8,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 4 + 8, then subtract 4.",
+            "explanation_ar": "اجمع 4 + 8 أولًا، ثم اطرح 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "4 + 8 = 12; 12 − 4 = 8.",
+            "explanation_ar": "4 + 8 = 12؛ 12 − 4 = 8."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 8.",
+            "explanation_ar": "الجواب: 8."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 12.",
+            "explanation_ar": "المجموع البدائي = 12."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 12 − 4 = 8.",
+            "explanation_ar": "بعد العطاء: 12 − 4 = 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(8) + 4 = 12. ✓",
+            "explanation_ar": "(8) + 4 = 12. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 4 + 8 dots side by side.",
+            "explanation_ar": "ارسم 4 + 8 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 4; left with 8.",
+            "explanation_ar": "اشطب 4؛ يتبقى 8."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 8.",
+            "explanation_ar": "الجواب: 8."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 8",
+        "result_ar": "الجواب: 8"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  },
+  {
+    "id": "g1-practice-word-hard-020",
+    "grade": 1,
+    "bank": "specific",
+    "category": "Word Problem",
+    "level": "Hard",
+    "question_en": "A bag has 8 pencils and 7 pens. The teacher takes 4 away. How many remain?",
+    "question_ar": "في الكيس 8 قلم رصاص و 7 قلم حبر. أخذت المعلّمة 4. كم تبقّى؟",
+    "answer": 11,
+    "methods": {
+      "vedic": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Observe",
+            "title_ar": "لاحظ",
+            "explanation_en": "First add 8 + 7, then subtract 4.",
+            "explanation_ar": "اجمع 8 + 7 أولًا، ثم اطرح 4."
+          },
+          {
+            "step": 2,
+            "title_en": "Compute Key Values",
+            "title_ar": "احسب القيم الأساسية",
+            "explanation_en": "8 + 7 = 15; 15 − 4 = 11.",
+            "explanation_ar": "8 + 7 = 15؛ 15 − 4 = 11."
+          },
+          {
+            "step": 3,
+            "title_en": "Apply the Rule",
+            "title_ar": "طبّق القاعدة",
+            "explanation_en": "Two small steps: combine, then take away.",
+            "explanation_ar": "خطوتان صغيرتان: ادمج، ثم اطرح."
+          },
+          {
+            "step": 4,
+            "title_en": "Combine & State",
+            "title_ar": "اجمع وأعلن",
+            "explanation_en": "Answer: 11.",
+            "explanation_ar": "الجواب: 11."
+          }
+        ],
+        "hint_en": "Combine first, then remove.",
+        "hint_ar": "ادمج أولًا، ثم احذف.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "decompose": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Identify & Split",
+            "title_ar": "حدّد وقسّم",
+            "explanation_en": "Step 1: add. Step 2: subtract.",
+            "explanation_ar": "الخطوة 1: اجمع. الخطوة 2: اطرح."
+          },
+          {
+            "step": 2,
+            "title_en": "Operate on Each Part",
+            "title_ar": "اعمل على كل جزء",
+            "explanation_en": "Total at first = 15.",
+            "explanation_ar": "المجموع البدائي = 15."
+          },
+          {
+            "step": 3,
+            "title_en": "Recombine",
+            "title_ar": "أعد التجميع",
+            "explanation_en": "After giving away: 15 − 4 = 11.",
+            "explanation_ar": "بعد العطاء: 15 − 4 = 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Verify & State",
+            "title_ar": "تحقق وأعلن",
+            "explanation_en": "(11) + 4 = 15. ✓",
+            "explanation_ar": "(11) + 4 = 15. ✓"
+          }
+        ],
+        "hint_en": "Story order tells you what to do first.",
+        "hint_ar": "ترتيب القصة يخبرك بما تفعله أولًا.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      },
+      "visualize": {
+        "steps": [
+          {
+            "step": 1,
+            "title_en": "Anchor to Story",
+            "title_ar": "اربط بالقصة",
+            "explanation_en": "Picture two small piles joining; then taking some away.",
+            "explanation_ar": "تخيّل دمج كومتين صغيرتين؛ ثم إزالة بعضها."
+          },
+          {
+            "step": 2,
+            "title_en": "Build the Model",
+            "title_ar": "ابنِ النموذج",
+            "explanation_en": "Draw 8 + 7 dots side by side.",
+            "explanation_ar": "ارسم 8 + 7 نقطة جنبًا إلى جنب."
+          },
+          {
+            "step": 3,
+            "title_en": "Read the Model",
+            "title_ar": "اقرأ النموذج",
+            "explanation_en": "Cross out 4; left with 11.",
+            "explanation_ar": "اشطب 4؛ يتبقى 11."
+          },
+          {
+            "step": 4,
+            "title_en": "Solve & Connect",
+            "title_ar": "احلل واربط",
+            "explanation_en": "Answer: 11.",
+            "explanation_ar": "الجواب: 11."
+          }
+        ],
+        "hint_en": "Combine then cross out.",
+        "hint_ar": "ادمج ثم اشطب.",
+        "result_en": "Answer: 11",
+        "result_ar": "الجواب: 11"
+      }
+    },
+    "meta": {
+      "fun_fact_tag": "word_problem"
+    }
+  }
+];
