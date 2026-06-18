@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import {
   View, Text, StyleSheet, TouchableOpacity,
-  SafeAreaView, ScrollView, Image, Modal, Animated,
+  SafeAreaView, ScrollView, Image, Animated,
 } from 'react-native';
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Colors, FontFamilies, Spacing, BorderRadius, Shadow, getMethodColor, getMethodEmoji } from '../theme';
+
+// Tracks which profile IDs have already seen the splash this app session (resets on cold start).
+const shownThisSession = new Set<string>();
 import { ChildProfile } from '../hooks/useAppState';
 import { getFunFactForIndex, getFunFactCount } from '../services/contentService';
 import strings from '../i18n/strings';
@@ -54,30 +56,23 @@ export default function HomeScreen({ profile, language, activeTab, onTabChange, 
   const [factText, setFactText] = useState('');
   const fadeAnim = useRef(new Animated.Value(0)).current;
 
-  // Check if we should show the splash today
+  // Show the splash once per cold-start session (not once per calendar day).
+  // shownThisSession is module-level so it persists across tab navigations
+  // but resets when the app process is killed and restarted.
   useEffect(() => {
-    const checkAndShow = async () => {
-      const today = new Date().toDateString();
-      const key = `julia_fact_shown_${profile.id}`;
-      const lastShown = await AsyncStorage.getItem(key);
-
-      // Load fact regardless
+    const loadAndMaybeShow = async () => {
       const fact = await getFunFactForIndex(funFactIndex, profile.grade, language);
       setFactText(fact.text);
 
-      // Only show splash if not yet shown today
-      if (lastShown !== today) {
+      if (!shownThisSession.has(profile.id)) {
+        shownThisSession.add(profile.id);
         setShowSplash(true);
         Animated.timing(fadeAnim, {
           toValue: 1, duration: 400, useNativeDriver: true,
         }).start();
-        await AsyncStorage.setItem(key, today);
-        // Advance to next fact for tomorrow
-        const count = await getFunFactCount(language);
-        // We don't call onAdvanceFunFact here — we advance AFTER dismiss
       }
     };
-    checkAndShow();
+    loadAndMaybeShow();
   }, [profile.id]);
 
   const dismissSplash = async () => {
@@ -314,7 +309,7 @@ const s = StyleSheet.create({
   },
   splashBadge: {
     backgroundColor: Colors.lavender,
-    borderRadius: BorderRadius.full,
+    borderRadius: BorderRadius.xxl,
     paddingHorizontal: Spacing.lg,
     paddingVertical: Spacing.sm,
   },
@@ -332,7 +327,7 @@ const s = StyleSheet.create({
   },
   splashBtn: {
     backgroundColor: Colors.pink,
-    borderRadius: BorderRadius.full,
+    borderRadius: BorderRadius.xxl,
     paddingHorizontal: Spacing.xl * 2,
     paddingVertical: Spacing.md,
     marginTop: Spacing.md,

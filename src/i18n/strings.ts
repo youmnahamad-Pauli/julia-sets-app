@@ -79,6 +79,7 @@ const strings = {
     parentView: 'Parent view', weeklyActivity: 'Weekly activity',
     topicGaps: 'Needs work on', recommendedPractice: 'Recommended practice',
     parentTips: 'Parent Tips', exportReport: 'Export weekly report', close: '✕',
+    parentNoData: 'No profiles in this group yet.',
 
     // Practice
     practiceHeading: 'Practice',
@@ -193,6 +194,7 @@ const strings = {
     parentView: 'عرض ولي الأمر', weeklyActivity: 'النشاط الأسبوعي',
     topicGaps: 'يحتاج تحسيناً في', recommendedPractice: 'تدريب مقترح',
     parentTips: 'نصائح لولي الأمر', exportReport: 'تصدير التقرير الأسبوعي', close: '✕',
+    parentNoData: 'لا توجد ملفات في هذه المجموعة بعد.',
 
     // Practice
     practiceHeading: 'تدرّب',

@@ -75,6 +75,7 @@ export const Radius = {
   lg: 16,
   xl: 20,
   xxl: 999,
+  full: 999,
 };
 export const BorderRadius = Radius;
 

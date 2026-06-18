@@ -42,6 +42,7 @@ export default function App() {
   const [pendingAvatar, setPendingAvatar] = useState('');
   const [pendingGroupCode, setPendingGroupCode] = useState<string | undefined>();
   const [pendingGrade, setPendingGrade] = useState(1);
+  const [isCreatingProfile, setIsCreatingProfile] = useState(false);
 
   const [activeTab, setActiveTab] = useState('home');
 
@@ -116,11 +117,12 @@ export default function App() {
             profiles={app.profiles}
             language={app.language}
             onSelectProfile={async (p) => {
+              setIsCreatingProfile(false);
               await app.switchProfile(p.id);
               app.navigate('home');
               setActiveTab('home');
             }}
-            onAddNewLearner={() => app.navigate('profileSetup')}
+            onAddNewLearner={() => { setIsCreatingProfile(true); app.navigate('profileSetup'); }}
             onParentGate={() => app.navigate('parentGate')}
             onBack={profile
               ? () => { app.navigate('home'); setActiveTab('home'); }
@@ -166,13 +168,7 @@ export default function App() {
           <OnboardingScreen
             language={app.language}
             onMethodSelected={async (method: any) => {
-              if (profile) {
-                // Existing profile changing their method (from My Power)
-                await app.setMethod(method);
-                app.navigate('profile');
-                setActiveTab('profile');
-              } else {
-                // New profile creation flow
+              if (isCreatingProfile) {
                 await app.createProfile(
                   pendingName,
                   pendingAvatar,
@@ -180,16 +176,22 @@ export default function App() {
                   method,
                   pendingGroupCode,
                 );
+                setIsCreatingProfile(false);
                 app.navigate('home');
                 setActiveTab('home');
+              } else {
+                // Existing profile changing their method (from My Power)
+                await app.setMethod(method);
+                app.navigate('profile');
+                setActiveTab('profile');
               }
             }}
             onBack={() => {
-              if (profile) {
+              if (isCreatingProfile) {
+                app.navigate('gradeSelection');
+              } else {
                 app.navigate('profile');
                 setActiveTab('profile');
-              } else {
-                app.navigate('gradeSelection');
               }
             }}
           />
@@ -226,7 +228,7 @@ export default function App() {
             language={app.language}
             activeTab={activeTab}
             onTabChange={handleTabChange}
-            onChangeMethod={() => app.navigate('onboarding')}
+            onChangeMethod={() => { setIsCreatingProfile(false); app.navigate('onboarding'); }}
             onSwitchLearner={() => app.navigate('whoIsLearning')}
             onCreateGroup={app.createGroup}
           />
