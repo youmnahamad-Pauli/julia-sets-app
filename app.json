@@ -19,7 +19,8 @@
       "bundleIdentifier": "com.juliasets.app",
       "buildNumber": "1",
       "infoPlist": {
-        "NSUserTrackingUsageDescription": "This app does not track you."
+        "NSUserTrackingUsageDescription": "This app does not track you.",
+        "ITSAppUsesNonExemptEncryption": false
       }
     },
     "android": {
@@ -34,24 +35,10 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-font",
-        {
-          "fonts": [
-            "./assets/fonts/Fraunces-Italic.ttf",
-            "./assets/fonts/Nunito-Regular.ttf",
-            "./assets/fonts/Nunito-Bold.ttf",
-            "./assets/fonts/Nunito-ExtraBold.ttf"
-          ]
-        }
-      ]
-    ],
     "extra": {
       "eas": {
         "projectId": "188f8cac-03b4-4035-808c-4674a7216754"
       }
-    },
-    "owner": "youmnahamad"
+    }
   }
 }

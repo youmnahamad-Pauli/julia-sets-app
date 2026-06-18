@@ -38,16 +38,59 @@ const PINK  = '#E8A8C0';
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function parseQuestion(q: string): { a: number; b: number; op: string } | null {
-  const clean = q.replace(/,/g, '');
+  // Real questions are written in messy ways; normalise them so the matcher is
+  // reliable across every category:
+  //   • commas in big numbers        "1,250"      → "1250"
+  //   • every minus/dash variant      −, –, —      → ASCII "-"
+  //   • parentheses around negatives  "(−8500)"    → " -8500 "
+  const clean = q
+    .replace(/,/g, '')
+    .replace(/[−–—]/g, '-')
+    .replace(/[()]/g, ' ');
   const m = clean.match(/(-?\d+(?:\.\d+)?)\s*([+\-×÷\/*])\s*(-?\d+(?:\.\d+)?)/);
   if (!m) return null;
-  return { a: parseFloat(m[1]), op: m[2], b: parseFloat(m[3]) };
+  let a = parseFloat(m[1]);
+  let op = m[2];
+  let b = parseFloat(m[3]);
+  // Fold signs so the diagram draws the correct direction / value:
+  //   "15000 − (−8500)" → 15000 + 8500    "x + (−3)" → x − 3
+  if (op === '-' && b < 0) { op = '+'; b = Math.abs(b); }
+  else if (op === '+' && b < 0) { op = '-'; b = Math.abs(b); }
+  return { a, op, b };
 }
 
 function parseFraction(q: string): { num: number; den: number } | null {
   const m = q.match(/(\d+)\s*\/\s*(\d+)/);
   if (!m) return null;
   return { num: parseInt(m[1]), den: parseInt(m[2]) };
+}
+
+// When a question has no clean "a op b" (most word problems), infer the
+// operation from the numbers in the sentence plus the known answer.
+// e.g. "Kenji has 4 fish, gets 3 more" + answer 7 → 4 + 3.
+function inferFromNumbers(question: string, answer: number): { a: number; b: number; op: string } | null {
+  if (!Number.isFinite(answer)) return null;
+  const clean = question.replace(/,/g, '').replace(/[−–—]/g, '-');
+  const ns = (clean.match(/-?\d+(?:\.\d+)?/g) ?? []).map(Number);
+  const close = (v: number) => Math.abs(v - answer) < 1e-6;
+  for (let i = 0; i < ns.length; i++) {
+    for (let j = 0; j < ns.length; j++) {
+      if (i === j) continue;
+      const x = ns[i], y = ns[j];
+      if (close(x + y)) return { a: x, b: y, op: '+' };
+      if (close(x - y)) return { a: x, b: y, op: '-' };
+      if (close(x * y)) return { a: x, b: y, op: '×' };
+      if (y !== 0 && close(x / y)) return { a: x, b: y, op: '÷' };
+    }
+  }
+  return null;
+}
+
+// "Round 47 to the nearest 10" → 47 (the number being rounded). No operator,
+// so parseQuestion can't see it.
+function parseRounding(question: string): number | null {
+  const m = question.replace(/,/g, '').match(/round\s+(-?\d+(?:\.\d+)?)\s+to\s+(?:the\s+)?nearest/i);
+  return m ? parseFloat(m[1]) : null;
 }
 
 // ── Shared UI atoms ────────────────────────────────────────────────────────
@@ -716,9 +759,10 @@ function DecimalDiagram({ a, b, op, color, phase }: {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// ROUTER
+// ROUTER (category-specific). Returns null when no category diagram applies;
+// the exported StepDiagram below then tries the universal fallbacks.
 // ─────────────────────────────────────────────────────────────────────────────
-export default function StepDiagram({ question, answer, category, method, phase, color }: Props) {
+function routeByCategory({ question, answer, category, method, phase, color }: Props) {
   const cat = category.toLowerCase();
   const parsed = parseQuestion(question);
 
@@ -738,7 +782,7 @@ export default function StepDiagram({ question, answer, category, method, phase,
     const dividend = parsed.op === '÷' || parsed.op === '/' ? parsed.a : Math.max(parsed.a, parsed.b);
     const divisor  = parsed.op === '÷' || parsed.op === '/' ? parsed.b : Math.min(parsed.a, parsed.b);
     if (method === 'vedic') return <VedicDiagram a={parsed.a} b={parsed.b} color={color} phase={phase} />;
-    if (divisor > 0 && Number.isInteger(dividend / divisor))
+    if (divisor > 0 && Math.abs(dividend / divisor - Math.round(dividend / divisor)) < 1e-9)
       return <GroupingDiagram dividend={dividend} divisor={divisor} color={color} phase={phase} />;
     return null;
   }
@@ -810,8 +854,20 @@ export default function StepDiagram({ question, answer, category, method, phase,
 
   // ── Percentages (basic & advanced) ────────────────────────────────────────
   if (cat.includes('percent')) {
-    if (!parsed) return null;
-    return <PercentageDiagram question={question} a={parsed.a} b={parsed.b} color={color} phase={phase} />;
+    // Percentage questions are usually word problems (e.g. "A jacket costs $60.
+    // After a 20% discount...") with no clean "a op b" expression, so we must
+    // NOT rely on parseQuestion here. Pull the percent and the base amount
+    // straight from the wording instead.
+    const pctM = question.match(/(\d+(?:\.\d+)?)\s*%/);
+    const otherNums = (question
+      .replace(/(\d+(?:\.\d+)?)\s*%/g, '')      // strip the "20%" so it isn't reused as the base
+      .match(/\d+(?:\.\d+)?/g) ?? [])
+      .map(Number)
+      .filter(n => n > 0);
+    const pct = pctM ? parseFloat(pctM[1]) : (parsed ? parsed.a : 0);
+    const whole = otherNums.length ? Math.max(...otherNums) : (parsed ? parsed.b : 0);
+    if (!pct && !whole) return null;
+    return <PercentageDiagram question={question} a={pct} b={whole} color={color} phase={phase} />;
   }
 
   // ── Rounding & Estimation ─────────────────────────────────────────────────
@@ -844,6 +900,44 @@ export default function StepDiagram({ question, answer, category, method, phase,
     if (op === '+') return <NumberLineDiagram a={a} b={b} op="+" color={color} phase={phase} />;
     if (op === '-') return <NumberLineDiagram a={a} b={Math.abs(b)} op="-" color={color} phase={phase} />;
     return <AreaModelDiagram a={a} b={b} color={color} phase={phase} />;
+  }
+
+  return null;
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// EXPORTED COMPONENT — tries the category diagram first, then universal
+// fallbacks so word problems, count-on/back, and rounding still get a visual.
+// ─────────────────────────────────────────────────────────────────────────────
+export default function StepDiagram(props: Props) {
+  const { question, answer, category, method, phase, color } = props;
+  const cat = category.toLowerCase();
+
+  // Abstract categories never get a diagram (no fallback either).
+  if (['algebra', 'powers & roots', 'scientific notation'].some(k => cat.includes(k))) return null;
+
+  // 1) Normal category-specific diagram.
+  const primary = routeByCategory(props);
+  if (primary) return primary;
+
+  // 2) Rounding word problems ("Round 47 to the nearest 10") — no operator.
+  if (cat.includes('round') || cat.includes('estimat')) {
+    const r = parseRounding(question);
+    if (r != null) return <RoundingDiagram a={r} color={color} phase={phase} />;
+  }
+
+  // 3) Universal fallback: infer operation from the numbers + the answer.
+  const inf = inferFromNumbers(question, answer);
+  if (inf) {
+    const { a, b, op } = inf;
+    if (op === '×') return <AreaModelDiagram a={a} b={b} color={color} phase={phase} />;
+    if (op === '÷') {
+      if (b > 0 && Math.abs(a / b - Math.round(a / b)) < 1e-9)
+        return <GroupingDiagram dividend={a} divisor={b} color={color} phase={phase} />;
+      return null;
+    }
+    if (op === '-') return <NumberLineDiagram a={a} b={Math.abs(b)} op="-" color={color} phase={phase} />;
+    return <NumberLineDiagram a={a} b={b} op="+" color={color} phase={phase} />;
   }
 
   return null;
