@@ -17,7 +17,7 @@
     "ios": {
       "supportsTablet": false,
       "bundleIdentifier": "com.juliasets.app",
-      "buildNumber": "1",
+      "buildNumber": "2",
       "infoPlist": {
         "NSUserTrackingUsageDescription": "This app does not track you.",
         "ITSAppUsesNonExemptEncryption": false
