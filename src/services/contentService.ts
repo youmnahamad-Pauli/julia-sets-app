@@ -6,6 +6,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import { FUN_FACTS as LOCAL_FUN_FACTS } from '../data/funFacts';
 
 // ── GitHub raw content base URL ───────────────────────────────────────────────
 const GITHUB_BASE =
@@ -107,6 +108,17 @@ const FALLBACK_FACTS_AR: FunFact[] = [
   },
 ];
 
+// Rich English fallback built from the full local funFacts.ts (65 facts), so
+// the home splash is varied even when the GitHub feed hasn't synced. The GitHub
+// content (when available) still overrides this via the cache.
+const RICH_FALLBACK_EN: FunFact[] = LOCAL_FUN_FACTS.map((f) => ({
+  id: `local-${f.id}`,
+  week: 0,
+  text: f.fact,
+  tag: f.category.toLowerCase().replace(/\s+/g, '_'),
+  grades: [1, 2, 3, 4, 5, 6, 7, 8],
+}));
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Helpers
 // ─────────────────────────────────────────────────────────────────────────────
@@ -175,7 +187,7 @@ export async function getFunFacts(language: 'en' | 'ar'): Promise<FunFact[]> {
     console.warn('[ContentService] Cache read error:', err);
   }
   // Fallback to bundled
-  return language === 'ar' ? FALLBACK_FACTS_AR : FALLBACK_FACTS_EN;
+  return language === 'ar' ? FALLBACK_FACTS_AR : RICH_FALLBACK_EN;
 }
 
 /**

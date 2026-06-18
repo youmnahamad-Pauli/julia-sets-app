@@ -61,7 +61,11 @@ export default function App() {
 
   useEffect(() => {
     if (!app.isLoaded) return;
-    if (!app.isFirstLaunch && app.profiles.length > 0 && !app.activeProfile) {
+    if (app.isFirstLaunch) {
+      app.navigate('language');
+    } else if (app.activeProfile) {
+      app.navigate('home');
+    } else if (app.profiles.length > 0) {
       app.navigate('whoIsLearning');
     } else {
       app.navigate('language');

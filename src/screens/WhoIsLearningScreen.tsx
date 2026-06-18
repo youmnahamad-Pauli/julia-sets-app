@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
-  View, Text, TouchableOpacity, StyleSheet, SafeAreaView,
-  FlatList, Alert,
+  View, Text, TouchableOpacity, StyleSheet, SafeAreaView, ScrollView, Alert,
 } from 'react-native';
-import { Colors, FontFamilies, Spacing, BorderRadius, Shadow } from '../theme';
+import { Colors, FontFamilies, Spacing, BorderRadius, Shadow, getMethodColor } from '../theme';
 import { ChildProfile } from '../hooks/useAppState';
-import strings from '../i18n/strings';
 
 interface Props {
   profiles: ChildProfile[];
@@ -18,223 +16,126 @@ interface Props {
 }
 
 export default function WhoIsLearningScreen({
-  profiles, language, onSelectProfile, onAddNewLearner,
-  onParentGate, onBack, onDeleteProfile,
+  profiles, language, onSelectProfile, onAddNewLearner, onParentGate, onBack, onDeleteProfile,
 }: Props) {
-  const [editMode, setEditMode] = useState(false);
-  const t = strings[language];
+  const isAr = language === 'ar';
 
-  const ibLabel = (stage: string) => {
-    if (stage === 'PYP') return 'PYP';
-    if (stage === 'MYP_TRANSITION') return 'MYP T';
-    return 'MYP';
-  };
+  const gradeLabel = (g: number) => (isAr ? `الصف ${g}` : `Grade ${g}`);
 
-  const handleDelete = (profile: ChildProfile) => {
+  const confirmDelete = (p: ChildProfile) => {
     Alert.alert(
-      'Remove learner',
-      `Remove ${profile.name}?`,
+      isAr ? 'حذف الملف؟' : 'Delete profile?',
+      isAr ? `سيتم حذف ${p.name} وكل تقدّمه.` : `This removes ${p.name} and all their progress.`,
       [
-        { text: 'Cancel', style: 'cancel' },
-        {
-          text: 'Remove', style: 'destructive',
-          onPress: () => onDeleteProfile(profile.id),
-        },
-      ]
+        { text: isAr ? 'إلغاء' : 'Cancel', style: 'cancel' },
+        { text: isAr ? 'حذف' : 'Delete', style: 'destructive', onPress: () => onDeleteProfile(p.id) },
+      ],
     );
   };
 
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.header}>
-        {onBack && (
-          <TouchableOpacity onPress={onBack} style={styles.backBtn}>
-            <Text style={styles.backText}>{t.back}</Text>
-          </TouchableOpacity>
-        )}
-        <View style={styles.headerRight}>
-          <TouchableOpacity onPress={() => setEditMode(!editMode)}>
-            <Text style={styles.editBtn}>{editMode ? 'Done' : '✏️'}</Text>
+    <SafeAreaView style={s.container}>
+      <ScrollView contentContainerStyle={s.scroll} showsVerticalScrollIndicator={false}>
+        {/* Header */}
+        <View style={s.header}>
+          {onBack ? (
+            <TouchableOpacity onPress={onBack} style={s.backBtn}>
+              <Text style={s.backTxt}>{isAr ? '→ رجوع' : '← Back'}</Text>
+            </TouchableOpacity>
+          ) : <View style={s.backBtn} />}
+        </View>
+
+        <Text style={[s.title, isAr && s.rtl]}>
+          {isAr ? 'من يتعلّم اليوم؟' : "Who's learning today?"}
+        </Text>
+        <Text style={[s.subtitle, isAr && s.rtl]}>
+          {isAr ? 'اختر ملفك للمتابعة' : 'Tap your name to continue'}
+        </Text>
+
+        {/* Profile cards */}
+        <View style={s.grid}>
+          {profiles.map((p) => (
+            <TouchableOpacity
+              key={p.id}
+              style={[s.card, { borderColor: getMethodColor(p.chosenMethod) }]}
+              activeOpacity={0.85}
+              onPress={() => onSelectProfile(p)}
+              onLongPress={() => confirmDelete(p)}
+            >
+              <Text style={s.avatar}>{p.avatarEmoji || '🧒'}</Text>
+              <Text style={s.cardName} numberOfLines={1}>{p.name}</Text>
+              <Text style={s.cardGrade}>{gradeLabel(p.grade)}</Text>
+            </TouchableOpacity>
+          ))}
+
+          {/* Add new learner */}
+          <TouchableOpacity
+            style={[s.card, s.addCard]}
+            activeOpacity={0.85}
+            onPress={onAddNewLearner}
+          >
+            <Text style={s.addPlus}>＋</Text>
+            <Text style={s.addTxt}>{isAr ? 'متعلّم جديد' : 'Add learner'}</Text>
           </TouchableOpacity>
         </View>
-      </View>
 
-      <View style={styles.inner}>
-        <Text style={styles.heading}>{t.whoIsLearning}</Text>
+        {profiles.length > 0 && (
+          <Text style={[s.hint, isAr && s.rtl]}>
+            {isAr ? 'اضغط مطوّلاً على ملف لحذفه' : 'Long-press a profile to remove it'}
+          </Text>
+        )}
 
-        <FlatList
-          data={profiles}
-          keyExtractor={item => item.id}
-          numColumns={2}
-          columnWrapperStyle={styles.row}
-          contentContainerStyle={styles.listContent}
-          ListFooterComponent={
-            <View style={styles.row}>
-              <TouchableOpacity style={styles.addCard} onPress={onAddNewLearner} activeOpacity={0.8}>
-                <Text style={styles.addCardText}>{t.addNewLearner}</Text>
-              </TouchableOpacity>
-              {profiles.length % 2 !== 0 && <View style={styles.cardSpacer} />}
-            </View>
-          }
-          renderItem={({ item }) => (
-            <TouchableOpacity
-              style={styles.profileCard}
-              onPress={() => !editMode && onSelectProfile(item)}
-              activeOpacity={0.85}
-            >
-              {editMode && (
-                <TouchableOpacity style={styles.deleteBtn} onPress={() => handleDelete(item)}>
-                  <Text style={styles.deleteBtnText}>✕</Text>
-                </TouchableOpacity>
-              )}
-              <Text style={styles.avatar}>{item.avatarEmoji}</Text>
-              <Text style={styles.profileName}>{item.name}</Text>
-              <View style={styles.gradeBadge}>
-                <Text style={styles.gradeBadgeText}>Grade {item.grade} · {ibLabel(item.ibStage)}</Text>
-              </View>
-              <Text style={styles.xpText}>{item.totalXP} XP</Text>
-            </TouchableOpacity>
-          )}
-        />
-
-        <TouchableOpacity style={styles.parentLink} onPress={onParentGate} activeOpacity={0.8}>
-          <Text style={styles.parentLinkText}>{t.parentTeacher}</Text>
+        {/* Parent area */}
+        <TouchableOpacity style={s.parentBtn} onPress={onParentGate} activeOpacity={0.8}>
+          <Text style={s.parentTxt}>{isAr ? '👤 منطقة الوالدين' : '👤 Parent area'}</Text>
         </TouchableOpacity>
-      </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: Colors.aubergine,
+const s = StyleSheet.create({
+  container: { flex: 1, backgroundColor: Colors.aubergine },
+  scroll: { flexGrow: 1, paddingHorizontal: Spacing.lg, paddingBottom: Spacing.xxl },
+  rtl: { textAlign: 'right' },
+
+  header: { flexDirection: 'row', alignItems: 'center', paddingTop: Spacing.md, minHeight: 36 },
+  backBtn: { alignSelf: 'flex-start' },
+  backTxt: { fontFamily: FontFamilies.bodySemiBold, fontSize: 16, color: Colors.pink },
+
+  title: {
+    fontFamily: FontFamilies.displayBold, fontSize: 28, color: Colors.white,
+    marginTop: Spacing.lg, textAlign: 'center',
   },
-  header: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    paddingHorizontal: Spacing.lg,
-    paddingTop: Spacing.md,
-    paddingBottom: Spacing.sm,
+  subtitle: {
+    fontFamily: FontFamilies.body, fontSize: 14, color: 'rgba(255,255,255,0.6)',
+    textAlign: 'center', marginTop: Spacing.xs, marginBottom: Spacing.xl,
   },
-  backBtn: {},
-  backText: {
-    fontFamily: FontFamilies.bodySemiBold,
-    fontSize: 16,
-    color: Colors.pink,
+
+  grid: {
+    flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', gap: Spacing.md,
   },
-  headerRight: {},
-  editBtn: {
-    fontFamily: FontFamilies.bodySemiBold,
-    fontSize: 16,
-    color: Colors.amber,
+  card: {
+    width: 150, height: 150, borderRadius: BorderRadius.xl, backgroundColor: Colors.white,
+    borderWidth: 2, alignItems: 'center', justifyContent: 'center', gap: 4, ...Shadow.card,
   },
-  inner: {
-    flex: 1,
-    paddingHorizontal: Spacing.md,
+  avatar: { fontSize: 52 },
+  cardName: { fontFamily: FontFamilies.displayBold, fontSize: 18, color: Colors.aubergine, maxWidth: 130 },
+  cardGrade: { fontFamily: FontFamilies.body, fontSize: 13, color: Colors.textMid },
+
+  addCard: { backgroundColor: 'rgba(255,255,255,0.08)', borderColor: 'rgba(255,255,255,0.25)', borderStyle: 'dashed' },
+  addPlus: { fontSize: 44, color: Colors.pink, fontFamily: FontFamilies.displayBold, marginBottom: 2 },
+  addTxt: { fontFamily: FontFamilies.bodyBold, fontSize: 14, color: 'rgba(255,255,255,0.85)' },
+
+  hint: {
+    fontFamily: FontFamilies.body, fontSize: 12, color: 'rgba(255,255,255,0.4)',
+    textAlign: 'center', marginTop: Spacing.lg,
   },
-  heading: {
-    fontFamily: FontFamilies.displayBold,
-    fontSize: 26,
-    color: Colors.white,
-    textAlign: 'center',
-    marginBottom: Spacing.lg,
-    marginTop: Spacing.sm,
+
+  parentBtn: {
+    marginTop: Spacing.xxl, alignSelf: 'center',
+    paddingHorizontal: Spacing.xl, paddingVertical: Spacing.md,
+    borderRadius: BorderRadius.xxl, borderWidth: 1, borderColor: 'rgba(255,255,255,0.2)',
   },
-  listContent: {
-    paddingBottom: Spacing.md,
-  },
-  row: {
-    gap: Spacing.md,
-    marginBottom: Spacing.md,
-    paddingHorizontal: Spacing.xs,
-  },
-  profileCard: {
-    flex: 1,
-    backgroundColor: Colors.aubergineDark,
-    borderRadius: BorderRadius.lg,
-    padding: Spacing.lg,
-    alignItems: 'center',
-    ...Shadow.card,
-  },
-  deleteBtn: {
-    position: 'absolute',
-    top: Spacing.sm,
-    right: Spacing.sm,
-    backgroundColor: Colors.coral,
-    width: 24,
-    height: 24,
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 1,
-  },
-  deleteBtnText: {
-    color: Colors.white,
-    fontSize: 12,
-    fontFamily: FontFamilies.bodyBold,
-  },
-  avatar: {
-    fontSize: 48,
-    marginBottom: Spacing.sm,
-  },
-  profileName: {
-    fontFamily: FontFamilies.bodyBold,
-    fontSize: 16,
-    color: Colors.white,
-    marginBottom: Spacing.xs,
-    textAlign: 'center',
-  },
-  gradeBadge: {
-    backgroundColor: Colors.pink,
-    borderRadius: BorderRadius.full,
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 2,
-    marginBottom: Spacing.xs,
-  },
-  gradeBadgeText: {
-    fontFamily: FontFamilies.bodySemiBold,
-    fontSize: 11,
-    color: Colors.aubergine,
-  },
-  xpText: {
-    fontFamily: FontFamilies.body,
-    fontSize: 13,
-    color: Colors.amber,
-  },
-  addCard: {
-    flex: 1,
-    backgroundColor: 'transparent',
-    borderRadius: BorderRadius.lg,
-    padding: Spacing.lg,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 2,
-    borderColor: Colors.coral,
-    borderStyle: 'dashed',
-    minHeight: 140,
-  },
-  addCardText: {
-    fontFamily: FontFamilies.bodySemiBold,
-    fontSize: 16,
-    color: Colors.coral,
-    textAlign: 'center',
-  },
-  cardSpacer: {
-    flex: 1,
-  },
-  parentLink: {
-    paddingVertical: Spacing.md,
-    alignItems: 'center',
-    borderTopWidth: 1,
-    borderTopColor: 'rgba(255,255,255,0.1)',
-    marginTop: Spacing.sm,
-  },
-  parentLinkText: {
-    fontFamily: FontFamilies.body,
-    fontSize: 14,
-    color: Colors.pink,
-    opacity: 0.8,
-  },
+  parentTxt: { fontFamily: FontFamilies.bodySemiBold, fontSize: 14, color: 'rgba(255,255,255,0.7)' },
 });

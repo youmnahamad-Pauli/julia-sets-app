@@ -1,0 +1,32 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native build output
+ios/
+android/
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# EAS / build metadata
+.easignore
+eas-build-*.json
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

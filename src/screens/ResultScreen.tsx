@@ -5,7 +5,7 @@ import {
 import { Colors, FontFamilies, Spacing, BorderRadius, Shadow } from '../theme';
 import { Problem } from '../data/problems';
 import strings from '../i18n/strings';
-import { getRandomFact, FunFact } from '../services/contentService';
+import { getFunFacts, FunFact } from '../services/contentService';
 
 interface ResultItem {
   problem: Problem;
@@ -29,7 +29,9 @@ export default function ResultScreen({ results, totalXP, language, onHome, onVie
   const grade = results[0]?.problem?.grade ?? 4;
 
   useEffect(() => {
-    getRandomFact(grade, language).then(setFact);
+    getFunFacts(language).then(facts => {
+      if (facts.length > 0) setFact(facts[Math.floor(Math.random() * facts.length)]);
+    });
   }, [grade, language]);
 
   return (
@@ -63,12 +65,9 @@ export default function ResultScreen({ results, totalXP, language, onHome, onVie
             {'💡 ' + t.didYouKnow}
           </Text>
           {fact ? (
-            <>
-              <Text style={styles.factEmoji}>{fact.emoji}</Text>
-              <Text style={[styles.factText, language === 'ar' && styles.factTextRTL]}>
-                {language === 'ar' ? fact.ar : fact.en}
-              </Text>
-            </>
+            <Text style={[styles.factText, language === 'ar' && styles.factTextRTL]}>
+              {fact.text}
+            </Text>
           ) : (
             <ActivityIndicator color={Colors.amber} style={{ marginTop: Spacing.sm }} />
           )}
@@ -202,7 +201,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
     paddingVertical: Spacing.md,
     paddingHorizontal: Spacing.xxl,
-    borderRadius: BorderRadius.full,
+    borderRadius: BorderRadius.xxl,
     width: '100%',
     alignItems: 'center',
     marginBottom: Spacing.md,
@@ -217,7 +216,7 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.lavender,
     paddingVertical: Spacing.md,
     paddingHorizontal: Spacing.xxl,
-    borderRadius: BorderRadius.full,
+    borderRadius: BorderRadius.xxl,
     width: '100%',
     alignItems: 'center',
     ...Shadow.card,
